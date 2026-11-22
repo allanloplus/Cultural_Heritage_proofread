@@ -106,14 +106,28 @@ def build(ctx, F, stats, started):
     rep = {"meta": meta, "summary": summary, "stats": stats, "dialogue": dialogue(summary, stats, meta, opens), "catalog": checks,
            "findings": opens, "accepted": accepted, "resolved": resolved[:100]}
     dump(rep, os.path.join(REPORTS, "latest.json"), indent=0)
-    dump(rep, os.path.join(REPORTS, "history", TODAY + ".json"), indent=0)
-    hist = [h for h in load(os.path.join(REPORTS, "history", "index.json"), []) if h["date"] != TODAY]
-    hist.append({"date": TODAY, "level": ctx["level"], **{k: summary[k] for k in ("total", "high", "medium", "low", "info", "new", "resolved", "overdue")}})
-    hist.sort(key=lambda h: h["date"])
-    for h in hist[:-80]:  # 完整報告留最近 80 次，趨勢摘要全部保留
-        p = os.path.join(REPORTS, "history", h["date"] + ".json")
-        if os.path.exists(p):
-            os.remove(p)
+    # 歷次紀錄：一天一筆；同一天跑多次時保留「當天第一次」與「當天最後一次」，看得出修正前後的差別
+    hdir = os.path.join(REPORTS, "history")
+    hist = load(os.path.join(hdir, "index.json"), [])
+    entry = {"date": TODAY, "level": ctx["level"], **{k: summary[k] for k in ("total", "high", "medium", "low", "info", "new", "resolved", "overdue")}}
+    today = [h for h in hist if h["date"] == TODAY]
+    if not today:
+        hist.append(entry)
+    else:
+        first = next((h for h in today if h.get("run") == "first"), None)
+        if not first:  # 第二次執行：原本那一筆變成「第一次」，它的完整報告另存
+            first = today[0]
+            first["run"] = "first"
+            src = os.path.join(hdir, TODAY + ".json")
+            if os.path.exists(src):
+                os.replace(src, os.path.join(hdir, TODAY + "-first.json"))
+        hist = [h for h in hist if h["date"] != TODAY] + [first, dict(entry, run="last")]
+    dump(rep, os.path.join(hdir, TODAY + ".json"), indent=0)
+    hist.sort(key=lambda h: (h["date"], h.get("run") == "last"))
+    keep = {h["date"] for h in hist[-80:]}
+    for fn in os.listdir(hdir):  # 完整報告留最近 80 筆，趨勢摘要全部保留
+        if fn != "index.json" and fn.endswith(".json") and fn[:10] not in keep:
+            os.remove(os.path.join(hdir, fn))
     dump(hist, os.path.join(REPORTS, "history", "index.json"))
     open(os.path.join(REPORTS, "latest.md"), "w", encoding="utf-8").write(markdown(rep))
     open(os.path.join(REPORTS, "latest.csv"), "w", encoding="utf-8-sig", newline="").write(to_csv(rep))
