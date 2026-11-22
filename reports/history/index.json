@@ -2,6 +2,19 @@
  {
   "date": "2026-11-22",
   "level": "weekly",
+  "total": 123,
+  "high": 2,
+  "medium": 59,
+  "low": 30,
+  "info": 32,
+  "new": 0,
+  "resolved": 0,
+  "overdue": 0,
+  "run": "first"
+ },
+ {
+  "date": "2026-11-22",
+  "level": "weekly",
   "total": 37,
   "high": 0,
   "medium": 0,
@@ -9,6 +22,7 @@
   "info": 37,
   "new": 1,
   "resolved": 1,
-  "overdue": 0
+  "overdue": 0,
+  "run": "last"
  }
 ]

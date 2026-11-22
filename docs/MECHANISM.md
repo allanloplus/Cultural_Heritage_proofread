@@ -122,7 +122,7 @@
 |---|---|---|
 | 最新報告 | `reports/latest.json`、`latest.md`、`latest.csv` | 每次檢測覆寫 |
 | 歷次完整報告 | `reports/history/<日期>.json` | 最近 80 次 |
-| 歷次摘要（趨勢） | `reports/history/index.json` | 全部 |
+| 歷次摘要（趨勢） | `reports/history/index.json` | 全部。一天一筆；同一天跑多次時保留當天第一次與最後一次 |
 | 每筆發現的首次發現日、已解決紀錄 | `state/findings.json` | 未解決的全部；已解決的最近 300 筆 |
 | 官方公告基準 | `state/official-baseline.json` | 每次檢測更新 |
 | 連結檢查狀態（連續失敗次數） | `state/links.json` | 每次檢測更新 |

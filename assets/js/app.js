@@ -252,7 +252,7 @@
     if (!H.length) { $("trendNote").textContent = "還沒有歷史資料。"; return; }
     var W = 520, Hh = 190, pad = 28, bw = Math.min(38, (W - pad * 2) / H.length - 8), max = Math.max.apply(null, H.map(function (h) { return h.high + h.medium + h.low; })) || 1;
     var svg = document.createElementNS(NS, "svg"); svg.setAttribute("viewBox", "0 0 " + W + " " + Hh); svg.setAttribute("role", "img");
-    svg.setAttribute("aria-label", "歷次健檢待處理件數：" + H.map(function (h) { return h.date + " 高" + h.high + " 中" + h.medium + " 低" + h.low; }).join("；"));
+    svg.setAttribute("aria-label", "歷次健檢待處理件數：" + H.map(function (h) { return h.date + (h.run === "first" ? "第一次" : h.run === "last" ? "最後一次" : "") + " 高" + h.high + " 中" + h.medium + " 低" + h.low; }).join("；"));
     function rect(x, y, w, h, fill) { var r = document.createElementNS(NS, "rect"); r.setAttribute("x", x); r.setAttribute("y", y); r.setAttribute("width", w); r.setAttribute("height", Math.max(h, 0)); r.setAttribute("rx", 3); r.setAttribute("fill", fill); svg.appendChild(r); return r; }
     function text(x, y, t, a, sz) { var e = document.createElementNS(NS, "text"); e.setAttribute("x", x); e.setAttribute("y", y); e.setAttribute("text-anchor", a || "middle"); e.setAttribute("font-size", sz || 11); e.setAttribute("fill", "currentColor"); e.textContent = t; svg.appendChild(e); }
     var base = Hh - 26, scale = (base - 22) / max, step = (W - pad * 2) / H.length;
@@ -261,12 +261,13 @@
       var x = pad + i * step + (step - bw) / 2, y = base;
       [["low", "var(--low)"], ["medium", "var(--medium)"], ["high", "var(--high)"]].forEach(function (s) {
         var hh = h[s[0]] * scale; y -= hh;
-        var r = rect(x, y, bw, hh, s[1]); var t = document.createElementNS(NS, "title"); t.textContent = h.date + "　優先度" + SEV[s[0]] + " " + h[s[0]]; r.appendChild(t);
+        var r = rect(x, y, bw, hh, s[1]); var t = document.createElementNS(NS, "title"); t.textContent = h.date + (h.run === "first" ? "（當天第一次）" : h.run === "last" ? "（當天最後一次）" : "") + "　優先度" + SEV[s[0]] + " " + h[s[0]]; r.appendChild(t);
       });
       text(x + bw / 2, y - 5, String(h.high + h.medium + h.low));
-      if (H.length <= 8 || i % 2 === (H.length - 1) % 2) text(x + bw / 2, Hh - 8, h.date.slice(5).replace("-", "/"), "middle", 10);
+      var lab = h.date.slice(5).replace("-", "/") + (h.run === "first" ? " 首次" : h.run === "last" ? " 末次" : "");
+      if (H.length <= 8 || i % 2 === (H.length - 1) % 2) text(x + bw / 2, Hh - 8, lab, "middle", 10);
     });
     box.appendChild(svg);
-    $("trendNote").textContent = H.length === 1 ? "這是第一次健檢。之後每次檢測都會多一根長條，可以看出待辦是變多還是變少。" : "由下而上：低、中、高。長條愈短愈好。";
+    $("trendNote").textContent = H.length === 1 ? "這是第一次健檢。之後每次檢測都會多一根長條，可以看出待辦是變多還是變少。" : "由下而上：低、中、高，長條愈短愈好。同一天跑多次時，顯示當天的首次與末次，可以看出修正前後的差別。";
   }
 })();
