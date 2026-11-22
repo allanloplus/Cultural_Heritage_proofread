@@ -10,8 +10,8 @@
 "news",
 "system"
 ],
-"generated": "2026-11-22T07:22:23Z",
-"seconds": 259,
+"generated": "2026-11-22T07:44:11Z",
+"seconds": 386,
 "sla": {
 "high": 7,
 "medium": 30,
@@ -26,25 +26,25 @@
 }
 },
 "summary": {
-"total": 123,
+"total": 125,
 "high": 2,
-"medium": 59,
-"low": 30,
-"info": 32,
-"new": 0,
-"resolved": 0,
+"medium": 67,
+"low": 27,
+"info": 29,
+"new": 12,
+"resolved": 10,
 "overdue": 0,
 "accepted": 0,
-"firstRun": true,
+"firstRun": false,
 "bySite": {
 "ch1": {
 "name": "文資知識網站（第一網站）",
 "url": "https://cultural.123hi.org/",
 "role": "core",
 "high": 2,
-"medium": 30,
+"medium": 33,
 "low": 17,
-"info": 12,
+"info": 10,
 "status": "act"
 },
 "ch2": {
@@ -52,9 +52,9 @@
 "url": "https://cultural2.123hi.org/",
 "role": "core",
 "high": 0,
-"medium": 29,
+"medium": 31,
 "low": 10,
-"info": 14,
+"info": 16,
 "status": "watch"
 },
 "visit": {
@@ -102,10 +102,10 @@
 "url": "https://cultural-ascent.123hi.org/",
 "role": "sister",
 "high": 0,
-"medium": 0,
+"medium": 3,
 "low": 0,
-"info": 3,
-"status": "good"
+"info": 0,
+"status": "watch"
 }
 },
 "byCity": {
@@ -173,7 +173,7 @@
 "high": 0,
 "medium": 2,
 "low": 0,
-"info": 1
+"info": 2
 },
 "lienchiang-county": {
 "name": "連江縣",
@@ -193,7 +193,7 @@
 "sites": 90,
 "ich": 8,
 "high": 1,
-"medium": 0,
+"medium": 1,
 "low": 1,
 "info": 0
 },
@@ -204,9 +204,9 @@
 "sites": 114,
 "ich": 63,
 "high": 0,
-"medium": 1,
+"medium": 2,
 "low": 0,
-"info": 3
+"info": 2
 },
 "tainan-city": {
 "name": "臺南市",
@@ -237,9 +237,9 @@
 "sites": 144,
 "ich": 20,
 "high": 0,
-"medium": 1,
+"medium": 2,
 "low": 12,
-"info": 1
+"info": 0
 },
 "yunlin-county": {
 "name": "雲林縣",
@@ -250,7 +250,7 @@
 "high": 0,
 "medium": 3,
 "low": 1,
-"info": 3
+"info": 2
 },
 "changhua-county": {
 "name": "彰化縣",
@@ -261,7 +261,7 @@
 "high": 0,
 "medium": 6,
 "low": 1,
-"info": 5
+"info": 7
 },
 "hsinchu-city": {
 "name": "新竹市",
@@ -327,7 +327,7 @@
 "high": 0,
 "medium": 8,
 "low": 1,
-"info": 3
+"info": 4
 },
 "taipei-city": {
 "name": "臺北市",
@@ -336,7 +336,7 @@
 "sites": 579,
 "ich": 30,
 "high": 0,
-"medium": 3,
+"medium": 4,
 "low": 4,
 "info": 1
 },
@@ -347,9 +347,9 @@
 "sites": 145,
 "ich": 26,
 "high": 0,
-"medium": 0,
+"medium": 1,
 "low": 0,
-"info": 1
+"info": 0
 }
 },
 "byGroup": {
@@ -359,20 +359,17 @@
 "low": 25
 },
 "links": {
-"medium": 1,
-"low": 2,
-"info": 7
+"medium": 9,
+"low": 2
 },
 "integrity": {
 "medium": 11
 },
 "live": {},
 "news": {
-"info": 25
+"info": 29
 },
-"system": {
-"low": 3
-}
+"system": {}
 }
 },
 "stats": {
@@ -395,9 +392,9 @@
 "unmatched": 8
 },
 "baseline": {
-"firstRun": true,
+"firstRun": false,
 "records": 6423,
-"newAnnouncements": 1
+"newAnnouncements": 0
 }
 },
 "integrity": {
@@ -434,40 +431,46 @@
 "ch1": {
 "ok": 40,
 "down": 0,
-"drift": 0
+"drift": 0,
+"certDays": 72
 },
 "ch2": {
 "ok": 28,
 "down": 0,
-"drift": 0
+"drift": 0,
+"certDays": 72
 },
 "visit": {
 "ok": 1,
 "down": 0,
-"drift": 0
+"drift": 0,
+"certDays": 73
 },
 "atlas": {
 "ok": 1,
 "down": 0,
-"drift": 0
+"drift": 0,
+"certDays": 83
 },
 "town": {
 "ok": 1,
 "down": 0,
-"drift": 0
+"drift": 0,
+"certDays": 83
 },
 "rail": {
 "ok": 1,
 "down": 0,
-"drift": 0
+"drift": 0,
+"certDays": 83
 },
 "ascent": {
 "ok": 1,
 "down": 0,
-"drift": 0
+"drift": 0,
+"certDays": 83
 }
-},
-"certNote": "本次經由代理執行，略過憑證到期日檢查"
+}
 },
 "links": {
 "total": 11315,
@@ -481,8 +484,8 @@
 "skip": 25,
 "wiki": 456
 },
-"checked": 4604,
-"unverified": 3837,
+"checked": 8432,
+"unverified": 0,
 "nchdbUnverifiable": 50,
 "manual": 12,
 "imageRotation": {
@@ -493,8 +496,8 @@
 "news": {
 "enabled": true,
 "queries": 16,
-"articles": 169,
-"matched": 25
+"articles": 184,
+"matched": 26
 }
 },
 "dialogue": [
@@ -511,7 +514,7 @@
 {
 "who": "R",
 "mood": "explain",
-"text": "看過了。要處理的有 91 項：優先度高的 2 項、中的 59 項、低的 30 項，另外有 32 則參考線索。"
+"text": "看過了。要處理的有 96 項：優先度高的 2 項、中的 67 項、低的 27 項，另外有 29 則參考線索。"
 },
 {
 "who": "A",
@@ -536,7 +539,7 @@
 {
 "who": "R",
 "mood": "explain",
-"text": "還有 25 則新聞提到我們收錄的文資，像修復完工、重新開放這類消息。"
+"text": "還有 29 則新聞提到我們收錄的文資，像修復完工、重新開放這類消息。"
 },
 {
 "who": "A",
@@ -544,9 +547,9 @@
 "text": "新聞只是線索，要讀過內容才知道介紹要不要改。有空一則一則看。"
 },
 {
-"who": "A",
-"mood": "smile",
-"text": "這是第一次健檢，結果就是我們的起點。之後每週自動檢查一次，新的問題會標出來。"
+"who": "R",
+"mood": "laugh",
+"text": "好消息！上次的問題有 10 項已經解決了。"
 },
 {
 "who": "R",
@@ -1173,6 +1176,66 @@
 "overdue": false
 },
 {
+"key": "5c2e6ecef3e3",
+"check": "LNK-BROKEN",
+"sev": "medium",
+"site": "ascent",
+"city": "",
+"item": "",
+"name": "",
+"title": "連結連續 3 次連不上：gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=BASIN&filetyp…",
+"detail": "最近一次：ConnectionResetError: [Errno 104] Connection reset by peer。可能是對方擋掉自動檢查，請用瀏覽器打開確認。\n出現在：README.md",
+"url": "https://gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=BASIN&filetype=SHP",
+"group": "links",
+"label": "連結失效",
+"first": "2026-11-22",
+"age": 0,
+"isNew": true,
+"carried": false,
+"due": "2026-12-22",
+"overdue": false
+},
+{
+"key": "ff9a5d11497e",
+"check": "LNK-BROKEN",
+"sev": "medium",
+"site": "ascent",
+"city": "",
+"item": "",
+"name": "",
+"title": "連結連續 3 次連不上：gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=RIVERLIN&file…",
+"detail": "最近一次：ConnectionResetError: [Errno 104] Connection reset by peer。可能是對方擋掉自動檢查，請用瀏覽器打開確認。\n出現在：README.md",
+"url": "https://gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=RIVERLIN&filetype=SHP",
+"group": "links",
+"label": "連結失效",
+"first": "2026-11-22",
+"age": 0,
+"isNew": true,
+"carried": false,
+"due": "2026-12-22",
+"overdue": false
+},
+{
+"key": "a06cd4ee3873",
+"check": "LNK-BROKEN",
+"sev": "medium",
+"site": "ascent",
+"city": "",
+"item": "",
+"name": "",
+"title": "連結連續 3 次連不上：www.tgos.tw/MDE/VirtualDir_TC/Product/9981ede9-584a-4470-8c5c-dbe57…",
+"detail": "最近一次：HTTP 403。可能是對方擋掉自動檢查，請用瀏覽器打開確認。\n出現在：README.md",
+"url": "https://www.tgos.tw/MDE/VirtualDir_TC/Product/9981ede9-584a-4470-8c5c-dbe579d4ecb4/",
+"group": "links",
+"label": "連結失效",
+"first": "2026-11-22",
+"age": 0,
+"isNew": true,
+"carried": false,
+"due": "2026-12-22",
+"overdue": false
+},
+{
 "key": "e432fcf3dcc8",
 "check": "LNK-BROKEN",
 "sev": "medium",
@@ -1188,6 +1251,106 @@
 "first": "2026-11-22",
 "age": 0,
 "isNew": false,
+"carried": false,
+"due": "2026-12-22",
+"overdue": false
+},
+{
+"key": "aaf03074f67c",
+"check": "LNK-BROKEN",
+"sev": "medium",
+"site": "ch1",
+"city": "penghu-county",
+"item": "",
+"name": "",
+"title": "維基百科條目「澎湖海戰」不存在",
+"detail": "條目可能已改名或刪除，請搜尋新條目名稱後更新連結。\n出現在：penghu-county/data/eras.json：sources.url",
+"url": "https://zh.wikipedia.org/zh-tw/澎湖海戰",
+"group": "links",
+"label": "連結失效",
+"first": "2026-11-22",
+"age": 0,
+"isNew": true,
+"carried": false,
+"due": "2026-12-22",
+"overdue": false
+},
+{
+"key": "2f8502c4e733",
+"check": "LNK-BROKEN",
+"sev": "medium",
+"site": "ch1",
+"city": "pingtung-county",
+"item": "pingdong-shishenglixincun",
+"name": "屏東市勝利新村、崇仁新村（成功區）日治時期軍官眷舍",
+"title": "連結連續 3 次連不上：www.cultural.pthg.gov.tw/vipzone/Default.aspx",
+"detail": "最近一次：URLError: <urlopen error [Errno 101] Network is unreachable>。可能是對方擋掉自動檢查，請用瀏覽器打開確認。\n出現在：pingtung-county/data/sites-official.json：open",
+"url": "https://www.cultural.pthg.gov.tw/vipzone/Default.aspx",
+"group": "links",
+"label": "連結失效",
+"first": "2026-11-22",
+"age": 0,
+"isNew": true,
+"carried": false,
+"due": "2026-12-22",
+"overdue": false
+},
+{
+"key": "2ab6beb15159",
+"check": "LNK-BROKEN",
+"sev": "medium",
+"site": "ch2",
+"city": "taipei-city",
+"item": "",
+"name": "",
+"title": "維基百科條目「臺北府城」不存在",
+"detail": "條目可能已改名或刪除，請搜尋新條目名稱後更新連結。\n出現在：taipei-city/data/eras.json：sources.url",
+"url": "https://zh.wikipedia.org/zh-tw/臺北府城",
+"group": "links",
+"label": "連結失效",
+"first": "2026-11-22",
+"age": 0,
+"isNew": true,
+"carried": false,
+"due": "2026-12-22",
+"overdue": false
+},
+{
+"key": "17e2532880fd",
+"check": "LNK-BROKEN",
+"sev": "medium",
+"site": "ch2",
+"city": "taoyuan-city",
+"item": "guishan-xianguangercun",
+"name": "龜山憲光二村",
+"title": "連結連續 3 次連不上：scft.taoyuancf.org.tw/",
+"detail": "最近一次：URLError: <urlopen error [Errno -2] Name or service not known>。可能是對方擋掉自動檢查，請用瀏覽器打開確認。\n出現在：taoyuan-city/data/sites-official.json：open",
+"url": "https://scft.taoyuancf.org.tw/",
+"group": "links",
+"label": "連結失效",
+"first": "2026-11-22",
+"age": 0,
+"isNew": true,
+"carried": false,
+"due": "2026-12-22",
+"overdue": false
+},
+{
+"key": "dabca007773d",
+"check": "LNK-BROKEN",
+"sev": "medium",
+"site": "ch1",
+"city": "yilan-county",
+"item": "",
+"name": "",
+"title": "連結連續 3 次連不上：www.moc.gov.tw/en/information_108_75034.html",
+"detail": "最近一次：HTTP 403。可能是對方擋掉自動檢查，請用瀏覽器打開確認。\n出現在：yilan-county/data/eras.json：sources.url",
+"url": "https://www.moc.gov.tw/en/information_108_75034.html",
+"group": "links",
+"label": "連結失效",
+"first": "2026-11-22",
+"age": 0,
+"isNew": true,
 "carried": false,
 "due": "2026-12-22",
 "overdue": false
@@ -2708,206 +2871,6 @@
 "overdue": false
 },
 {
-"key": "1f599d308c33",
-"check": "SYS-SOURCE",
-"sev": "low",
-"site": "",
-"city": "",
-"item": "",
-"name": "",
-"title": "維基共享資源有 1791 個頁面本次未能確認",
-"detail": "commons.wikimedia.org 的 API 限流或沒有回應。這不代表連結失效，下次檢測會再查。",
-"url": "",
-"group": "system",
-"label": "資料來源暫時無法取得",
-"first": "2026-11-22",
-"age": 0,
-"isNew": false,
-"carried": false,
-"due": "2027-02-20",
-"overdue": false
-},
-{
-"key": "2ee90f861e5c",
-"check": "SYS-SOURCE",
-"sev": "low",
-"site": "",
-"city": "",
-"item": "",
-"name": "",
-"title": "維基百科有 1 個頁面本次未能確認",
-"detail": "en.wikipedia.org 的 API 限流或沒有回應。這不代表連結失效，下次檢測會再查。",
-"url": "",
-"group": "system",
-"label": "資料來源暫時無法取得",
-"first": "2026-11-22",
-"age": 0,
-"isNew": false,
-"carried": false,
-"due": "2027-02-20",
-"overdue": false
-},
-{
-"key": "d091c11ffc17",
-"check": "SYS-SOURCE",
-"sev": "low",
-"site": "",
-"city": "",
-"item": "",
-"name": "",
-"title": "維基百科有 243 個頁面本次未能確認",
-"detail": "zh.wikipedia.org 的 API 限流或沒有回應。這不代表連結失效，下次檢測會再查。",
-"url": "",
-"group": "system",
-"label": "資料來源暫時無法取得",
-"first": "2026-11-22",
-"age": 0,
-"isNew": false,
-"carried": false,
-"due": "2027-02-20",
-"overdue": false
-},
-{
-"key": "5c68a2b96327",
-"check": "LNK-UNSURE",
-"sev": "info",
-"site": "ascent",
-"city": "",
-"item": "",
-"name": "",
-"title": "連結本次未能確認：gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=BASIN&filetyp…",
-"detail": "RemoteDisconnected: Remote end closed connection without response。可能只是對方暫時忙碌或擋掉自動檢查；連續 3 次才會列為失效。\n出現在：README.md",
-"url": "https://gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=BASIN&filetype=SHP",
-"group": "links",
-"label": "連結未能確認",
-"first": "2026-11-22",
-"age": 0,
-"isNew": false,
-"carried": false,
-"due": "",
-"overdue": false
-},
-{
-"key": "ddb577f9afdc",
-"check": "LNK-UNSURE",
-"sev": "info",
-"site": "ascent",
-"city": "",
-"item": "",
-"name": "",
-"title": "連結本次未能確認：gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=RIVERLIN&file…",
-"detail": "URLError: <urlopen error [Errno 104] Connection reset by peer>。可能只是對方暫時忙碌或擋掉自動檢查；連續 3 次才會列為失效。\n出現在：README.md",
-"url": "https://gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=RIVERLIN&filetype=SHP",
-"group": "links",
-"label": "連結未能確認",
-"first": "2026-11-22",
-"age": 0,
-"isNew": false,
-"carried": false,
-"due": "",
-"overdue": false
-},
-{
-"key": "7bee3ab7eb69",
-"check": "LNK-UNSURE",
-"sev": "info",
-"site": "ascent",
-"city": "",
-"item": "",
-"name": "",
-"title": "連結本次未能確認：www.tgos.tw/MDE/VirtualDir_TC/Product/9981ede9-584a-4470-8c5c-dbe57…",
-"detail": "HTTP 403。可能只是對方暫時忙碌或擋掉自動檢查；連續 3 次才會列為失效。\n出現在：README.md",
-"url": "https://www.tgos.tw/MDE/VirtualDir_TC/Product/9981ede9-584a-4470-8c5c-dbe579d4ecb4/",
-"group": "links",
-"label": "連結未能確認",
-"first": "2026-11-22",
-"age": 0,
-"isNew": false,
-"carried": false,
-"due": "",
-"overdue": false
-},
-{
-"key": "82fafc7c8054",
-"check": "LNK-UNSURE",
-"sev": "info",
-"site": "ch1",
-"city": "pingtung-county",
-"item": "pingdong-shishenglixincun",
-"name": "屏東市勝利新村、崇仁新村（成功區）日治時期軍官眷舍",
-"title": "連結本次未能確認：www.cultural.pthg.gov.tw/vipzone/Default.aspx",
-"detail": "URLError: <urlopen error [Errno 104] Connection reset by peer>。可能只是對方暫時忙碌或擋掉自動檢查；連續 3 次才會列為失效。\n出現在：pingtung-county/data/sites-official.json：open",
-"url": "https://www.cultural.pthg.gov.tw/vipzone/Default.aspx",
-"group": "links",
-"label": "連結未能確認",
-"first": "2026-11-22",
-"age": 0,
-"isNew": false,
-"carried": false,
-"due": "",
-"overdue": false
-},
-{
-"key": "7e7a107a1d86",
-"check": "LNK-UNSURE",
-"sev": "info",
-"site": "ch2",
-"city": "taoyuan-city",
-"item": "guishan-xianguangercun",
-"name": "龜山憲光二村",
-"title": "連結本次未能確認：scft.taoyuancf.org.tw/",
-"detail": "URLError: <urlopen error Tunnel connection failed: 502 Bad Gateway>。可能只是對方暫時忙碌或擋掉自動檢查；連續 3 次才會列為失效。\n出現在：taoyuan-city/data/sites-official.json：open",
-"url": "https://scft.taoyuancf.org.tw/",
-"group": "links",
-"label": "連結未能確認",
-"first": "2026-11-22",
-"age": 0,
-"isNew": false,
-"carried": false,
-"due": "",
-"overdue": false
-},
-{
-"key": "b3b881e0d4a0",
-"check": "LNK-UNSURE",
-"sev": "info",
-"site": "ch1",
-"city": "yilan-county",
-"item": "",
-"name": "",
-"title": "連結本次未能確認：www.moc.gov.tw/en/information_108_75034.html",
-"detail": "HTTP 403。可能只是對方暫時忙碌或擋掉自動檢查；連續 3 次才會列為失效。\n出現在：yilan-county/data/eras.json：sources.url",
-"url": "https://www.moc.gov.tw/en/information_108_75034.html",
-"group": "links",
-"label": "連結未能確認",
-"first": "2026-11-22",
-"age": 0,
-"isNew": false,
-"carried": false,
-"due": "",
-"overdue": false
-},
-{
-"key": "9ce49d472006",
-"check": "LNK-UNSURE",
-"sev": "info",
-"site": "ch1",
-"city": "yunlin-county",
-"item": "",
-"name": "",
-"title": "連結本次未能確認：news.ltn.com.tw/news/politics/breakingnews/5499641",
-"detail": "HTTP 403。可能只是對方暫時忙碌或擋掉自動檢查；連續 3 次才會列為失效。\n出現在：yunlin-county/data/eras.json：sources.url",
-"url": "https://news.ltn.com.tw/news/politics/breakingnews/5499641",
-"group": "links",
-"label": "連結未能確認",
-"first": "2026-11-22",
-"age": 0,
-"isNew": false,
-"carried": false,
-"due": "",
-"overdue": false
-},
-{
 "key": "b38df4551e98",
 "check": "NEWS-NEW",
 "sev": "info",
@@ -2996,6 +2959,28 @@
 "overdue": false
 },
 {
+"key": "d987df1a16d1",
+"check": "NEWS-SITE",
+"sev": "info",
+"site": "ch2",
+"city": "changhua-county",
+"item": "lugang-wenwumiao",
+"name": "鹿港文武廟",
+"title": "新聞提到「鹿港文武廟」：彰化縣定古蹟鹿港文武廟修復竣工",
+"detail": "焦點時報・2026-11-07（關鍵字：古蹟 修復 完工）\n請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。",
+"url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9ZREdodXZOdktzUlhOQndobGY4YzRNZmtCaENUOG9nN3Byd3lFcmpUMnFxa0V2R1NHcmkxSjUxRmZVUkgyZlQ2RFRvQ2d1T054bFRsTldQNA?oc=5",
+"date": "2026-11-07",
+"detected": "2026-11-22",
+"group": "news",
+"label": "新聞提到網站收錄的文資",
+"first": "2026-11-22",
+"age": 0,
+"isNew": true,
+"carried": false,
+"due": "",
+"overdue": false
+},
+{
 "key": "6e6ff4ac1493",
 "check": "NEWS-SITE",
 "sev": "info",
@@ -3013,6 +2998,28 @@
 "first": "2026-11-22",
 "age": 0,
 "isNew": false,
+"carried": false,
+"due": "",
+"overdue": false
+},
+{
+"key": "5c4710ef699c",
+"check": "NEWS-SITE",
+"sev": "info",
+"site": "ch2",
+"city": "changhua-county",
+"item": "lugang-wenwumiao",
+"name": "鹿港文武廟",
+"title": "新聞提到「鹿港文武廟」：提早半年完工 鹿港文武廟再現風華",
+"detail": "中時新聞網・2026-11-07（關鍵字：古蹟 修復 完工）\n請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。",
+"url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5SZk9zNFFONXNFRU1UZ0J1UDh4RkQ0MEpNdmVzeGkwV3NwbDg0a2FIZExGbHBOYnEwWnpFMm9IMEFRaE1yVHVZeHp6Y3pxWThCWkJsQkU3LWJpdUgyYkR2QW82TTBHLUJxMTRr?oc=5",
+"date": "2026-11-07",
+"detected": "2026-11-22",
+"group": "news",
+"label": "新聞提到網站收錄的文資",
+"first": "2026-11-22",
+"age": 0,
+"isNew": true,
 "carried": false,
 "due": "",
 "overdue": false
@@ -3194,6 +3201,28 @@
 "overdue": false
 },
 {
+"key": "1dfa6902d0ea",
+"check": "NEWS-SITE",
+"sev": "info",
+"site": "ch1",
+"city": "kinmen-county",
+"item": "jinsha-yongchangtangjiwu",
+"name": "永昌堂暨浯陽小學校",
+"title": "新聞提到「永昌堂暨浯陽小學校」：陽翟 永昌堂暨浯陽小學校修復工程舉行上梁儀式 老建築新生帶動聚落發展 陳福海期許風華再現",
+"detail": "金門日報・2026-11-10（關鍵字：古蹟 修復 完工）\n請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。",
+"url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBLcmRFbVV4aUMtTDRyNmNaUjg5cHI3QWpWS3NQNkw5U1IwQjBvbGlTV2hLZDNWREtCY1lnaGtqSG9PSkc4WnQtTHdod3VLd0E0QXZSVEY3RmF1QQ?oc=5",
+"date": "2026-11-10",
+"detected": "2026-11-22",
+"group": "news",
+"label": "新聞提到網站收錄的文資",
+"first": "2026-11-22",
+"age": 0,
+"isNew": true,
+"carried": false,
+"due": "",
+"overdue": false
+},
+{
 "key": "a6efb0d2714d",
 "check": "NEWS-SITE",
 "sev": "info",
@@ -3321,6 +3350,28 @@
 "first": "2026-11-22",
 "age": 0,
 "isNew": false,
+"carried": false,
+"due": "",
+"overdue": false
+},
+{
+"key": "cb34e81668a9",
+"check": "NEWS-SITE",
+"sev": "info",
+"site": "ch2",
+"city": "taichung-city",
+"item": "xi-zhouting",
+"name": "臺中州廳",
+"title": "新聞提到「臺中州廳」：台中州廳6年整修斥資6億！盧秀燕市政會議移師百年古蹟 打造文化新地標",
+"detail": "蕃新聞・2026-11-04（關鍵字：古蹟 修復 完工）\n請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。",
+"url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5fU0JIY2J6elJrVmxNbDVEOHU2RUFhTHQyM2pCRFRuOC0wVG5nRG44S2Z6QlAzS1d3b2VIQ0twTjZNZ3NuNW1zSG9PMFB4OFNoRVE?oc=5",
+"date": "2026-11-04",
+"detected": "2026-11-22",
+"group": "news",
+"label": "新聞提到網站收錄的文資",
+"first": "2026-11-22",
+"age": 0,
+"isNew": true,
 "carried": false,
 "due": "",
 "overdue": false
@@ -3459,5 +3510,156 @@
 }
 ],
 "accepted": [],
-"resolved": []
+"resolved": [
+{
+"key": "1f599d308c33",
+"check": "SYS-SOURCE",
+"sev": "low",
+"site": "",
+"city": "",
+"item": "",
+"name": "",
+"title": "維基共享資源有 1791 個頁面本次未能確認",
+"detail": "commons.wikimedia.org 的 API 限流或沒有回應。這不代表連結失效，下次檢測會再查。",
+"url": "",
+"group": "system",
+"first": "2026-11-22",
+"resolved": "2026-11-22"
+},
+{
+"key": "d091c11ffc17",
+"check": "SYS-SOURCE",
+"sev": "low",
+"site": "",
+"city": "",
+"item": "",
+"name": "",
+"title": "維基百科有 243 個頁面本次未能確認",
+"detail": "zh.wikipedia.org 的 API 限流或沒有回應。這不代表連結失效，下次檢測會再查。",
+"url": "",
+"group": "system",
+"first": "2026-11-22",
+"resolved": "2026-11-22"
+},
+{
+"key": "2ee90f861e5c",
+"check": "SYS-SOURCE",
+"sev": "low",
+"site": "",
+"city": "",
+"item": "",
+"name": "",
+"title": "維基百科有 1 個頁面本次未能確認",
+"detail": "en.wikipedia.org 的 API 限流或沒有回應。這不代表連結失效，下次檢測會再查。",
+"url": "",
+"group": "system",
+"first": "2026-11-22",
+"resolved": "2026-11-22"
+},
+{
+"key": "82fafc7c8054",
+"check": "LNK-UNSURE",
+"sev": "info",
+"site": "ch1",
+"city": "pingtung-county",
+"item": "pingdong-shishenglixincun",
+"name": "屏東市勝利新村、崇仁新村（成功區）日治時期軍官眷舍",
+"title": "連結本次未能確認：www.cultural.pthg.gov.tw/vipzone/Default.aspx",
+"detail": "URLError: <urlopen error [Errno 104] Connection reset by peer>。可能只是對方暫時忙碌或擋掉自動檢查；連續 3 次才會列為失效。\n出現在：pingtung-county/data/sites-official.json：open",
+"url": "https://www.cultural.pthg.gov.tw/vipzone/Default.aspx",
+"group": "links",
+"first": "2026-11-22",
+"resolved": "2026-11-22"
+},
+{
+"key": "b3b881e0d4a0",
+"check": "LNK-UNSURE",
+"sev": "info",
+"site": "ch1",
+"city": "yilan-county",
+"item": "",
+"name": "",
+"title": "連結本次未能確認：www.moc.gov.tw/en/information_108_75034.html",
+"detail": "HTTP 403。可能只是對方暫時忙碌或擋掉自動檢查；連續 3 次才會列為失效。\n出現在：yilan-county/data/eras.json：sources.url",
+"url": "https://www.moc.gov.tw/en/information_108_75034.html",
+"group": "links",
+"first": "2026-11-22",
+"resolved": "2026-11-22"
+},
+{
+"key": "9ce49d472006",
+"check": "LNK-UNSURE",
+"sev": "info",
+"site": "ch1",
+"city": "yunlin-county",
+"item": "",
+"name": "",
+"title": "連結本次未能確認：news.ltn.com.tw/news/politics/breakingnews/5499641",
+"detail": "HTTP 403。可能只是對方暫時忙碌或擋掉自動檢查；連續 3 次才會列為失效。\n出現在：yunlin-county/data/eras.json：sources.url",
+"url": "https://news.ltn.com.tw/news/politics/breakingnews/5499641",
+"group": "links",
+"first": "2026-11-22",
+"resolved": "2026-11-22"
+},
+{
+"key": "7e7a107a1d86",
+"check": "LNK-UNSURE",
+"sev": "info",
+"site": "ch2",
+"city": "taoyuan-city",
+"item": "guishan-xianguangercun",
+"name": "龜山憲光二村",
+"title": "連結本次未能確認：scft.taoyuancf.org.tw/",
+"detail": "URLError: <urlopen error Tunnel connection failed: 502 Bad Gateway>。可能只是對方暫時忙碌或擋掉自動檢查；連續 3 次才會列為失效。\n出現在：taoyuan-city/data/sites-official.json：open",
+"url": "https://scft.taoyuancf.org.tw/",
+"group": "links",
+"first": "2026-11-22",
+"resolved": "2026-11-22"
+},
+{
+"key": "5c68a2b96327",
+"check": "LNK-UNSURE",
+"sev": "info",
+"site": "ascent",
+"city": "",
+"item": "",
+"name": "",
+"title": "連結本次未能確認：gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=BASIN&filetyp…",
+"detail": "RemoteDisconnected: Remote end closed connection without response。可能只是對方暫時忙碌或擋掉自動檢查；連續 3 次才會列為失效。\n出現在：README.md",
+"url": "https://gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=BASIN&filetype=SHP",
+"group": "links",
+"first": "2026-11-22",
+"resolved": "2026-11-22"
+},
+{
+"key": "ddb577f9afdc",
+"check": "LNK-UNSURE",
+"sev": "info",
+"site": "ascent",
+"city": "",
+"item": "",
+"name": "",
+"title": "連結本次未能確認：gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=RIVERLIN&file…",
+"detail": "URLError: <urlopen error [Errno 104] Connection reset by peer>。可能只是對方暫時忙碌或擋掉自動檢查；連續 3 次才會列為失效。\n出現在：README.md",
+"url": "https://gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=RIVERLIN&filetype=SHP",
+"group": "links",
+"first": "2026-11-22",
+"resolved": "2026-11-22"
+},
+{
+"key": "7bee3ab7eb69",
+"check": "LNK-UNSURE",
+"sev": "info",
+"site": "ascent",
+"city": "",
+"item": "",
+"name": "",
+"title": "連結本次未能確認：www.tgos.tw/MDE/VirtualDir_TC/Product/9981ede9-584a-4470-8c5c-dbe57…",
+"detail": "HTTP 403。可能只是對方暫時忙碌或擋掉自動檢查；連續 3 次才會列為失效。\n出現在：README.md",
+"url": "https://www.tgos.tw/MDE/VirtualDir_TC/Product/9981ede9-584a-4470-8c5c-dbe579d4ecb4/",
+"group": "links",
+"first": "2026-11-22",
+"resolved": "2026-11-22"
+}
+]
 }

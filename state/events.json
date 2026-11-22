@@ -361,5 +361,61 @@
 "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBTa3BteVJnblkxR216Q1IzclFvc1R4QVF3ajlXbGp1T0xmSHZreWwtTHduV3h4U05QQWIzNUFVa1BwNWJpMWJwTjNpdDY0eC1uTnZIbjFvVXNCZzlIMWhkNNIBZkFVX3lxTE5IRXlrSkd3SlBoNEo1RlRJbnppNUlPb0htQUpSbXE0WE42SERKQWRWdk5PeU40TFVBREpsQ2JOWDhZTWdsTXU5Y3JEOUw2M3BXclFJeC1NM25kbjlvOG9QcXFVekJUQQ?oc=5",
 "date": "2026-10-19",
 "detected": "2026-11-22"
+},
+{
+"key": "1dfa6902d0ea",
+"check": "NEWS-SITE",
+"sev": "info",
+"site": "ch1",
+"city": "kinmen-county",
+"item": "jinsha-yongchangtangjiwu",
+"name": "永昌堂暨浯陽小學校",
+"title": "新聞提到「永昌堂暨浯陽小學校」：陽翟 永昌堂暨浯陽小學校修復工程舉行上梁儀式 老建築新生帶動聚落發展 陳福海期許風華再現",
+"detail": "金門日報・2026-11-10（關鍵字：古蹟 修復 完工）\n請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。",
+"url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBLcmRFbVV4aUMtTDRyNmNaUjg5cHI3QWpWS3NQNkw5U1IwQjBvbGlTV2hLZDNWREtCY1lnaGtqSG9PSkc4WnQtTHdod3VLd0E0QXZSVEY3RmF1QQ?oc=5",
+"date": "2026-11-10",
+"detected": "2026-11-22"
+},
+{
+"key": "d987df1a16d1",
+"check": "NEWS-SITE",
+"sev": "info",
+"site": "ch2",
+"city": "changhua-county",
+"item": "lugang-wenwumiao",
+"name": "鹿港文武廟",
+"title": "新聞提到「鹿港文武廟」：彰化縣定古蹟鹿港文武廟修復竣工",
+"detail": "焦點時報・2026-11-07（關鍵字：古蹟 修復 完工）\n請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。",
+"url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9ZREdodXZOdktzUlhOQndobGY4YzRNZmtCaENUOG9nN3Byd3lFcmpUMnFxa0V2R1NHcmkxSjUxRmZVUkgyZlQ2RFRvQ2d1T054bFRsTldQNA?oc=5",
+"date": "2026-11-07",
+"detected": "2026-11-22"
+},
+{
+"key": "5c4710ef699c",
+"check": "NEWS-SITE",
+"sev": "info",
+"site": "ch2",
+"city": "changhua-county",
+"item": "lugang-wenwumiao",
+"name": "鹿港文武廟",
+"title": "新聞提到「鹿港文武廟」：提早半年完工 鹿港文武廟再現風華",
+"detail": "中時新聞網・2026-11-07（關鍵字：古蹟 修復 完工）\n請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。",
+"url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5SZk9zNFFONXNFRU1UZ0J1UDh4RkQ0MEpNdmVzeGkwV3NwbDg0a2FIZExGbHBOYnEwWnpFMm9IMEFRaE1yVHVZeHp6Y3pxWThCWkJsQkU3LWJpdUgyYkR2QW82TTBHLUJxMTRr?oc=5",
+"date": "2026-11-07",
+"detected": "2026-11-22"
+},
+{
+"key": "cb34e81668a9",
+"check": "NEWS-SITE",
+"sev": "info",
+"site": "ch2",
+"city": "taichung-city",
+"item": "xi-zhouting",
+"name": "臺中州廳",
+"title": "新聞提到「臺中州廳」：台中州廳6年整修斥資6億！盧秀燕市政會議移師百年古蹟 打造文化新地標",
+"detail": "蕃新聞・2026-11-04（關鍵字：古蹟 修復 完工）\n請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。",
+"url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5fU0JIY2J6elJrVmxNbDVEOHU2RUFhTHQyM2pCRFRuOC0wVG5nRG44S2Z6QlAzS1d3b2VIQ0twTjZNZ3NuNW1zSG9PMFB4OFNoRVE?oc=5",
+"date": "2026-11-04",
+"detected": "2026-11-22"
 }
 ]
