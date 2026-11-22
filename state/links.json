@@ -2624,7 +2624,7 @@
 "final": ""
 },
 "https://www.cultural.pthg.gov.tw/vipzone/Default.aspx": {
-"f": 3,
+"f": 1,
 "ff": "2026-11-22",
 "s": "unsure",
 "c": 0,
@@ -2681,7 +2681,7 @@
 "final": ""
 },
 "https://www.moc.gov.tw/en/information_108_75034.html": {
-"f": 3,
+"f": 1,
 "ff": "2026-11-22",
 "s": "unsure",
 "c": 403,
@@ -2874,7 +2874,7 @@
 "final": ""
 },
 "https://scft.taoyuancf.org.tw/": {
-"f": 3,
+"f": 1,
 "ff": "2026-11-22",
 "s": "unsure",
 "c": 0,
@@ -2955,7 +2955,7 @@
 "final": "https://access.line.me/oauth2/v2.1/login?returnUri=%2Foauth2%2Fv2.1%2Fauthorize%2Fconsent%3Fresponse_type%3Dcode%26client_id%3D1446101138%26state%3D478f263917e061019f23524468bd53%26redirect_uri%3Dhttps%253A%252F%252Fsocial-plugins.line.me%252Flineit%252FloginCallback%253FreturnUrl%253Dhttps%25253A%25252F%25252Fsocial-plugins.line.me%25252Flineit%25252Fshare%25253Furl%25253D%26scope%3Dopenid%2520profile%2520friends%2520groups%2520timeline.post%2520message.write&loginChannelId=1446101138&loginState=0vfjhEx1sv88z2XOH7OfjR"
 },
 "https://gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=BASIN&filetype=SHP": {
-"f": 3,
+"f": 1,
 "ff": "2026-11-22",
 "s": "unsure",
 "c": 0,
@@ -2972,7 +2972,7 @@
 "final": ""
 },
 "https://www.tgos.tw/MDE/VirtualDir_TC/Product/9981ede9-584a-4470-8c5c-dbe579d4ecb4/": {
-"f": 3,
+"f": 1,
 "ff": "2026-11-22",
 "s": "unsure",
 "c": 403,
@@ -2981,7 +2981,7 @@
 "final": ""
 },
 "https://gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=RIVERLIN&filetype=SHP": {
-"f": 3,
+"f": 1,
 "ff": "2026-11-22",
 "s": "unsure",
 "c": 0,
