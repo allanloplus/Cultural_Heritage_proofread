@@ -1,6 +1,6 @@
 # 文資網站健檢報告　2026-11-22
 
-- 檢測等級：每週｜執行項目：official、integrity、live、links、news、system｜耗時 386 秒
+- 檢測等級：每週｜執行項目：official、integrity、live、links、news、system｜耗時 425 秒
 - 範圍：22 個縣市、3,032 處有形文化資產、624 項無形文化資產、559 件古物、11,315 個不重複網址
 - 網頁版報告（可篩選）：`index.html`｜試算表：`reports/latest.csv`
 
@@ -9,23 +9,23 @@
 | 優先度 | 件數 | 處理期限 |
 |---|---|---|
 | 高 | 2 | 7 天內 |
-| 中 | 67 | 30 天內 |
+| 中 | 58 | 30 天內 |
 | 低 | 27 | 90 天內 |
-| 參考 | 29 | 看過即可 |
+| 參考 | 35 | 看過即可 |
 
-本次新發現 12 項｜已解決 10 項｜逾期 0 項｜列為例外 0 項
+本次新發現 6 項｜已解決 9 項｜逾期 0 項｜列為例外 0 項
 
 ## 各網站
 
 | 網站 | 狀態 | 高 | 中 | 低 | 參考 |
 |---|---|---|---|---|---|
-| [文資知識網站（第一網站）](https://cultural.123hi.org/) | 需處理 | 2 | 33 | 17 | 10 |
-| [文資知識網站（第二網站）](https://cultural2.123hi.org/) | 留意 | 0 | 31 | 10 | 16 |
+| [文資知識網站（第一網站）](https://cultural.123hi.org/) | 需處理 | 2 | 30 | 17 | 12 |
+| [文資知識網站（第二網站）](https://cultural2.123hi.org/) | 留意 | 0 | 28 | 10 | 17 |
 | [文資達人訪查](https://cultural-visit.123hi.org/) | 良好 | 0 | 0 | 0 | 0 |
 | [文資地圖集](https://cultural-atlas.123hi.org/) | 良好 | 0 | 0 | 0 | 0 |
 | [鄉鎮文資性格卡](https://cultural-town.123hi.org/) | 良好 | 0 | 0 | 0 | 0 |
 | [鐵道文資](https://cultural-rail.123hi.org/) | 良好 | 0 | 0 | 0 | 0 |
-| [從海口到山頂](https://cultural-ascent.123hi.org/) | 留意 | 0 | 3 | 0 | 0 |
+| [從海口到山頂](https://cultural-ascent.123hi.org/) | 良好 | 0 | 0 | 0 | 3 |
 
 ## 官方資料比對（74）
 
@@ -199,33 +199,9 @@
 | 低 | 臺北市 | 古物「黃土水《釋迦出山》」在官方開放資料找不到同名紀錄<br><sub>展示點：臺北市立美術館。可能是網站用了簡稱、官方改名，或已廢止。請到國家文化資產網確認名稱與等級。</sub> | 2026-11-22 | 2027-02-20 |
 
 
-## 連結（11）
+## 連結（8）
 
 網站裡每一個對外連結是否還打得開、有沒有搬家；照片在維基共享資源是否還在。
-
-### 連結失效（9）
-
-建議：找新網址取代；找不到就改連到該機關首頁、網站時光機（web.archive.org）的存檔，或拿掉連結並保留出處文字。
-
-更新方法：
-
-1. 用瀏覽器打開確認真的失效（有些網站只擋自動檢查）。
-2. 搜尋頁面標題找新網址。
-3. 修改「出現在」列出的檔案（多半是 data/eras.json 的 sources 或 config.json）。
-4. 在主網站執行 python3 tools/build_data.py（重新產生各縣市 js/data.js），再執行 python3 tools/build_search.py（全站搜尋索引）。
-5. 確認沒問題但檢測一直誤報的，加到 config/ignore.json。
-
-| 優先度 | 縣市 | 內容 | 首次發現 | 期限 |
-|---|---|---|---|---|
-| 中・新 |  | [連結連續 3 次連不上：gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=BASIN&filetyp…](https://gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=BASIN&filetype=SHP)<br><sub>最近一次：ConnectionResetError: [Errno 104] Connection reset by peer。可能是對方擋掉自動檢查，請用瀏覽器打開確認。<br>出現在：README.md</sub> | 2026-11-22 | 2026-12-22 |
-| 中・新 |  | [連結連續 3 次連不上：gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=RIVERLIN&file…](https://gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=RIVERLIN&filetype=SHP)<br><sub>最近一次：ConnectionResetError: [Errno 104] Connection reset by peer。可能是對方擋掉自動檢查，請用瀏覽器打開確認。<br>出現在：README.md</sub> | 2026-11-22 | 2026-12-22 |
-| 中・新 |  | [連結連續 3 次連不上：www.tgos.tw/MDE/VirtualDir_TC/Product/9981ede9-584a-4470-8c5c-dbe57…](https://www.tgos.tw/MDE/VirtualDir_TC/Product/9981ede9-584a-4470-8c5c-dbe579d4ecb4/)<br><sub>最近一次：HTTP 403。可能是對方擋掉自動檢查，請用瀏覽器打開確認。<br>出現在：README.md</sub> | 2026-11-22 | 2026-12-22 |
-| 中 | 彰化縣 | [維基百科條目「半線」不存在](https://zh.wikipedia.org/wiki/半線)<br><sub>條目可能已改名或刪除，請搜尋新條目名稱後更新連結。<br>出現在：changhua-county/data/eras.json：sources.url</sub> | 2026-11-22 | 2026-12-22 |
-| 中・新 | 澎湖縣 | [維基百科條目「澎湖海戰」不存在](https://zh.wikipedia.org/zh-tw/澎湖海戰)<br><sub>條目可能已改名或刪除，請搜尋新條目名稱後更新連結。<br>出現在：penghu-county/data/eras.json：sources.url</sub> | 2026-11-22 | 2026-12-22 |
-| 中・新 | 屏東縣 | [連結連續 3 次連不上：www.cultural.pthg.gov.tw/vipzone/Default.aspx](https://www.cultural.pthg.gov.tw/vipzone/Default.aspx)<br><sub>最近一次：URLError: <urlopen error [Errno 101] Network is unreachable>。可能是對方擋掉自動檢查，請用瀏覽器打開確認。<br>出現在：pingtung-county/data/sites-official.json：open</sub> | 2026-11-22 | 2026-12-22 |
-| 中・新 | 臺北市 | [維基百科條目「臺北府城」不存在](https://zh.wikipedia.org/zh-tw/臺北府城)<br><sub>條目可能已改名或刪除，請搜尋新條目名稱後更新連結。<br>出現在：taipei-city/data/eras.json：sources.url</sub> | 2026-11-22 | 2026-12-22 |
-| 中・新 | 桃園市 | [連結連續 3 次連不上：scft.taoyuancf.org.tw/](https://scft.taoyuancf.org.tw/)<br><sub>最近一次：URLError: <urlopen error [Errno -2] Name or service not known>。可能是對方擋掉自動檢查，請用瀏覽器打開確認。<br>出現在：taoyuan-city/data/sites-official.json：open</sub> | 2026-11-22 | 2026-12-22 |
-| 中・新 | 宜蘭縣 | [連結連續 3 次連不上：www.moc.gov.tw/en/information_108_75034.html](https://www.moc.gov.tw/en/information_108_75034.html)<br><sub>最近一次：HTTP 403。可能是對方擋掉自動檢查，請用瀏覽器打開確認。<br>出現在：yilan-county/data/eras.json：sources.url</sub> | 2026-11-22 | 2026-12-22 |
 
 ### 連結已搬家（2）
 
@@ -240,6 +216,23 @@
 |---|---|---|---|---|
 | 低 | 連江縣 | [連結已搬家：matsucc.gov.tw/?p=3240](https://matsucc.gov.tw/?p=3240)<br><sub>新網址：https://matsucc.gov.tw/museum/%e6%9e%97%e7%be%a9%e5%92%8c%e5%b7%a5%e5%9d%8a/<br>出現在：lienchiang-county/data/eras.json：sources.url</sub> | 2026-11-22 | 2027-02-20 |
 | 低 | 雲林縣 | [連結已搬家：www.nownews.com/news/20180822/2804421/](https://www.nownews.com/news/20180822/2804421/)<br><sub>新網址：https://www.nownews.com/news/2804421<br>出現在：yunlin-county/data/eras.json：sources.url</sub> | 2026-11-22 | 2027-02-20 |
+
+### 連結未能確認（6）
+
+建議：先不用處理。連續多次連不上才會升級成「連結失效」。
+
+更新方法：
+
+1. 想立刻確認的話，用瀏覽器打開看看。
+
+| 優先度 | 縣市 | 內容 | 首次發現 | 期限 |
+|---|---|---|---|---|
+| 參考・新 |  | [連結本次未能確認：gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=BASIN&filetyp…](https://gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=BASIN&filetype=SHP)<br><sub>ConnectionResetError: [Errno 104] Connection reset by peer。可能只是對方暫時忙碌或擋掉自動檢查；連續 3 次才會列為失效。<br>出現在：README.md</sub> | 2026-11-22 | — |
+| 參考・新 |  | [連結本次未能確認：gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=RIVERLIN&file…](https://gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=RIVERLIN&filetype=SHP)<br><sub>ConnectionResetError: [Errno 104] Connection reset by peer。可能只是對方暫時忙碌或擋掉自動檢查；連續 3 次才會列為失效。<br>出現在：README.md</sub> | 2026-11-22 | — |
+| 參考・新 |  | [連結本次未能確認：www.tgos.tw/MDE/VirtualDir_TC/Product/9981ede9-584a-4470-8c5c-dbe57…](https://www.tgos.tw/MDE/VirtualDir_TC/Product/9981ede9-584a-4470-8c5c-dbe579d4ecb4/)<br><sub>HTTP 403。可能只是對方暫時忙碌或擋掉自動檢查；連續 3 次才會列為失效。<br>出現在：README.md</sub> | 2026-11-22 | — |
+| 參考・新 | 屏東縣 | [連結本次未能確認：www.cultural.pthg.gov.tw/vipzone/Default.aspx](https://www.cultural.pthg.gov.tw/vipzone/Default.aspx)<br><sub>URLError: <urlopen error [Errno 101] Network is unreachable>。可能只是對方暫時忙碌或擋掉自動檢查；連續 3 次才會列為失效。<br>出現在：pingtung-county/data/sites-official.json：open</sub> | 2026-11-22 | — |
+| 參考・新 | 桃園市 | [連結本次未能確認：scft.taoyuancf.org.tw/](https://scft.taoyuancf.org.tw/)<br><sub>URLError: <urlopen error [Errno -2] Name or service not known>。可能只是對方暫時忙碌或擋掉自動檢查；連續 3 次才會列為失效。<br>出現在：taoyuan-city/data/sites-official.json：open</sub> | 2026-11-22 | — |
+| 參考・新 | 宜蘭縣 | [連結本次未能確認：www.moc.gov.tw/en/information_108_75034.html](https://www.moc.gov.tw/en/information_108_75034.html)<br><sub>HTTP 403。可能只是對方暫時忙碌或擋掉自動檢查；連續 3 次才會列為失效。<br>出現在：yilan-county/data/eras.json：sources.url</sub> | 2026-11-22 | — |
 
 
 ## 內部一致性（11）
@@ -316,9 +309,9 @@
 | 優先度 | 縣市 | 內容 | 首次發現 | 期限 |
 |---|---|---|---|---|
 | 參考 | 彰化縣 | [新聞提到「鹿港文武廟」：再現古蹟風華 鹿港文武廟修復啟用](https://news.google.com/rss/articles/CBMingJBVV95cUxNWUx3UWE2d1gxX1V6TzVqd0p5Rk94MEJzaUNNd081VU1UdEptdk1nRWFiald6dF9mclAzZHNWd1doVnR2SzVPUjVrMjhqbzVzR3pnbDFKMzM2SjBkcTFvczN4VC1mSDVBZkFFeXg4SEJuQjNUT2tjd1JtZk5xRTBHSE9Ra29RMEtKV0tPWHpMb184VEVGSUVHd2thQmxmYnNYdnVVSy1INDhFa1VjOS1JbVRvdkZxWDhPR0d4VTRmTzlCSWp6endUSi03RGpRcVZJeVlwWWFqajE2aGx6elVYNmRxX1c3TFBJck9nWmg0b0ppU2F6Tk16Q0piT1dfNWhnV0lXdnlBMmhLT2Q4T2M4T1FzYmswOGFBZGY3ODNn?oc=5)<br><sub>新唐人亞太電視台・2026-11-07（關鍵字：歷史建築 修復 啟用）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
-| 參考・新 | 彰化縣 | [新聞提到「鹿港文武廟」：彰化縣定古蹟鹿港文武廟修復竣工](https://news.google.com/rss/articles/CBMiV0FVX3lxTE9ZREdodXZOdktzUlhOQndobGY4YzRNZmtCaENUOG9nN3Byd3lFcmpUMnFxa0V2R1NHcmkxSjUxRmZVUkgyZlQ2RFRvQ2d1T054bFRsTldQNA?oc=5)<br><sub>焦點時報・2026-11-07（關鍵字：古蹟 修復 完工）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
+| 參考 | 彰化縣 | [新聞提到「鹿港文武廟」：彰化縣定古蹟鹿港文武廟修復竣工](https://news.google.com/rss/articles/CBMiV0FVX3lxTE9ZREdodXZOdktzUlhOQndobGY4YzRNZmtCaENUOG9nN3Byd3lFcmpUMnFxa0V2R1NHcmkxSjUxRmZVUkgyZlQ2RFRvQ2d1T054bFRsTldQNA?oc=5)<br><sub>焦點時報・2026-11-07（關鍵字：古蹟 修復 完工）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 | 參考 | 彰化縣 | [新聞提到「鹿港文武廟」：彰化縣定古蹟鹿港文武廟修復竣工- 社會新聞](https://news.google.com/rss/articles/CBMijAFBVV95cUxNNXVWam1YZkUtaXFURkZOMk5abHJKYjRqUGRpNTAzRFoxd2RBZTNxaGwxQ2RpRFlEREZORjlqX0pVWWIzZDVQN25RMEcxNlRWSDBCRkxocTdxbTdKSDNUM1lycTkzbzBNTE8wdnNPelE4aTFNYUN4VTFia1VOSnhNaFVfTXBra1BvVFFzMw?oc=5)<br><sub>PChome Online 新聞・2026-11-07（關鍵字：古蹟 火災）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
-| 參考・新 | 彰化縣 | [新聞提到「鹿港文武廟」：提早半年完工 鹿港文武廟再現風華](https://news.google.com/rss/articles/CBMia0FVX3lxTE5SZk9zNFFONXNFRU1UZ0J1UDh4RkQ0MEpNdmVzeGkwV3NwbDg0a2FIZExGbHBOYnEwWnpFMm9IMEFRaE1yVHVZeHp6Y3pxWThCWkJsQkU3LWJpdUgyYkR2QW82TTBHLUJxMTRr?oc=5)<br><sub>中時新聞網・2026-11-07（關鍵字：古蹟 修復 完工）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
+| 參考 | 彰化縣 | [新聞提到「鹿港文武廟」：提早半年完工 鹿港文武廟再現風華](https://news.google.com/rss/articles/CBMia0FVX3lxTE5SZk9zNFFONXNFRU1UZ0J1UDh4RkQ0MEpNdmVzeGkwV3NwbDg0a2FIZExGbHBOYnEwWnpFMm9IMEFRaE1yVHVZeHp6Y3pxWThCWkJsQkU3LWJpdUgyYkR2QW82TTBHLUJxMTRr?oc=5)<br><sub>中時新聞網・2026-11-07（關鍵字：古蹟 修復 完工）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 | 參考 | 彰化縣 | [新聞提到「鹿港文武廟」：鹿港文武廟修復完成兩百年歷史古蹟重現昔日風采｜ 台灣好新聞](https://news.google.com/rss/articles/CBMiVkFVX3lxTFBtSnJJN25YbHFyXy1VdUVPaktMR0Z1ODdEbnBMVlpoRjBEa1R5WnVRVzNWRU91MjJLQlktRkJYZy1HVmRYcVU1VXJoMUdNcmNNZzhWQndB?oc=5)<br><sub>LINE TODAY・2026-11-06（關鍵字：古蹟 火災）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 | 參考 | 彰化縣 | [新聞提到「鹿港街長宿舍」：「鹿港街長宿舍」修復完工重新啟用 成為鹿港深度文化走讀新地標](https://news.google.com/rss/articles/CBMiVEFVX3lxTE1YRXhDd1M1bEVnTzFRcWUzVm1lYXo4X1F6VVlnSEh0ZV8xdDdIS3RLNzhhcmkzOEo1OWFGdEZEWDN6VG9UWHZLa2RDbWJLR2xKZ3UxVw?oc=5)<br><sub>新頭條・2026-11-13（關鍵字：古蹟 修復 完工）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 | 參考 | 彰化縣 | [新聞提到「鹿港街長宿舍」：風華再現！彰化歷史建築「鹿港街長宿舍」修復啟用- 生活新聞](https://news.google.com/rss/articles/CBMikwFBVV95cUxQdEFKOVhsMTFxZWJmeXp6UE53Ym43bHhPakctX0NDSE5YYXRQdDVhU0FUZ200WU9WRXJPa3c2ek95ZDdrQVpDbXpaY19EZU5kU1VPR1ZOeWpiSkZuQVNWcEljY1BSbktOX1hXVFR1WjdDT1ktVnN4UTdYUE1xekhHd1BmdlNoT2gxckxpem53WlJpMTQ?oc=5)<br><sub>PChome Online 新聞・2026-11-13（關鍵字：歷史建築 修復 啟用）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
@@ -327,14 +320,14 @@
 | 參考 | 嘉義縣 | [新聞提到「新港台糖復興鐵橋(原臺糖嘉北線五分仔鐵道暨北港溪鐵橋)」：橫跨雲嘉歷史建築復興鐵橋啟用耗資2億餘元修復｜ 地方](https://news.google.com/rss/articles/CBMiX0FVX3lxTE5hTFNkTWliOWJwbExfc2VsTnJOWWFheE5yUGlQZTRfTjhoNDQtM1hmUTRZcnhSNnp0b3d4NlZQQmluTk13aXo1MU1HSjktM1R3eVhPNHFBVllzQTdFV3pr?oc=5)<br><sub>中央社 CNA・2026-11-11（關鍵字：歷史建築 修復 啟用）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 | 參考 | 嘉義縣 | [新聞提到「新港台糖復興鐵橋(原臺糖嘉北線五分仔鐵道暨北港溪鐵橋)」：百年復興鐵橋修復啟用！678公尺鐵道景觀步道串聯雲嘉觀光- 社會新聞](https://news.google.com/rss/articles/CBMijAFBVV95cUxPNUhidVJBdExqZmhhdlRyZ0dZbUNFRk5GaVVyWTNabVBqaFVWSUNmamdFZGhMcDF0YjBRNlhoU3dYN0FVTk1qVlp1d2tUSFhRczJnejFsNmo1cDZHb2lYX0YtandwZFFXTUNtSlF5NXZQWGtlVTMzbEJZanJUZjNtSlFLcDIxQjV1SU1qTQ?oc=5)<br><sub>PChome Online 新聞・2026-11-12（關鍵字：歷史建築 修復 啟用）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 | 參考 | 金門縣 | [新聞提到「永昌堂暨浯陽小學校」：百年古蹟永昌堂暨浯陽小學校修復上梁 融合中西建築特色再現僑鄉歷史風華](https://news.google.com/rss/articles/CBMif0FVX3lxTE5Lc2Ixb1pwX3hXdGNUTVFXZ3lTc0RoYnlOQkV0R0pZOXJnSVc0U2MtNUh0QnpHeFBMdUcwQkhpT0h0cEJ4Mm01U0ppZ1VpWnBJLWxMQ0c0bEszU0R0TEdFT3FKR3N2NHZVb2tEWmdOc3J4VGwyaTJCNG1YSDF5R0U?oc=5)<br><sub>金門GO資訊網・2026-11-10（關鍵字：古蹟 修復 完工）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
-| 參考・新 | 金門縣 | [新聞提到「永昌堂暨浯陽小學校」：陽翟 永昌堂暨浯陽小學校修復工程舉行上梁儀式 老建築新生帶動聚落發展 陳福海期許風華再現](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBLcmRFbVV4aUMtTDRyNmNaUjg5cHI3QWpWS3NQNkw5U1IwQjBvbGlTV2hLZDNWREtCY1lnaGtqSG9PSkc4WnQtTHdod3VLd0E0QXZSVEY3RmF1QQ?oc=5)<br><sub>金門日報・2026-11-10（關鍵字：古蹟 修復 完工）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
+| 參考 | 金門縣 | [新聞提到「永昌堂暨浯陽小學校」：陽翟 永昌堂暨浯陽小學校修復工程舉行上梁儀式 老建築新生帶動聚落發展 陳福海期許風華再現](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBLcmRFbVV4aUMtTDRyNmNaUjg5cHI3QWpWS3NQNkw5U1IwQjBvbGlTV2hLZDNWREtCY1lnaGtqSG9PSkc4WnQtTHdod3VLd0E0QXZSVEY3RmF1QQ?oc=5)<br><sub>金門日報・2026-11-10（關鍵字：古蹟 修復 完工）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 | 參考 | 苗栗縣 | [新聞提到「南庄田美永和宮」：百年歷史建築南庄田美永和宮開工修復 總經費5550萬盼重現風華](https://news.google.com/rss/articles/CBMiZEFVX3lxTE9PSndfREk4NlVReWdpVUtTSDU0dDVoZkQ4RWVVSDR3dzJfS01wUUgya3dmdkdCdV90OXZ1a0FoS09CZTE1QUM4dWhWNmE5bktWVGVGSkNVRW1ISzQ5dnM1dm1ZT1_SAWpBVV95cUxObm81ZE41XzN1ZWw3QWctaS13QmJyZE1mUEwyUGxMUERvcjFZVGJwaDJOSEZsYkNEdTg4bWZDSGgxZXBGUmd3NC1wOTMyUzRYaUNudTNvRGdtY1ZZRjZzQXBPWEpIUm5MUXRB?oc=5)<br><sub>自由時報・2026-11-13（關鍵字：登錄歷史建築）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 | 參考 | 苗栗縣 | [新聞提到「通霄神社」：秒到日本！通霄神社列古蹟保留石燈龍.拜殿格局- 地方](https://news.google.com/rss/articles/CBMibkFVX3lxTE8xZ3duYWFfQ2xfdmJfcnNERVotNzhkY1AwXzBoVk9EMmkwMUlLaE92MENtQkpmWUpIbHBzeXdxZmFiRXhMLTVzZlhZS1hmV1ljOFpEOS1HUzNCZG5CN3J3NzlUWFYyUmtIV3Bldl9B?oc=5)<br><sub>華視新聞網・2026-11-18（關鍵字：登錄歷史建築）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 | 參考 | 苗栗縣 | [新聞提到「造橋車站暨附屬宿舍」：全面優化造橋車站周邊景觀 百年日式歷史建築群環境改造工程今動土](https://news.google.com/rss/articles/CBMiUEFVX3lxTE12WFlpUzdGUjU0TWJtNjBiUlk1c1dtbTJYc0xiNXl3NWtUdG1yU19Qd3lVUFBVT1lVTDZKMzVXTlIwN1dyS1l0a3h1alhsZ2dC0gFWQVVfeXFMT2tISXM1dTN0ZkpDTlBsRTc4UnBFSk5rRnI2eHhtc2FKTW1tdmcycmduNkc1MmZZeHU1TEJBOUpWZmVpQ0pKRXRQLTgzbkVtTWlmY1p1UWc?oc=5)<br><sub>UDN・2026-11-18（關鍵字：歷史建築 火警）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 | 參考 | 苗栗縣 | [新聞提到「造橋車站暨附屬宿舍」：百年造橋車站迎新貌！串聯百年日式歷史建築群 打造157坪集會廣場](https://news.google.com/rss/articles/CBMiZEFVX3lxTE8za3Z0RFRHbDl4cjEtN1pXRk5aZXRsVlE4RXViWEpnQ1BFd1hNRXJTTHZhbWY4QklDbXk5MEs5Y2lnaURLUEZaNHlGQzBmMmdlOGdzM0lWY1BvZ3RFaFByX0owV27SAWpBVV95cUxQVkxRVXFRVmt4UzZJNjR2ZzVzejEtR3dnY2NHR1RfLWh1RlRLSWZKdHdPX3l6WFluX2ZiNHhWOU1BSmFmNnFjU2FweUYwd2N6YU9FV2tJTTd3SFZPQXNmc0xaT1djVTNYTW1R?oc=5)<br><sub>自由時報・2026-11-18（關鍵字：歷史建築 火警）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 | 參考 | 屏東縣 | [新聞提到「屏東市勝利新村、崇仁新村（成功區）日治時期軍官眷舍」：屏東再獲4.76億打造「潮州、東港版」勝利星村 最後一塊拼圖曝光](https://news.google.com/rss/articles/CBMiX0FVX3lxTE1yeUFTVnc3M1FweExsZ1FaVkEtSERCMUVwSGFBTGRZbjZJMVJ3ZXVXQmZwOEI2TFBTR2t0cFdFNkg1NGNnRERWWHFvWGhqTFBhamtRekdvRVR2VEEtUm5Z?oc=5)<br><sub>中時新聞網・2026-10-22（關鍵字：登錄歷史建築）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 | 參考 | 屏東縣 | [新聞提到「屏東憲光十村」：屏東獲再造歷史現場2.0補助4.76億 修復憲光十村潮州東港](https://news.google.com/rss/articles/CBMiUkFVX3lxTFB3TmVFbGRUUWdVa0tkbk9sSnBJeTZLVV9tU2hNNlB6RkZiMk1hTm5ucEh2YXdXQUV6dzAyNVc2TmhNQmtoUmlTU2ZYTEpSZncwVmc?oc=5)<br><sub>蕃新聞・2026-10-23（關鍵字：歷史建築 修復 啟用）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
-| 參考・新 | 臺中市 | [新聞提到「臺中州廳」：台中州廳6年整修斥資6億！盧秀燕市政會議移師百年古蹟 打造文化新地標](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5fU0JIY2J6elJrVmxNbDVEOHU2RUFhTHQyM2pCRFRuOC0wVG5nRG44S2Z6QlAzS1d3b2VIQ0twTjZNZ3NuNW1zSG9PMFB4OFNoRVE?oc=5)<br><sub>蕃新聞・2026-11-04（關鍵字：古蹟 修復 完工）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
+| 參考 | 臺中市 | [新聞提到「臺中州廳」：台中州廳6年整修斥資6億！盧秀燕市政會議移師百年古蹟 打造文化新地標](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5fU0JIY2J6elJrVmxNbDVEOHU2RUFhTHQyM2pCRFRuOC0wVG5nRG44S2Z6QlAzS1d3b2VIQ0twTjZNZ3NuNW1zSG9PMFB4OFNoRVE?oc=5)<br><sub>蕃新聞・2026-11-04（關鍵字：古蹟 修復 完工）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 | 參考 | 臺中市 | [新聞提到「臺中州廳」：台中州廳修復完工！盧秀燕市政會議移師百年古蹟：修好了就要活用](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE05OXZ4M0xqRXVjZGM3VHhWWDhhTktVenJzWVNGX2RGY2FjNU1GMkR3NHFnODlrUkFHbXFIM2xkQWdEY25qbHZGWC1ZUl83MGpyNWZtV0h6ZUZzWGFfVDVCOHlDdmh5dXM?oc=5)<br><sub>新華報導・2026-11-03（關鍵字：古蹟 修復 完工）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 | 參考 | 臺中市 | [新聞提到「臺中州廳」：綠建築是現代發明？ 台中州廳早在百年前就做到了](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5yZjZ5MnZWVEEtanpqRzFGMUkxMGx6S1hnT1RpZHBLVGVHbGEwbUl0Q3FicnowVWREandIMUdKWF9TM3B0XzFLTDZzYVptbnNhUnc?oc=5)<br><sub>蕃新聞・2026-11-12（關鍵字：文化資產審議 通過）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 | 參考 | 臺中市 | [新聞提到「臺中州廳」：臺中州廳修復 融合現代永續設計 ｜ 青年日報](https://news.google.com/rss/articles/CBMiVkFVX3lxTE5adlM3clBMeXpseGNmUlBoTUo1Uml0YzBBVUZ2RWtNTG1KNzNTMExHem0xbWVHeGxJLV9EeURNcDhENHdBTkpxWERuejh6M3pqVFZldmpn?oc=5)<br><sub>LINE TODAY・2026-11-17（關鍵字：文化資產審議 通過）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
@@ -342,15 +335,14 @@
 | 參考 | 雲林縣 | [新聞提到「北港糖廠」：北港糖廠登錄歷史建築 倉庫群修復活化盼帶動觀光](https://news.google.com/rss/articles/CBMiT0FVX3lxTE94NnFUNGJSRERNY3hYRERsSFYtdElYbW54bUVURFlLaWJpenI3NVIwQ2RTemV2ZGxYbzZwTmx1bHgxMGtBdHh2cDl0SkY2TG8?oc=5)<br><sub>公視新聞・2026-10-27（關鍵字：登錄歷史建築）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 | 參考 | 雲林縣 | [新聞提到「北港糖廠」：百年北港糖廠變身文化新地標！1911好庫開園 三大展覽一次看](https://news.google.com/rss/articles/CBMiTkFVX3lxTE81a0hTY0ViLUlXNU5DWTVIV0tCeThyZ1J3c1c2VWpnaHVSQlJENWJJS0tyZFh3ajlmUTdfeGxjaFRBbzlXMnlHRlNheXZwZw?oc=5)<br><sub>創新聞・2026-10-26（關鍵字：登錄無形文化資產）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 
-## 已解決（10）
+## 已解決（9）
 
-- 維基共享資源有 1791 個頁面本次未能確認
-- 維基百科有 243 個頁面本次未能確認
-- 維基百科有 1 個頁面本次未能確認
-- 連結本次未能確認：www.cultural.pthg.gov.tw/vipzone/Default.aspx
-- 連結本次未能確認：www.moc.gov.tw/en/information_108_75034.html
-- 連結本次未能確認：news.ltn.com.tw/news/politics/breakingnews/5499641
-- 連結本次未能確認：scft.taoyuancf.org.tw/
-- 連結本次未能確認：gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=BASIN&filetyp…
-- 連結本次未能確認：gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=RIVERLIN&file…
-- 連結本次未能確認：www.tgos.tw/MDE/VirtualDir_TC/Product/9981ede9-584a-4470-8c5c-dbe57…
+- 維基百科條目「半線」不存在
+- 維基百科條目「澎湖海戰」不存在
+- 維基百科條目「臺北府城」不存在
+- 連結連續 3 次連不上：www.cultural.pthg.gov.tw/vipzone/Default.aspx
+- 連結連續 3 次連不上：www.moc.gov.tw/en/information_108_75034.html
+- 連結連續 3 次連不上：scft.taoyuancf.org.tw/
+- 連結連續 3 次連不上：gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=RIVERLIN&file…
+- 連結連續 3 次連不上：gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=BASIN&filetyp…
+- 連結連續 3 次連不上：www.tgos.tw/MDE/VirtualDir_TC/Product/9981ede9-584a-4470-8c5c-dbe57…

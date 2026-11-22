@@ -2,13 +2,13 @@
  {
   "date": "2026-11-22",
   "level": "weekly",
-  "total": 125,
+  "total": 122,
   "high": 2,
-  "medium": 67,
+  "medium": 58,
   "low": 27,
-  "info": 29,
-  "new": 12,
-  "resolved": 10,
+  "info": 35,
+  "new": 6,
+  "resolved": 9,
   "overdue": 0
  }
 ]
