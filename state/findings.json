@@ -159,21 +159,6 @@
 "group": "official",
 "first": "2026-11-22"
 },
-"9704aad3cac5": {
-"key": "9704aad3cac5",
-"dsha": "91674255",
-"check": "INT-STALE",
-"sev": "medium",
-"site": "atlas",
-"city": "",
-"item": "",
-"name": "",
-"title": "文資地圖集的資料比主網站舊",
-"detail": "data/sites.json 產生於 2026-11-15，主網站縣市資料最後更新是 2026-11-22。\n更新方法：在 Cultural_Atlas 執行 python3 tools/build_sites.py（之後依 README 重跑其他圖層），檢查後開 PR。",
-"url": "",
-"group": "integrity",
-"first": "2026-11-22"
-},
 "82fafc7c8054": {
 "key": "82fafc7c8054",
 "dsha": "045c04ab",
@@ -219,21 +204,6 @@
 "group": "links",
 "first": "2026-11-22"
 },
-"7bee3ab7eb69": {
-"key": "7bee3ab7eb69",
-"dsha": "649650d4",
-"check": "LNK-UNSURE",
-"sev": "info",
-"site": "ascent",
-"city": "",
-"item": "",
-"name": "",
-"title": "連結本次未能確認：www.tgos.tw/MDE/VirtualDir_TC/Product/9981ede9-584a-4470-8c5c-dbe57…",
-"detail": "HTTP 403。可能只是對方暫時忙碌或擋掉自動檢查；連續 3 次才會列為失效。\n出現在：README.md",
-"url": "https://www.tgos.tw/MDE/VirtualDir_TC/Product/9981ede9-584a-4470-8c5c-dbe579d4ecb4/",
-"group": "links",
-"first": "2026-11-22"
-},
 "5c68a2b96327": {
 "key": "5c68a2b96327",
 "dsha": "b27208ab",
@@ -246,6 +216,21 @@
 "title": "連結本次未能確認：gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=BASIN&filetyp…",
 "detail": "ConnectionResetError: [Errno 104] Connection reset by peer。可能只是對方暫時忙碌或擋掉自動檢查；連續 3 次才會列為失效。\n出現在：README.md",
 "url": "https://gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=BASIN&filetype=SHP",
+"group": "links",
+"first": "2026-11-22"
+},
+"7bee3ab7eb69": {
+"key": "7bee3ab7eb69",
+"dsha": "649650d4",
+"check": "LNK-UNSURE",
+"sev": "info",
+"site": "ascent",
+"city": "",
+"item": "",
+"name": "",
+"title": "連結本次未能確認：www.tgos.tw/MDE/VirtualDir_TC/Product/9981ede9-584a-4470-8c5c-dbe57…",
+"detail": "HTTP 403。可能只是對方暫時忙碌或擋掉自動檢查；連續 3 次才會列為失效。\n出現在：README.md",
+"url": "https://www.tgos.tw/MDE/VirtualDir_TC/Product/9981ede9-584a-4470-8c5c-dbe579d4ecb4/",
 "group": "links",
 "first": "2026-11-22"
 },
@@ -759,9 +744,42 @@
 "detected": "2026-11-22",
 "group": "news",
 "first": "2026-11-22"
+},
+"c4d7857153d0": {
+"key": "c4d7857153d0",
+"dsha": "c5e357f1",
+"check": "NEWS-SITE",
+"sev": "info",
+"site": "ch2",
+"city": "changhua-county",
+"item": "lugang-wenwumiao",
+"name": "鹿港文武廟",
+"title": "新聞提到「鹿港文武廟」：（有影片）／新舊共存、修舊如故 鹿港文武廟重現歷史風華",
+"detail": "觀傳媒・2026-11-06（關鍵字：古蹟 修復 完工）\n請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。",
+"url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1QZlpSeVZKQmJtT1ZXTTIyeklUMVFVcS10RHh4YzhfWXhJSFlIX0Z5SDNyLUZ6R3NLNWV0LW5EdmVSU05tRnpzdmNpaW10U1lBWEoycDVvMA?oc=5",
+"date": "2026-11-06",
+"detected": "2026-11-22",
+"group": "news",
+"first": "2026-11-22"
 }
 },
 "resolved": [
+{
+"key": "9704aad3cac5",
+"dsha": "91674255",
+"check": "INT-STALE",
+"sev": "medium",
+"site": "atlas",
+"city": "",
+"item": "",
+"name": "",
+"title": "文資地圖集的資料比主網站舊",
+"detail": "data/sites.json 產生於 2026-11-15，主網站縣市資料最後更新是 2026-11-22。\n更新方法：在 Cultural_Atlas 執行 python3 tools/build_sites.py（之後依 README 重跑其他圖層），檢查後開 PR。",
+"url": "",
+"group": "integrity",
+"first": "2026-11-22",
+"resolved": "2026-11-22"
+},
 {
 "key": "231a97e85fa1",
 "check": "OFF-FIELD",

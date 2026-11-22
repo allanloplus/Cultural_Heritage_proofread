@@ -432,5 +432,20 @@
 "url": "https://news.google.com/rss/articles/CBMi_wJBVV95cUxQcVp5TThjcGV2Q3FzaGxUeHdrN3NHblRUMUNNT1RTV21iR2lTdmdYcDEwSTBHTGZTV3hEcnRadVM1YU5xWFZtUW9DU3RyRklhYUFsWlNyUVY5cmZVaHRVQ094d0dLaGc4UEszOU0zR0hMZUlYLWhFUkdlRTNWT1JBNHRlc0gyRk1xeGdDdDdHaVpLdS01dVEtdTVTZndKUUlZRGpxUmxwdlE0d19nVFcxX1VOd25HeTRINE5BZDNaSDJxa2tSYjhSbzdOQmJFMGJGOEl2RTBfeFZpWS1xaGExZ2lnY2xuSUVncE1JSFFaRGczdW5fa1YtclE0eFdoeVN6eHVLaWY2dGhKMkhJSmxLZTlnRnZsWDgtUFJLdUtyU1VmcUZub0ptS3ZOSUMwNFo4Nk8wV1ZQNFU2aWs1NTAyVDlVQ0lYeTV2U1hMWlVLQmRkS2JrendGS1Jvd0JYVTBtekxid1Nsd2k5UWVIWkprUVFPM1haOV93X2lFRzRsMA?oc=5",
 "date": "2026-11-06",
 "detected": "2026-11-22"
+},
+{
+"key": "c4d7857153d0",
+"dsha": "c5e357f1",
+"check": "NEWS-SITE",
+"sev": "info",
+"site": "ch2",
+"city": "changhua-county",
+"item": "lugang-wenwumiao",
+"name": "鹿港文武廟",
+"title": "新聞提到「鹿港文武廟」：（有影片）／新舊共存、修舊如故 鹿港文武廟重現歷史風華",
+"detail": "觀傳媒・2026-11-06（關鍵字：古蹟 修復 完工）\n請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。",
+"url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1QZlpSeVZKQmJtT1ZXTTIyeklUMVFVcS10RHh4YzhfWXhJSFlIX0Z5SDNyLUZ6R3NLNWV0LW5EdmVSU05tRnpzdmNpaW10U1lBWEoycDVvMA?oc=5",
+"date": "2026-11-06",
+"detected": "2026-11-22"
 }
 ]

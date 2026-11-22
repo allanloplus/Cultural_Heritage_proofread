@@ -4,11 +4,11 @@
   "level": "weekly",
   "total": 37,
   "high": 0,
-  "medium": 1,
+  "medium": 0,
   "low": 0,
-  "info": 36,
-  "new": 2,
-  "resolved": 80,
+  "info": 37,
+  "new": 1,
+  "resolved": 1,
   "overdue": 0
  }
 ]

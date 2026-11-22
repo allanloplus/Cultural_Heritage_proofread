@@ -1,6 +1,6 @@
 # 文資網站健檢報告　2026-11-22
 
-- 檢測等級：每週｜執行項目：official、integrity、live、links、news、system｜耗時 441 秒
+- 檢測等級：每週｜執行項目：official、integrity、live、links、news、system｜耗時 553 秒
 - 範圍：22 個縣市、3,032 處有形文化資產、625 項無形文化資產、559 件古物、11,316 個不重複網址
 - 網頁版報告（可篩選）：`index.html`｜試算表：`reports/latest.csv`
 
@@ -9,20 +9,20 @@
 | 優先度 | 件數 | 處理期限 |
 |---|---|---|
 | 高 | 0 | 7 天內 |
-| 中 | 1 | 30 天內 |
+| 中 | 0 | 30 天內 |
 | 低 | 0 | 90 天內 |
-| 參考 | 36 | 看過即可 |
+| 參考 | 37 | 看過即可 |
 
-本次新發現 2 項｜已解決 80 項｜逾期 0 項｜列為例外 11 項
+本次新發現 1 項｜已解決 1 項｜逾期 0 項｜列為例外 11 項
 
 ## 各網站
 
 | 網站 | 狀態 | 高 | 中 | 低 | 參考 |
 |---|---|---|---|---|---|
 | [文資知識網站（第一網站）](https://cultural.123hi.org/) | 良好 | 0 | 0 | 0 | 12 |
-| [文資知識網站（第二網站）](https://cultural2.123hi.org/) | 良好 | 0 | 0 | 0 | 18 |
+| [文資知識網站（第二網站）](https://cultural2.123hi.org/) | 良好 | 0 | 0 | 0 | 19 |
 | [文資達人訪查](https://cultural-visit.123hi.org/) | 良好 | 0 | 0 | 0 | 0 |
-| [文資地圖集](https://cultural-atlas.123hi.org/) | 留意 | 0 | 1 | 0 | 0 |
+| [文資地圖集](https://cultural-atlas.123hi.org/) | 良好 | 0 | 0 | 0 | 0 |
 | [鄉鎮文資性格卡](https://cultural-town.123hi.org/) | 良好 | 0 | 0 | 0 | 0 |
 | [鐵道文資](https://cultural-rail.123hi.org/) | 良好 | 0 | 0 | 0 | 0 |
 | [從海口到山頂](https://cultural-ascent.123hi.org/) | 良好 | 0 | 0 | 0 | 3 |
@@ -49,25 +49,7 @@
 | 參考 | 宜蘭縣 | [連結本次未能確認：www.moc.gov.tw/en/information_108_75034.html](https://www.moc.gov.tw/en/information_108_75034.html)<br><sub>HTTP 403。可能只是對方暫時忙碌或擋掉自動檢查；連續 3 次才會列為失效。<br>出現在：yilan-county/data/eras.json：sources.url</sub> | 2026-11-22 | — |
 
 
-## 內部一致性（1）
-
-資料之間對不對得起來、照片與語音檔在不在、網頁資料是否重新產生、姊妹站資料是否過期、有沒有不該出現的個資。
-
-### 姊妹站資料過期（1）
-
-建議：主網站的文資資料更新後，姊妹站要重新產生資料才會同步。
-
-更新方法：
-
-1. 依序重建姊妹站資料：文資達人訪查 build_index.py → 地圖集 build_sites.py → 鐵道版 build.py → 鄉鎮卡 build.py → 海拔版 build.py。
-2. 各姊妹站 repo 開 PR 合併。
-
-| 優先度 | 縣市 | 內容 | 首次發現 | 期限 |
-|---|---|---|---|---|
-| 中・新 |  | 文資地圖集的資料比主網站舊<br><sub>data/sites.json 產生於 2026-11-15，主網站縣市資料最後更新是 2026-11-22。<br>更新方法：在 Cultural_Atlas 執行 python3 tools/build_sites.py（之後依 README 重跑其他圖層），檢查後開 PR。</sub> | 2026-11-22 | 2026-12-22 |
-
-
-## 新聞線索（30）
+## 新聞線索（31）
 
 近期新聞標題是否提到網站收錄的文資，或出現新的指定、登錄。只是線索，要看過內容才能判斷。
 
@@ -85,7 +67,7 @@
 | 參考 |  | [可能有新的指定或登錄：台北博愛路93號 再次登錄歷史建築](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1CTFhkZjBKaVYtemdJQnpLU0dxTkx0RENYVUgwMjRqdWRVZDktMnNQYnlibFY4R24tRkNVRE1aQm5ZLWVDOFlXdTI1NDBWMFVlTHZNRGlFVVJiOVHSAWBBVV95cUxOUEhFdjlQSVlHSjYzN2Y4bkQ1bkFVRFo1NWxOUHBabGQ5d280UjVPcEYwelBzbVl2ZVJLU1dtVWdHMmlvZDVyajNRbGczN0JNMGNYY2VLSjAyNDdLNnh1OVQ?oc=5)<br><sub>自由時報・2026-10-20（關鍵字：登錄歷史建築）<br>官方開放資料通常晚幾週才更新；若確定是新指定／登錄，可先記下，等開放資料出現後一併新增。</sub> | 2026-11-22 | — |
 | 參考 |  | [可能有新的指定或登錄：總統賴清德贈匾彰化南瑤宮 盼升格國定古蹟延續百年香火](https://news.google.com/rss/articles/CBMiV0FVX3lxTFBGUkZ2ZTU3b2M2ZEdteVVuTWl5a25nd1dyYnJDS1dQSy01UWV6M3JxVF9PdDVzWnJCOW5UNlhzRU11LU9WQmRiTFpsTnlfQzZvQXIwQkR5dw?oc=5)<br><sub>觀傳媒・2026-11-19（關鍵字：升格國定古蹟）<br>官方開放資料通常晚幾週才更新；若確定是新指定／登錄，可先記下，等開放資料出現後一併新增。</sub> | 2026-11-22 | — |
 
-### 新聞提到網站收錄的文資（27）
+### 新聞提到網站收錄的文資（28）
 
 建議：看新聞內容。火災、倒塌、拆除、修復完工、重新開放、升格都值得更新介紹或開放資訊；一般活動報導可略過。
 
@@ -101,8 +83,9 @@
 | 參考 | 彰化縣 | [新聞提到「鹿港文武廟」：彰化縣定古蹟鹿港文武廟修復竣工](https://news.google.com/rss/articles/CBMiV0FVX3lxTE9ZREdodXZOdktzUlhOQndobGY4YzRNZmtCaENUOG9nN3Byd3lFcmpUMnFxa0V2R1NHcmkxSjUxRmZVUkgyZlQ2RFRvQ2d1T054bFRsTldQNA?oc=5)<br><sub>焦點時報・2026-11-07（關鍵字：古蹟 修復 完工）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 | 參考 | 彰化縣 | [新聞提到「鹿港文武廟」：彰化縣定古蹟鹿港文武廟修復竣工- 社會新聞](https://news.google.com/rss/articles/CBMijAFBVV95cUxNNXVWam1YZkUtaXFURkZOMk5abHJKYjRqUGRpNTAzRFoxd2RBZTNxaGwxQ2RpRFlEREZORjlqX0pVWWIzZDVQN25RMEcxNlRWSDBCRkxocTdxbTdKSDNUM1lycTkzbzBNTE8wdnNPelE4aTFNYUN4VTFia1VOSnhNaFVfTXBra1BvVFFzMw?oc=5)<br><sub>PChome Online 新聞・2026-11-07（關鍵字：古蹟 火災）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 | 參考 | 彰化縣 | [新聞提到「鹿港文武廟」：提早半年完工 鹿港文武廟再現風華](https://news.google.com/rss/articles/CBMia0FVX3lxTE5SZk9zNFFONXNFRU1UZ0J1UDh4RkQ0MEpNdmVzeGkwV3NwbDg0a2FIZExGbHBOYnEwWnpFMm9IMEFRaE1yVHVZeHp6Y3pxWThCWkJsQkU3LWJpdUgyYkR2QW82TTBHLUJxMTRr?oc=5)<br><sub>中時新聞網・2026-11-07（關鍵字：古蹟 修復 完工）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
-| 參考・新 | 彰化縣 | [新聞提到「鹿港文武廟」：鹿港文武廟修復完成 兩百年歷史古蹟重現昔日風采](https://news.google.com/rss/articles/CBMi_wJBVV95cUxQcVp5TThjcGV2Q3FzaGxUeHdrN3NHblRUMUNNT1RTV21iR2lTdmdYcDEwSTBHTGZTV3hEcnRadVM1YU5xWFZtUW9DU3RyRklhYUFsWlNyUVY5cmZVaHRVQ094d0dLaGc4UEszOU0zR0hMZUlYLWhFUkdlRTNWT1JBNHRlc0gyRk1xeGdDdDdHaVpLdS01dVEtdTVTZndKUUlZRGpxUmxwdlE0d19nVFcxX1VOd25HeTRINE5BZDNaSDJxa2tSYjhSbzdOQmJFMGJGOEl2RTBfeFZpWS1xaGExZ2lnY2xuSUVncE1JSFFaRGczdW5fa1YtclE0eFdoeVN6eHVLaWY2dGhKMkhJSmxLZTlnRnZsWDgtUFJLdUtyU1VmcUZub0ptS3ZOSUMwNFo4Nk8wV1ZQNFU2aWs1NTAyVDlVQ0lYeTV2U1hMWlVLQmRkS2JrendGS1Jvd0JYVTBtekxid1Nsd2k5UWVIWkprUVFPM1haOV93X2lFRzRsMA?oc=5)<br><sub>台灣好新聞・2026-11-06（關鍵字：古蹟 修復 完工）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
+| 參考 | 彰化縣 | [新聞提到「鹿港文武廟」：鹿港文武廟修復完成 兩百年歷史古蹟重現昔日風采](https://news.google.com/rss/articles/CBMi_wJBVV95cUxQcVp5TThjcGV2Q3FzaGxUeHdrN3NHblRUMUNNT1RTV21iR2lTdmdYcDEwSTBHTGZTV3hEcnRadVM1YU5xWFZtUW9DU3RyRklhYUFsWlNyUVY5cmZVaHRVQ094d0dLaGc4UEszOU0zR0hMZUlYLWhFUkdlRTNWT1JBNHRlc0gyRk1xeGdDdDdHaVpLdS01dVEtdTVTZndKUUlZRGpxUmxwdlE0d19nVFcxX1VOd25HeTRINE5BZDNaSDJxa2tSYjhSbzdOQmJFMGJGOEl2RTBfeFZpWS1xaGExZ2lnY2xuSUVncE1JSFFaRGczdW5fa1YtclE0eFdoeVN6eHVLaWY2dGhKMkhJSmxLZTlnRnZsWDgtUFJLdUtyU1VmcUZub0ptS3ZOSUMwNFo4Nk8wV1ZQNFU2aWs1NTAyVDlVQ0lYeTV2U1hMWlVLQmRkS2JrendGS1Jvd0JYVTBtekxid1Nsd2k5UWVIWkprUVFPM1haOV93X2lFRzRsMA?oc=5)<br><sub>台灣好新聞・2026-11-06（關鍵字：古蹟 修復 完工）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 | 參考 | 彰化縣 | [新聞提到「鹿港文武廟」：鹿港文武廟修復完成兩百年歷史古蹟重現昔日風采｜ 台灣好新聞](https://news.google.com/rss/articles/CBMiVkFVX3lxTFBtSnJJN25YbHFyXy1VdUVPaktMR0Z1ODdEbnBMVlpoRjBEa1R5WnVRVzNWRU91MjJLQlktRkJYZy1HVmRYcVU1VXJoMUdNcmNNZzhWQndB?oc=5)<br><sub>LINE TODAY・2026-11-06（關鍵字：古蹟 火災）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
+| 參考・新 | 彰化縣 | [新聞提到「鹿港文武廟」：（有影片）／新舊共存、修舊如故 鹿港文武廟重現歷史風華](https://news.google.com/rss/articles/CBMiV0FVX3lxTE1QZlpSeVZKQmJtT1ZXTTIyeklUMVFVcS10RHh4YzhfWXhJSFlIX0Z5SDNyLUZ6R3NLNWV0LW5EdmVSU05tRnpzdmNpaW10U1lBWEoycDVvMA?oc=5)<br><sub>觀傳媒・2026-11-06（關鍵字：古蹟 修復 完工）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 | 參考 | 彰化縣 | [新聞提到「鹿港街長宿舍」：「鹿港街長宿舍」修復完工重新啟用 成為鹿港深度文化走讀新地標](https://news.google.com/rss/articles/CBMiVEFVX3lxTE1YRXhDd1M1bEVnTzFRcWUzVm1lYXo4X1F6VVlnSEh0ZV8xdDdIS3RLNzhhcmkzOEo1OWFGdEZEWDN6VG9UWHZLa2RDbWJLR2xKZ3UxVw?oc=5)<br><sub>新頭條・2026-11-13（關鍵字：古蹟 修復 完工）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 | 參考 | 彰化縣 | [新聞提到「鹿港街長宿舍」：風華再現！彰化歷史建築「鹿港街長宿舍」修復啟用- 生活新聞](https://news.google.com/rss/articles/CBMikwFBVV95cUxQdEFKOVhsMTFxZWJmeXp6UE53Ym43bHhPakctX0NDSE5YYXRQdDVhU0FUZ200WU9WRXJPa3c2ek95ZDdrQVpDbXpaY19EZU5kU1VPR1ZOeWpiSkZuQVNWcEljY1BSbktOX1hXVFR1WjdDT1ktVnN4UTdYUE1xekhHd1BmdlNoT2gxckxpem53WlJpMTQ?oc=5)<br><sub>PChome Online 新聞・2026-11-13（關鍵字：歷史建築 修復 啟用）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 | 參考 | 嘉義市 | [新聞提到「舊嘉義市公所」：【建築】舊嘉義市公所——從歷史見證 到現代藝文空間的重生 ｜2026](https://news.google.com/rss/articles/CBMi1AJBVV95cUxObGlzc3FOODZxMlhqQVR5bUpZNTcxSkl6RmhsMUxPUkY4Y1Z6d0F6WlZxSXJyWHJncWQ2VlV2OTJ1QVhRUFVBeVRJWHo2SHJhUG5iWmVFLUx0OHptRm43Q284NEd2dGFfR0N2YURSZ04yVkloYlc5RERGbXp1NmtDRUdaeE5TT19sWVJxdUhlR2hjaExvaVZtYjNaZHpmc1A0Z3ZmT2pTdlk3d2ZuN2hDeWpUaUNJcHVhM01KdFY3WnllbGU2TW5PdmVlZks2UFYtTV9tdTl0R2pkUTMtNF95VjFnbFMwQ3NmMWp5WndpZzNUbXZRTVp1M3FEajhvUjBFVEp0MFJ4a1FHNXpCQXN1Uzc2WnI0bUpsYm05eF8weGVNT3dudmhUa3ZvZU02LVBfdTJESTFhRjIwT2R6eUU5ekRpMVB6VGdBZHF3ZXdMQnVMUnpl?oc=5)<br><sub>The Culturist・2026-11-13（關鍵字：登錄歷史建築）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
@@ -125,85 +108,6 @@
 | 參考 | 雲林縣 | [新聞提到「北港糖廠」：北港糖廠登錄歷史建築 倉庫群修復活化盼帶動觀光](https://news.google.com/rss/articles/CBMiT0FVX3lxTE94NnFUNGJSRERNY3hYRERsSFYtdElYbW54bUVURFlLaWJpenI3NVIwQ2RTemV2ZGxYbzZwTmx1bHgxMGtBdHh2cDl0SkY2TG8?oc=5)<br><sub>公視新聞・2026-10-27（關鍵字：登錄歷史建築）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 | 參考 | 雲林縣 | [新聞提到「北港糖廠」：百年北港糖廠變身文化新地標！1911好庫開園 三大展覽一次看](https://news.google.com/rss/articles/CBMiTkFVX3lxTE81a0hTY0ViLUlXNU5DWTVIV0tCeThyZ1J3c1c2VWpnaHVSQlJENWJJS0tyZFh3ajlmUTdfeGxjaFRBbzlXMnlHRlNheXZwZw?oc=5)<br><sub>創新聞・2026-10-26（關鍵字：登錄無形文化資產）<br>請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。</sub> | 2026-11-22 | — |
 
-## 已解決（80）
+## 已解決（1）
 
-- 「原南國運送店」的所有權與官方資料不同
-- 「檢察長宿舍」的開放時間與官方資料不同
-- 「美崙溪畔日式宿舍」的開放時間與官方資料不同
-- 「美崙溪畔日式宿舍」的開放時間與官方資料不同
-- 「八通關古道」的所有權與官方資料不同
-- 「八通關古道」的所有權與官方資料不同
-- 「烏山頭水庫暨嘉南大圳水利系統」的地址與官方資料不同
-- 「礁溪協天廟老戲臺」的官方代表圖與官方資料不同
-- 「第一商業銀行宜蘭分行」的官方代表圖與官方資料不同
-- 「開蘭進士楊士芳旗杆座」的官方代表圖與官方資料不同
-- 「宜蘭國民小學科學教育中心」的官方代表圖與官方資料不同
-- 「宜蘭大學民權日式眷舍」的官方代表圖與官方資料不同
-- 「宜蘭測候所宜蘭飛行場出張所」的官方代表圖與官方資料不同
-- 「農糧署宜蘭市公糧倉庫群」的官方代表圖與官方資料不同
-- 「利澤簡永安宮」的官方代表圖與官方資料不同
-- 「羅東林區管理處處長宿舍」的官方代表圖與官方資料不同
-- 「寒溪神社遺跡」的官方代表圖與官方資料不同
-- 「蘇澳砲台山及金刀比羅社遺蹟」的官方代表圖與官方資料不同
-- 「蘇澳扇形鐵道暨轉車台」的官方代表圖與官方資料不同
-- 「南瑤宮」的開放時間與官方資料不同
-- 「鹿港公會堂」的開放時間與官方資料不同
-- 「鹿港敬義園紀念碑」的開放時間與官方資料不同
-- 「新竹市消防博物館」的開放時間與官方資料不同
-- 「竹東長春醫院」的官方代表圖與官方資料不同
-- 「新莊樂生療養院」的官方代表圖與官方資料不同
-- 「頭汴坑警察官吏派出所」的開放時間與官方資料不同
-- 「頭汴坑警察官吏派出所」的官方代表圖與官方資料不同
-- 官方有「鹿港天后宮」，網站還沒有收錄
-- 官方有「麥寮拱範宮」，網站還沒有收錄
-- 官方有「建國啤酒廠」，網站還沒有收錄
-- 官方有「新莊樂生療養院」，網站還沒有收錄
-- 官方有「望安花宅」，網站還沒有收錄
-- 官方有「阿里山林業暨鐵道文化景觀」，網站還沒有收錄
-- 官方有「Sbayan泰雅民族起源地」，網站還沒有收錄
-- 無形文資「鄒族戰祭（mayasvi）」的名稱與官方資料不同
-- 無形文資「阿美族馬蘭複音歌謠（Macacadaay）」的名稱與官方資料不同
-- 官方有無形文資「南管」，網站還沒有收錄
-- 官方有無形文資「布農族八部合音(pasibutbut祈禱小米豐收歌)」，網站還沒有收錄
-- 官方有無形文資「製鼓工藝」，網站還沒有收錄
-- 官方有無形文資「纏花工藝(春仔花)」，網站還沒有收錄
-- 官方有無形文資「木工藝」，網站還沒有收錄
-- 官方有無形文資「木雕」，網站還沒有收錄
-- 官方有無形文資「噶瑪蘭香蕉絲編織工藝」，網站還沒有收錄
-- 官方有無形文資「排灣族(大王部落)傳統刺繡」，網站還沒有收錄
-- 官方有無形文資「傳統彩繪」，網站還沒有收錄
-- 官方有無形文資「卑南族建和部落(Kasavakan)木雕」，網站還沒有收錄
-- 官方有無形文資「卑南族傳統織布技藝(tenun)」，網站還沒有收錄
-- 官方有無形文資「阿美族樹皮布工藝」，網站還沒有收錄
-- 官方有無形文資「新竹縣賽夏族矮靈祭（pasta'ay）」，網站還沒有收錄
-- 官方有無形文資「賽夏族巴斯達隘（矮靈祭）」，網站還沒有收錄
-- 官方有無形文資「歸仁仁壽宮王船醮典暨遶境」，網站還沒有收錄
-- 官方有無形文資「關廟山西宮遶境暨王醮祭典」，網站還沒有收錄
-- 官方有無形文資「東山吉貝耍夜祭」，網站還沒有收錄
-- 官方有無形文資「阿美族Fakong部落ilisin（豐年祭)」，網站還沒有收錄
-- 官方有無形文資「四月十二日迎城隍」，網站還沒有收錄
-- 官方有無形文資「馬鳴山五年千歲五年大科」，網站還沒有收錄
-- 官方有無形文資「保西代天府王醮暨遶境」，網站還沒有收錄
-- 官方有無形文資「邵族年祭」，網站還沒有收錄
-- 古物「臺灣野球史」在官方開放資料找不到同名紀錄
-- 古物「台灣關地界碑」的等級與官方不同
-- 古物「澎湖天后宮「帡幪臺廈」匾」在官方開放資料找不到同名紀錄
-- 古物「彰化聖廟「與天地參」匾」在官方開放資料找不到同名紀錄
-- 古物「嚴禁差役藉端擾累碑」在官方開放資料找不到同名紀錄
-- 古物「北魏曹天度造九層千佛石塔」在官方開放資料找不到同名紀錄
-- 古物「排灣族望嘉舊社佳邏夫岸頭目家雙面祖先像石雕柱」在官方開放資料找不到同名紀錄
-- 古物「黃土水《南國》（水牛群像）」在官方開放資料找不到同名紀錄
-- 古物「黃土水《釋迦出山》」在官方開放資料找不到同名紀錄
-- 「竹田車站」有照片缺少作者或授權標示
-- 「彰化孔子廟」有照片缺少作者或授權標示
-- 「新埔張氏家廟」的資料有疑似手機號碼：0912＊＊＊＊
-- 「新莊樂生療養院」有照片缺少作者或授權標示
-- 「路思義教堂」有照片缺少作者或授權標示
-- 「臺鐵舊山線-大安溪鐵橋」有照片缺少作者或授權標示
-- 「臺中市第四市場」的資料有疑似手機號碼：0975＊＊＊＊
-- 「林懋陽故居」的資料有疑似手機號碼：0903＊＊＊＊
-- 「清水大楊原美軍油庫設施」的資料有疑似手機號碼：0921＊＊＊＊
-- 「神岡呂家頂瓦厝」的資料有疑似手機號碼：0932＊＊＊＊
-- 「艋舺龍山寺」有照片缺少作者或授權標示
-- 連結已搬家：matsucc.gov.tw/?p=3240
-- 連結已搬家：www.nownews.com/news/20180822/2804421/
+- 文資地圖集的資料比主網站舊
