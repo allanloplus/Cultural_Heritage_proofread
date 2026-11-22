@@ -417,5 +417,20 @@
 "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5fU0JIY2J6elJrVmxNbDVEOHU2RUFhTHQyM2pCRFRuOC0wVG5nRG44S2Z6QlAzS1d3b2VIQ0twTjZNZ3NuNW1zSG9PMFB4OFNoRVE?oc=5",
 "date": "2026-11-04",
 "detected": "2026-11-22"
+},
+{
+"key": "3976ca239006",
+"dsha": "8ed539b7",
+"check": "NEWS-SITE",
+"sev": "info",
+"site": "ch2",
+"city": "changhua-county",
+"item": "lugang-wenwumiao",
+"name": "鹿港文武廟",
+"title": "新聞提到「鹿港文武廟」：鹿港文武廟修復完成 兩百年歷史古蹟重現昔日風采",
+"detail": "台灣好新聞・2026-11-06（關鍵字：古蹟 修復 完工）\n請看內容是否影響網站介紹：災損、修復完工、重新開放、升格、範圍變更等。",
+"url": "https://news.google.com/rss/articles/CBMi_wJBVV95cUxQcVp5TThjcGV2Q3FzaGxUeHdrN3NHblRUMUNNT1RTV21iR2lTdmdYcDEwSTBHTGZTV3hEcnRadVM1YU5xWFZtUW9DU3RyRklhYUFsWlNyUVY5cmZVaHRVQ094d0dLaGc4UEszOU0zR0hMZUlYLWhFUkdlRTNWT1JBNHRlc0gyRk1xeGdDdDdHaVpLdS01dVEtdTVTZndKUUlZRGpxUmxwdlE0d19nVFcxX1VOd25HeTRINE5BZDNaSDJxa2tSYjhSbzdOQmJFMGJGOEl2RTBfeFZpWS1xaGExZ2lnY2xuSUVncE1JSFFaRGczdW5fa1YtclE0eFdoeVN6eHVLaWY2dGhKMkhJSmxLZTlnRnZsWDgtUFJLdUtyU1VmcUZub0ptS3ZOSUMwNFo4Nk8wV1ZQNFU2aWs1NTAyVDlVQ0lYeTV2U1hMWlVLQmRkS2JrendGS1Jvd0JYVTBtekxid1Nsd2k5UWVIWkprUVFPM1haOV93X2lFRzRsMA?oc=5",
+"date": "2026-11-06",
+"detected": "2026-11-22"
 }
 ]
