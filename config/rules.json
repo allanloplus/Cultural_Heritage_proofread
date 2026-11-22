@@ -1,0 +1,30 @@
+{
+ "_說明": "檢測規則。改這裡不用改程式。",
+ "sla_days": {"high": 7, "medium": 30, "low": 90},
+ "levels": {
+  "weekly": {"checks": ["official", "integrity", "live", "links", "news"], "official_image_budget": 300, "sister_links": false},
+  "monthly": {"checks": ["official", "integrity", "live", "links", "news"], "official_image_budget": 4000, "sister_links": true}
+ },
+ "links": {
+  "skip_hosts": ["localhost", "127.0.0.1", "www.w3.org", "fonts.googleapis.com", "fonts.gstatic.com", "cdn.jsdelivr.net", "unpkg.com",
+                 "nominatim.openstreetmap.org", "apis.youbike.com.tw", "copernicus-dem-30m.s3.amazonaws.com", "registry.opendata.aws",
+                 "ptx.transportdata.tw", "tdx.transportdata.tw", "wmts.nlsc.gov.tw", "gis.sinica.edu.tw", "gis.rchss.sinica.edu.tw"],
+  "skip_host_suffix": [".supabase.co", ".tile.openstreetmap.org", ".basemaps.cartocdn.com"],
+  "manual_hosts": ["www.facebook.com", "facebook.com", "www.instagram.com", "instagram.com", "forms.gle", "www.google.com", "maps.google.com", "goo.gl", "maps.app.goo.gl"],
+  "fails_before_broken": 2,
+  "recheck_ok_days": 6,
+  "timeout": 25
+ },
+ "news": {
+  "enabled": true,
+  "days": 35,
+  "max_findings": 60,
+  "keep_days": 45,
+  "queries": ["古蹟 火災", "古蹟 祝融", "歷史建築 火警", "古蹟 拆除", "歷史建築 拆除", "古蹟 倒塌", "古蹟 修復 完工", "歷史建築 修復 啟用",
+              "指定古蹟 公告", "登錄歷史建築", "升格國定古蹟", "廢止 歷史建築", "文化資產審議 通過", "重要古物 指定", "登錄無形文化資產", "保存者 辭世"],
+  "new_designation_words": ["指定為古蹟", "指定古蹟", "登錄為歷史建築", "登錄歷史建築", "升格國定古蹟", "指定為國定古蹟", "登錄為文化景觀", "登錄為聚落建築群", "指定為考古遺址", "廢止", "解除列冊"],
+  "name_min_len": 4,
+  "stop_names": ["臺北車站", "總統府", "中山堂", "行政院"]
+ },
+ "live": {"cert_warn_days": 21}
+}

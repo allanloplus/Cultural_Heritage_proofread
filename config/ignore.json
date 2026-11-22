@@ -1,0 +1,5 @@
+{
+ "_說明": "已判斷「不需處理」的發現（例外管理）。每一筆要寫原因、決定的人與到期日；到期後會重新出現在報告裡，請再判斷一次。match 的欄位全部符合才算：key（報告裡每筆發現的編號）、check、site、city、item、url、title_has 都可選填。",
+ "_範例": {"match": {"check": "OFF-FIELD", "city": "tainan-city", "item": "zhongxi-chikanlou"}, "reason": "網站名稱沿用通稱，已確認", "by": "Allan", "until": "2027-06-30"},
+ "items": []
+}

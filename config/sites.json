@@ -1,0 +1,17 @@
+{
+ "_說明": "受檢網站清單。role=core 是重點網站（逐筆比對官方資料、檢查全部連結）；role=sister 是姊妹站（檢查上線狀態、與主網站的連結、資料是否過期）。",
+ "sites": [
+  {"id": "ch1", "repo": "Cultural_Heritage", "name": "文資知識網站（第一網站）", "url": "https://cultural.123hi.org/", "role": "core"},
+  {"id": "ch2", "repo": "Cultural_Heritage2", "name": "文資知識網站（第二網站）", "url": "https://cultural2.123hi.org/", "role": "core"},
+  {"id": "visit", "repo": "Cultural_Heritage_Master", "name": "文資達人訪查", "url": "https://cultural-visit.123hi.org/", "role": "sister",
+   "data": ["data/heritage-index.json"], "rebuild": "python3 tools/build_index.py"},
+  {"id": "atlas", "repo": "Cultural_Atlas", "name": "文資地圖集", "url": "https://cultural-atlas.123hi.org/", "role": "sister",
+   "data": ["data/sites.json"], "rebuild": "python3 tools/build_sites.py（之後依 README 重跑其他圖層）"},
+  {"id": "town", "repo": "Cultural_Town", "name": "鄉鎮文資性格卡", "url": "https://cultural-town.123hi.org/", "role": "sister",
+   "data": ["data/index.json"], "rebuild": "python3 tools/build.py"},
+  {"id": "rail", "repo": "Cultural_Rail", "name": "鐵道文資", "url": "https://cultural-rail.123hi.org/", "role": "sister",
+   "data": ["data/index.json"], "rebuild": "python3 tools/build.py"},
+  {"id": "ascent", "repo": "Cultural_Ascent", "name": "從海口到山頂", "url": "https://cultural-ascent.123hi.org/", "role": "sister",
+   "data": ["data/alt.json", "data/trails.json", "data/rivers.json"], "rebuild": "python3 tools/build.py"}
+ ]
+}

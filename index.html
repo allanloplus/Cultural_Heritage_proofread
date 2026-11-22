@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>文資網站健檢室｜Allan Lo 和你逛文化</title>
+<meta name="description" content="Allan 與阿拉蕾定期替文資系列網站做健檢：比對文資局官方資料、檢查連結、確認上線狀態，並提供更新建議與方法。">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1d6f73">
+<link rel="icon" href="assets/characters/arale-explain.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="assets/css/app.css?v=20261122a">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#top"><img src="assets/characters/arale-explain.webp" alt="" width="34" height="34"><span>文資網站健檢室</span></a>
+  <nav class="nav" aria-label="頁面段落">
+    <a href="#summary">摘要</a><a href="#todo">待辦清單</a><a href="#cities">各縣市</a><a href="#checks">檢測項目</a><a href="#method">管理機制</a>
+  </nav>
+  <a class="home" href="https://cultural.123hi.org/">文資知識網站 ↗</a>
+</header>
+
+<main id="top">
+  <section class="hero" aria-label="本次健檢播報">
+    <div class="hero-text">
+      <p class="kicker">Allan Lo 和你逛文化・內容與連結健檢</p>
+      <h1>網站也要定期<span>回診</span></h1>
+      <p class="lead">文化資產會新增、升格，也會廢止；連結會搬家、會失效。Allan 和阿拉蕾每週替全系列網站檢查一次，把要更新的地方列成清單。</p>
+      <p class="chips" id="metaChips"></p>
+    </div>
+    <div class="stage">
+      <img class="actor a" id="actorA" src="assets/characters/allan-wave.webp" alt="Allan Lo" width="150" height="150">
+      <div class="bubble from-R" id="bubble" aria-live="polite">
+        <b class="who" id="bubbleWho">阿拉蕾</b>
+        <p id="bubbleText">正在讀取健檢報告…</p>
+        <div class="bubble-ctl">
+          <button type="button" id="dlgPrev" aria-label="上一句">‹</button>
+          <span id="dlgPos">–</span>
+          <button type="button" id="dlgNext" aria-label="下一句">›</button>
+          <button type="button" id="dlgAuto" class="auto">自動播報</button>
+        </div>
+      </div>
+      <img class="actor r" id="actorR" src="assets/characters/arale-wave.webp" alt="阿拉蕾" width="150" height="150">
+    </div>
+  </section>
+
+  <section id="summary" class="sec">
+    <h2>本次結果</h2>
+    <div class="tiles" id="tiles"></div>
+    <div class="tiles small" id="tiles2"></div>
+    <div class="two">
+      <div class="panel">
+        <h3>各網站狀態</h3>
+        <div class="sites" id="siteCards"></div>
+      </div>
+      <div class="panel">
+        <h3>歷次健檢趨勢 <small>待處理件數</small></h3>
+        <div id="trend" class="trend"></div>
+        <p class="note" id="trendNote"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="todo" class="sec">
+    <div class="sec-head">
+      <h2>待辦清單</h2>
+      <div class="tip"><img src="assets/characters/allan-point.webp" alt="" width="56" height="56"><p><b>Allan</b>先處理紅色的「高」，再看「中」。每一筆點開都有建議和更新方法；判斷不用處理的，記到例外清單並寫下原因。</p></div>
+    </div>
+    <div class="filters" role="search">
+      <div class="sevs" id="fSev" role="group" aria-label="優先度"></div>
+      <select id="fGroup" aria-label="檢測類別"></select>
+      <select id="fSite" aria-label="網站"></select>
+      <select id="fCity" aria-label="縣市"></select>
+      <label class="ck"><input type="checkbox" id="fNew"> 只看新發現</label>
+      <label class="ck"><input type="checkbox" id="fOver"> 只看逾期</label>
+      <input type="search" id="fQ" placeholder="搜尋名稱、內容" aria-label="搜尋">
+      <button type="button" id="fReset" class="ghost">清除篩選</button>
+    </div>
+    <p class="count" id="count"></p>
+    <div id="list" class="list"></div>
+    <button type="button" id="more" class="more" hidden>顯示更多</button>
+    <details class="fold" id="acceptedBox" hidden><summary></summary><div class="list" id="acceptedList"></div></details>
+    <details class="fold" id="resolvedBox" hidden><summary></summary><ul id="resolvedList"></ul></details>
+  </section>
+
+  <section id="cities" class="sec">
+    <div class="sec-head">
+      <h2>各縣市</h2>
+      <div class="tip r"><img src="assets/characters/arale-think.webp" alt="" width="56" height="56"><p><b>阿拉蕾</b>點縣市名稱，待辦清單就只看那個縣市。要一次整理一個縣市的時候很方便！</p></div>
+    </div>
+    <div class="tbl-wrap"><table class="tbl" id="cityTbl"></table></div>
+  </section>
+
+  <section id="checks" class="sec">
+    <div class="sec-head">
+      <h2>檢測項目</h2>
+      <div class="tip"><img src="assets/characters/allan-think.webp" alt="" width="56" height="56"><p><b>Allan</b>健檢分五科。能用官方資料確認的就不靠猜，不確定的只列為「未能確認」，連續幾次才算失效，避免誤報。</p></div>
+    </div>
+    <div class="checks" id="checkCards"></div>
+  </section>
+
+  <section id="method" class="sec">
+    <div class="sec-head">
+      <h2>管理機制</h2>
+      <div class="tip r"><img src="assets/characters/arale-fight.webp" alt="" width="56" height="56"><p><b>阿拉蕾</b>檢查、判斷、更新、再確認，一圈一圈轉下去。每一步都留紀錄，之後查得到！</p></div>
+    </div>
+    <ol class="cycle">
+      <li><b>檢測</b><span>每週一自動執行；每月 1 日做完整檢測。也可以手動啟動。</span></li>
+      <li><b>報告</b><span>這個網頁、Markdown 與試算表同步更新；有高優先度的新發現時自動開 Issue 通知。</span></li>
+      <li><b>判斷</b><span>逐筆決定：要更新，或列為例外（寫原因與到期日）。</span></li>
+      <li><b>更新</b><span>依每筆的更新方法修改資料、重新產生網頁，開 PR 合併。</span></li>
+      <li><b>確認</b><span>下次健檢時該筆自動消失並記入「已解決」；仍存在就繼續追蹤。</span></li>
+    </ol>
+    <div class="two">
+      <div class="panel">
+        <h3>優先度與處理期限</h3>
+        <table class="tbl mini" id="slaTbl"></table>
+      </div>
+      <div class="panel">
+        <h3>文件與下載</h3>
+        <ul class="docs">
+          <li><a href="https://github.com/allanloplus/Cultural_Heritage_proofread/blob/main/docs/MECHANISM.md">內容檢測管理機制</a>：範圍、週期、分級、流程、例外、紀錄</li>
+          <li><a href="https://github.com/allanloplus/Cultural_Heritage_proofread/blob/main/docs/UPDATE-SOP.md">更新方法手冊</a>：每一類問題怎麼改</li>
+          <li><a href="https://github.com/allanloplus/Cultural_Heritage_proofread/blob/main/docs/AI-REVIEW.md">請 Claude 協助</a>：修正與每季深度審查的提示詞</li>
+          <li><a href="reports/latest.md">本次報告 Markdown</a>・<a href="reports/latest.csv" download>試算表 CSV</a>・<a href="reports/latest.json">原始 JSON</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>文資系列網站：<span id="footSites"></span></p>
+  <p>規劃設計：Allan Lo　<a href="https://www.123hi.org">www.123hi.org</a>　｜　檢測只讀取公開資料；新聞線索僅列標題與連結。</p>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="assets/js/app.js?v=20261122a"></script>
+</body>
+</html>

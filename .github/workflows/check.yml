@@ -1,0 +1,72 @@
+name: 文資網站健檢
+
+# 每週一 03:17（臺灣時間）做每週檢測；每月 1 日 04:47 做完整檢測。也可以在 Actions 頁面手動啟動。
+on:
+  schedule:
+    - cron: "17 19 * * 0"
+    - cron: "47 20 1 * *"
+  workflow_dispatch:
+    inputs:
+      level:
+        description: "檢測等級"
+        type: choice
+        default: weekly
+        options: [weekly, monthly]
+
+# 只需要寫回本 repo 的報告與開 Issue；不需要任何密碼或金鑰，也不會寫入其他 repo。
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: proofread
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 取出受檢網站（只取文字檔，不下載語音與照片）
+        run: |
+          mkdir -p repos
+          for r in Cultural_Heritage Cultural_Heritage2 Cultural_Heritage_Master Cultural_Atlas Cultural_Town Cultural_Rail Cultural_Ascent; do
+            git clone --quiet --filter=blob:none --no-checkout "https://github.com/allanloplus/$r.git" "repos/$r"
+            git -C "repos/$r" sparse-checkout set --no-cone '/*' '!*.mp3' '!*.webp' '!*.jpg' '!*.jpeg' '!*.png' '!*.gif' '!*.woff2' '!*.pdf' '!*.zip' '!*.tif' '!*.bin'
+            git -C "repos/$r" checkout --quiet
+          done
+          du -sh repos/*
+
+      - name: 執行健檢
+        env:
+          REPOS_DIR: ${{ github.workspace }}/repos
+          LEVEL_INPUT: ${{ inputs.level }}
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          export PROOFREAD_DATE="$(TZ=Asia/Taipei date +%F)"
+          LEVEL="${LEVEL_INPUT:-weekly}"
+          if [ "$SCHEDULE" = "47 20 1 * *" ]; then LEVEL=monthly; fi
+          echo "PROOFREAD_DATE=$PROOFREAD_DATE" >> "$GITHUB_ENV"
+          echo "LEVEL=$LEVEL" >> "$GITHUB_ENV"
+          python3 tools/run.py --level "$LEVEL"
+          python3 tools/summary.py >> "$GITHUB_STEP_SUMMARY"
+
+      - name: 寫回報告
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports state
+          if git diff --cached --quiet; then echo "沒有變更"; exit 0; fi
+          git commit --quiet -m "健檢報告 $PROOFREAD_DATE（$LEVEL）"
+          git push
+
+      - name: 有高優先度的新發現或逾期件數增加時開 Issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 tools/summary.py --issue > issue.md
+          if [ -s issue.md ]; then
+            gh issue create --title "健檢 $PROOFREAD_DATE：有需要優先處理的項目" --body-file issue.md
+          fi

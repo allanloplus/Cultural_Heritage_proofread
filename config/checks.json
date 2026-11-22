@@ -1,0 +1,357 @@
+{
+ "groups": [
+  {
+   "id": "official",
+   "label": "官方資料比對",
+   "icon": "📜",
+   "what": "與文化部文化資產局開放資料逐筆比對：有沒有新指定或登錄、廢止、升格、改名、新公告。"
+  },
+  {
+   "id": "links",
+   "label": "連結",
+   "icon": "🔗",
+   "what": "網站裡每一個對外連結是否還打得開、有沒有搬家；照片在維基共享資源是否還在。"
+  },
+  {
+   "id": "integrity",
+   "label": "內部一致性",
+   "icon": "🧩",
+   "what": "資料之間對不對得起來、照片與語音檔在不在、網頁資料是否重新產生、姊妹站資料是否過期、有沒有不該出現的個資。"
+  },
+  {
+   "id": "live",
+   "label": "上線狀態",
+   "icon": "🌐",
+   "what": "每個網站、每個縣市頁是否打得開，線上版本是否就是 repo 的最新版，憑證是否快到期。"
+  },
+  {
+   "id": "news",
+   "label": "新聞線索",
+   "icon": "📰",
+   "what": "近期新聞標題是否提到網站收錄的文資，或出現新的指定、登錄。只是線索，要看過內容才能判斷。"
+  },
+  {
+   "id": "system",
+   "label": "檢測本身",
+   "icon": "🛠️",
+   "what": "檢測過程遇到的問題，例如資料來源下載失敗。"
+  }
+ ],
+ "checks": {
+  "OFF-NEW": {
+   "group": "official",
+   "label": "官方新增，網站未收錄",
+   "suggest": "確認是否為新指定／登錄的文資。是的話新增到該縣市；若只是官方重新編案（網站已有同一處），加到例外清單。",
+   "fix": [
+    "到國家文化資產網打開這筆，確認名稱、類別、地址、公告日期。",
+    "在該縣市 data/sites-official.json 新增一筆（欄位照同檔其他筆；id 用「行政區拼音-名稱拼音」，定了就不要再改）。",
+    "在 data/sites-content.json 寫介紹、雙人對話與測驗（規格見主網站 tools/newcity/SPEC.md，寫完用 tools/newcity/validate.py 檢查）。",
+    "找授權清楚的照片：python3 tools/newcity/images.py <縣市> <資料夾>，再 python3 tools/fetch_images.py <資料夾>。",
+    "在主網站執行 python3 tools/build_data.py（重新產生各縣市 js/data.js），再執行 python3 tools/build_search.py（全站搜尋索引）。",
+    "執行 python3 tools/gen_audio.py 產生新景點的語音。",
+    "更新 assets/js/cities.js 與 README 裡的數量。",
+    "依序重建姊妹站資料：文資達人訪查 build_index.py → 地圖集 build_sites.py → 鐵道版 build.py → 鄉鎮卡 build.py → 海拔版 build.py。",
+    "各 repo 開 PR 合併到 main；第二網站的縣市先合併 Cultural_Heritage2，再合併 Cultural_Heritage。合併後確認 GitHub Pages 部署成功。"
+   ]
+  },
+  "OFF-GONE": {
+   "group": "official",
+   "label": "官方已無此筆",
+   "suggest": "先確認是廢止、撤銷，還是併案或換了案號。廢止的文資不要直接刪除：建議保留頁面並加註「已於某年某月廢止」，或移除後在更新紀錄留下說明。",
+   "fix": [
+    "到國家文化資產網與該縣市文化局公告確認原因。",
+    "廢止：從 data/sites-official.json、sites-content.json、images.json 移除這筆（或保留並在介紹開頭加註），同縣市時光地圖 eras.json 若提到也要改。",
+    "換案號：只改 sites-official.json 的 caseId 與 url。",
+    "在主網站執行 python3 tools/build_data.py（重新產生各縣市 js/data.js），再執行 python3 tools/build_search.py（全站搜尋索引）。",
+    "執行 python3 tools/gen_audio.py（會略過沒變的語音）；移除的景點請刪掉 audio/site-<id>.mp3 與 img/ 的照片。",
+    "更新 assets/js/cities.js 與 README 裡的數量。",
+    "依序重建姊妹站資料：文資達人訪查 build_index.py → 地圖集 build_sites.py → 鐵道版 build.py → 鄉鎮卡 build.py → 海拔版 build.py。",
+    "各 repo 開 PR 合併到 main；第二網站的縣市先合併 Cultural_Heritage2，再合併 Cultural_Heritage。合併後確認 GitHub Pages 部署成功。"
+   ]
+  },
+  "OFF-ANN": {
+   "group": "official",
+   "label": "官方新公告",
+   "suggest": "看公告內容。常見的是範圍變更、名稱修正、類別變更、保存者異動；只影響地籍範圍的通常不用改網站。",
+   "fix": [
+    "打開官方頁，看最新一筆公告的說明。",
+    "需要改的欄位直接改該縣市 data/sites-official.json（名稱、類別、announced）或 ich.json（保存者、哪裡看得到）。",
+    "介紹文字若提到舊資訊，一併改 sites-content.json；改到雙人對話就要重跑 python3 tools/gen_audio.py。",
+    "在主網站執行 python3 tools/build_data.py（重新產生各縣市 js/data.js），再執行 python3 tools/build_search.py（全站搜尋索引）。",
+    "不需要改網站的，在本 repo 的 config/ignore.json 記一筆並寫原因。"
+   ]
+  },
+  "OFF-FIELD": {
+   "group": "official",
+   "label": "欄位與官方不同",
+   "suggest": "名稱、類別、官方頁網址以官方為準；開放時間改了要同時看介紹裡的「開放資訊」；所有權由公有變私有時，確認詳情頁已隱藏門牌。",
+   "fix": [
+    "直接修改該縣市 data/sites-official.json 對應欄位（name、category、address、lat、lng、open、officialImg、url、ownership）。",
+    "開放時間：一併檢查 sites-content.json 的 openNote 是否矛盾。",
+    "名稱或類別：檢查 sites-content.json 的介紹與對話是否沿用舊稱；類別改變時確認 config.json 的 categories 有這個類別。",
+    "在主網站執行 python3 tools/build_data.py（重新產生各縣市 js/data.js），再執行 python3 tools/build_search.py（全站搜尋索引）。",
+    "名稱或類別有改時：依序重建姊妹站資料：文資達人訪查 build_index.py → 地圖集 build_sites.py → 鐵道版 build.py → 鄉鎮卡 build.py → 海拔版 build.py。",
+    "各 repo 開 PR 合併到 main；第二網站的縣市先合併 Cultural_Heritage2，再合併 Cultural_Heritage。合併後確認 GitHub Pages 部署成功。"
+   ]
+  },
+  "ICH-NEW": {
+   "group": "official",
+   "label": "官方有的無形文資，網站未收錄",
+   "suggest": "確認是否為新登錄項目。網站把同一項目的多位保存者合併成一筆時不用新增，加到例外清單即可。",
+   "fix": [
+    "到國家文化資產網確認項目、保存者、登錄日期與是否仍有效（最後一筆公告是廢止的不用新增）。",
+    "在該縣市 data/ich.json 的 items 新增一筆（規格見主網站 tools/newcity/SPEC.md），有固定地點就設 venueId 並在 venues 補展示點。",
+    "在主網站執行 python3 tools/build_data.py（重新產生各縣市 js/data.js），再執行 python3 tools/build_search.py（全站搜尋索引）。",
+    "執行 python3 tools/gen_audio.py。",
+    "更新 cities.js 與 README 的數量；重建文資達人訪查與鄉鎮卡的資料。",
+    "各 repo 開 PR 合併到 main；第二網站的縣市先合併 Cultural_Heritage2，再合併 Cultural_Heritage。合併後確認 GitHub Pages 部署成功。"
+   ]
+  },
+  "ICH-GONE": {
+   "group": "official",
+   "label": "官方已無此無形文資",
+   "suggest": "多半是保存者辭世後廢止登錄。建議保留介紹並在「哪裡看得到」註明現況，除非項目本身已不存在。",
+   "fix": [
+    "確認廢止原因與日期。",
+    "修改 data/ich.json：更新 holder、whereToSee，或移除該筆並從展示點的 ichIds 拿掉。",
+    "在主網站執行 python3 tools/build_data.py（重新產生各縣市 js/data.js），再執行 python3 tools/build_search.py（全站搜尋索引）。",
+    "執行 python3 tools/gen_audio.py。",
+    "各 repo 開 PR 合併到 main；第二網站的縣市先合併 Cultural_Heritage2，再合併 Cultural_Heritage。合併後確認 GitHub Pages 部署成功。"
+   ]
+  },
+  "ANT-LEVEL": {
+   "group": "official",
+   "label": "古物等級不同",
+   "suggest": "以官方為準（一般古物、重要古物、國寶）。升級是值得在介紹裡提的事。",
+   "fix": [
+    "修改 data/ich.json 該展示點 antiquities 裡這件古物的 level 與 registered。",
+    "在主網站執行 python3 tools/build_data.py（重新產生各縣市 js/data.js），再執行 python3 tools/build_search.py（全站搜尋索引）。",
+    "重建文資達人訪查的資料（build_index.py）。",
+    "各 repo 開 PR 合併到 main；第二網站的縣市先合併 Cultural_Heritage2，再合併 Cultural_Heritage。合併後確認 GitHub Pages 部署成功。"
+   ]
+  },
+  "ANT-GONE": {
+   "group": "official",
+   "label": "古物對不到官方紀錄",
+   "suggest": "先用關鍵字到國家文化資產網搜尋。只是名稱寫法不同就改成官方名稱；確定已廢止才移除。",
+   "fix": [
+    "修改 data/ich.json 該古物的 name（改成官方全名）或移除。",
+    "在主網站執行 python3 tools/build_data.py（重新產生各縣市 js/data.js），再執行 python3 tools/build_search.py（全站搜尋索引）。",
+    "各 repo 開 PR 合併到 main；第二網站的縣市先合併 Cultural_Heritage2，再合併 Cultural_Heritage。合併後確認 GitHub Pages 部署成功。"
+   ]
+  },
+  "ANT-NEW": {
+   "group": "official",
+   "label": "官方新增古物",
+   "suggest": "網站的古物依展示點收錄。這件古物若在已收錄的展示點、或有公開展示，值得加入。",
+   "fix": [
+    "確認古物的保管單位是否公開展示。",
+    "在 data/ich.json 對應展示點的 antiquities 新增（name、level、registered、note）；沒有展示點就新增一個 venue。",
+    "在主網站執行 python3 tools/build_data.py（重新產生各縣市 js/data.js），再執行 python3 tools/build_search.py（全站搜尋索引）。",
+    "各 repo 開 PR 合併到 main；第二網站的縣市先合併 Cultural_Heritage2，再合併 Cultural_Heritage。合併後確認 GitHub Pages 部署成功。"
+   ]
+  },
+  "LNK-BROKEN": {
+   "group": "links",
+   "label": "連結失效",
+   "suggest": "找新網址取代；找不到就改連到該機關首頁、網站時光機（web.archive.org）的存檔，或拿掉連結並保留出處文字。",
+   "fix": [
+    "用瀏覽器打開確認真的失效（有些網站只擋自動檢查）。",
+    "搜尋頁面標題找新網址。",
+    "修改「出現在」列出的檔案（多半是 data/eras.json 的 sources 或 config.json）。",
+    "在主網站執行 python3 tools/build_data.py（重新產生各縣市 js/data.js），再執行 python3 tools/build_search.py（全站搜尋索引）。",
+    "確認沒問題但檢測一直誤報的，加到 config/ignore.json。"
+   ]
+  },
+  "LNK-REDIRECT": {
+   "group": "links",
+   "label": "連結已搬家",
+   "suggest": "目前還能自動轉到新網址，不急；下次更新該縣市時順手改成新網址，避免日後轉址取消。",
+   "fix": [
+    "把「出現在」列出的檔案裡的舊網址換成新網址。",
+    "在主網站執行 python3 tools/build_data.py（重新產生各縣市 js/data.js），再執行 python3 tools/build_search.py（全站搜尋索引）。"
+   ]
+  },
+  "LNK-COMMONS": {
+   "group": "links",
+   "label": "照片已從維基共享資源刪除",
+   "suggest": "這是授權風險，優先處理。共享資源刪除檔案通常是著作權問題，網站自架的副本也應下架。",
+   "fix": [
+    "到維基共享資源查這個檔名的刪除紀錄，確認原因。",
+    "從該縣市 data/images.json 移除這張，並刪除 img/ 底下對應的 webp 檔（大圖與 -s 小圖）。",
+    "需要補照片：python3 tools/newcity/images.py <縣市> <資料夾>，再 python3 tools/fetch_images.py <資料夾>。",
+    "若這張是入口頁卡片或分享預覽圖，一併更換 assets/js/cities.js 的 img 與 credit。",
+    "在主網站執行 python3 tools/build_data.py（重新產生各縣市 js/data.js），再執行 python3 tools/build_search.py（全站搜尋索引）。",
+    "鐵道版、鄉鎮卡、海拔版若用到同一張，重建它們的資料。",
+    "各 repo 開 PR 合併到 main；第二網站的縣市先合併 Cultural_Heritage2，再合併 Cultural_Heritage。合併後確認 GitHub Pages 部署成功。"
+   ]
+  },
+  "LNK-OFFIMG": {
+   "group": "links",
+   "label": "官方代表圖連結失效",
+   "suggest": "詳情頁上的「官方代表圖（連結）」打不開。官方已換新圖的改成新網址；官方資料本身就失效的，把該筆的 officialImg 清空，網頁就不會顯示這個連結。可以整個縣市一次處理。",
+   "fix": [
+    "說明裡列出的每一處，到該縣市 data/sites-official.json 找到那一筆。",
+    "官方已換新圖（同時會出現在「欄位與官方不同」）：把 officialImg 改成官方的新網址。",
+    "官方網址本身失效：把 officialImg 改成 null。",
+    "在主網站執行 python3 tools/build_data.py（重新產生各縣市 js/data.js）。",
+    "開 PR 合併；第二網站的縣市先合併 Cultural_Heritage2，再合併 Cultural_Heritage。"
+   ]
+  },
+  "LNK-UNSURE": {
+   "group": "links",
+   "label": "連結未能確認",
+   "suggest": "先不用處理。連續多次連不上才會升級成「連結失效」。",
+   "fix": [
+    "想立刻確認的話，用瀏覽器打開看看。"
+   ]
+  },
+  "INT-CONTENT": {
+   "group": "integrity",
+   "label": "官方資料與介紹內容對不上",
+   "suggest": "兩個檔的 id 必須完全一致，否則景點在網頁上會缺內容或不顯示。",
+   "fix": [
+    "補寫缺的介紹（sites-content.json），或移除多出來的那筆。",
+    "在主網站執行 python3 tools/build_data.py（重新產生各縣市 js/data.js），再執行 python3 tools/build_search.py（全站搜尋索引）。"
+   ]
+  },
+  "INT-IMG": {
+   "group": "integrity",
+   "label": "照片檔或授權資訊有問題",
+   "suggest": "缺檔會讓網頁出現破圖；缺作者或授權標示是著作權風險，要補齊或換照片。",
+   "fix": [
+    "缺檔：python3 tools/fetch_images.py <資料夾> 重新下載。",
+    "缺授權資訊：到 images.json 的 page 連結查作者與授權後補上；查不到就換一張。",
+    "在主網站執行 python3 tools/build_data.py（重新產生各縣市 js/data.js），再執行 python3 tools/build_search.py（全站搜尋索引）。"
+   ]
+  },
+  "INT-AUDIO": {
+   "group": "integrity",
+   "label": "語音檔有問題",
+   "suggest": "缺語音時網頁會改用瀏覽器內建語音，不會壞，但體驗不一致。",
+   "fix": [
+    "在主網站執行 python3 tools/build_data.py && python3 tools/gen_audio.py（只會合成有變動的句子）。",
+    "各 repo 開 PR 合併到 main；第二網站的縣市先合併 Cultural_Heritage2，再合併 Cultural_Heritage。合併後確認 GitHub Pages 部署成功。"
+   ]
+  },
+  "INT-REF": {
+   "group": "integrity",
+   "label": "無形文資與展示點互相對不上",
+   "suggest": "id 寫錯或另一邊被刪掉了。",
+   "fix": [
+    "修改 data/ich.json 的 venueId、relatedSiteId 或 ichIds。",
+    "在主網站執行 python3 tools/build_data.py（重新產生各縣市 js/data.js），再執行 python3 tools/build_search.py（全站搜尋索引）。"
+   ]
+  },
+  "INT-BUILD": {
+   "group": "integrity",
+   "label": "網頁資料沒有重新產生",
+   "suggest": "data/*.json 改了，但網頁實際載入的 js/data.js 還是舊的，訪客看不到修改。",
+   "fix": [
+    "在主網站執行 python3 tools/build_data.py（重新產生各縣市 js/data.js），再執行 python3 tools/build_search.py（全站搜尋索引）。",
+    "各 repo 開 PR 合併到 main；第二網站的縣市先合併 Cultural_Heritage2，再合併 Cultural_Heritage。合併後確認 GitHub Pages 部署成功。"
+   ]
+  },
+  "INT-COUNT": {
+   "group": "integrity",
+   "label": "入口頁數量與實際不符",
+   "suggest": "新增或移除文資後，入口頁卡片與 README 的數字要跟著改。",
+   "fix": [
+    "修改主網站 assets/js/cities.js 該縣市的 desc，以及 README 的數量。",
+    "各 repo 開 PR 合併到 main；第二網站的縣市先合併 Cultural_Heritage2，再合併 Cultural_Heritage。合併後確認 GitHub Pages 部署成功。"
+   ]
+  },
+  "INT-DEEPLINK": {
+   "group": "integrity",
+   "label": "站內連結指向不存在的頁面",
+   "suggest": "主網站改過景點 id 或搬了縣市，姊妹站的連結沒跟上。",
+   "fix": [
+    "依序重建姊妹站資料：文資達人訪查 build_index.py → 地圖集 build_sites.py → 鐵道版 build.py → 鄉鎮卡 build.py → 海拔版 build.py。",
+    "寫死在網頁或 README 的連結直接改。"
+   ]
+  },
+  "INT-STALE": {
+   "group": "integrity",
+   "label": "姊妹站資料過期",
+   "suggest": "主網站的文資資料更新後，姊妹站要重新產生資料才會同步。",
+   "fix": [
+    "依序重建姊妹站資料：文資達人訪查 build_index.py → 地圖集 build_sites.py → 鐵道版 build.py → 鄉鎮卡 build.py → 海拔版 build.py。",
+    "各姊妹站 repo 開 PR 合併。"
+   ]
+  },
+  "INT-PII": {
+   "group": "integrity",
+   "label": "疑似個人資料",
+   "suggest": "多半來自官方開放資料的「開放時間」欄（預約聯絡人手機）。公開網站轉載個人手機有個資風險；建議改寫成「需預約，聯絡方式見官方頁」。機關代表號與官方信箱可保留並加到例外清單。",
+   "fix": [
+    "修改該縣市 data/sites-official.json 的 open（或其他出現的欄位），拿掉個人姓名與手機。",
+    "同步檢查 sites-content.json 的 openNote。",
+    "在主網站執行 python3 tools/build_data.py（重新產生各縣市 js/data.js），再執行 python3 tools/build_search.py（全站搜尋索引）。",
+    "確認可保留的，加到 config/ignore.json 並寫原因。"
+   ]
+  },
+  "LIVE-DOWN": {
+   "group": "live",
+   "label": "網頁打不開",
+   "suggest": "先自己用瀏覽器開一次。整個網站都打不開，看 GitHub Pages 與網域設定；單一頁面打不開，看該資料夾是否在 main。",
+   "fix": [
+    "到該 repo 的 Actions 看「pages build and deployment」是否失敗，失敗就按 Re-run all jobs。",
+    "到 Settings → Pages 確認自訂網域與 Enforce HTTPS 仍然有效。",
+    "到 githubstatus.com 看 GitHub Pages 是否有事故。"
+   ]
+  },
+  "LIVE-DRIFT": {
+   "group": "live",
+   "label": "線上不是最新版",
+   "suggest": "main 已更新但 GitHub Pages 沒部署成功（大型 repo 偶爾逾時）。網站不會壞，只是停在舊版。",
+   "fix": [
+    "到該 repo 的 Actions，點進最近一次「pages build and deployment」按 Re-run all jobs。",
+    "一直排隊不動：合併一個小 PR 讓 main 有新提交，觸發全新的部署。不要用 API 重跑。"
+   ]
+  },
+  "LIVE-CERT": {
+   "group": "live",
+   "label": "HTTPS 憑證快到期",
+   "suggest": "GitHub Pages 平常會自動續期，卡住時要手動觸發。",
+   "fix": [
+    "到 Settings → Pages，把自訂網域清空儲存，再填回去儲存，等憑證重新簽發後勾選 Enforce HTTPS。",
+    "確認 DNS 的 CNAME 仍指向 allanloplus.github.io。"
+   ]
+  },
+  "NEWS-SITE": {
+   "group": "news",
+   "label": "新聞提到網站收錄的文資",
+   "suggest": "看新聞內容。火災、倒塌、拆除、修復完工、重新開放、升格都值得更新介紹或開放資訊；一般活動報導可略過。",
+   "fix": [
+    "需要更新：修改該縣市 data/sites-content.json 的 intro、openNote 或 funFact；改到對話要重跑 gen_audio.py。",
+    "在主網站執行 python3 tools/build_data.py（重新產生各縣市 js/data.js），再執行 python3 tools/build_search.py（全站搜尋索引）。",
+    "不需要更新：不用做任何事，這則線索 45 天後自動消失。"
+   ]
+  },
+  "NEWS-NEW": {
+   "group": "news",
+   "label": "可能有新的指定或登錄",
+   "suggest": "記下來即可。官方開放資料更新後，「官方新增，網站未收錄」會自動出現，那時再新增。",
+   "fix": [
+    "想搶先新增的話，流程同「官方新增，網站未收錄」。"
+   ]
+  },
+  "SYS-SOURCE": {
+   "group": "system",
+   "label": "資料來源暫時無法取得",
+   "suggest": "通常下次檢測就會恢復。連續好幾次都失敗，再看是不是對方改了網址或格式。",
+   "fix": [
+    "在 GitHub 的 Actions 手動重跑一次檢測（Run workflow）。",
+    "連續失敗：檢查 tools/check_official.py 的下載網址是否仍正確。"
+   ]
+  },
+  "SYS-ERROR": {
+   "group": "system",
+   "label": "檢測程式錯誤",
+   "suggest": "這一項檢測沒有跑完，結果不完整。",
+   "fix": [
+    "看 Actions 的執行紀錄找出錯誤訊息，修正 tools/ 底下對應的程式。"
+   ]
+  }
+ }
+}
