@@ -142,7 +142,7 @@ def api_exists(host, titles):
     out, titles, miss = {}, sorted(set(titles)), 0
     for i in range(0, len(titles), 40):
         chunk = titles[i:i + 40]
-        q = urllib.parse.urlencode({"action": "query", "format": "json", "formatversion": "2", "redirects": "1", "titles": "|".join(chunk)})
+        q = urllib.parse.urlencode({"action": "query", "format": "json", "formatversion": "2", "redirects": "1", "converttitles": "1", "titles": "|".join(chunk)})  # converttitles：中文維基的繁簡、臺／台標題視為同一條目
         d = get_json("https://%s/w/api.php?%s" % (host, q), gap=1.5, tries=2)
         if not d or "query" not in d:
             log("  %s API 沒有回應（可能被限流），這一批 %d 個標題未確認" % (host, len(chunk)))
@@ -153,13 +153,13 @@ def api_exists(host, titles):
         miss = 0
         qd = d["query"]
         alias = {}
-        for k in ("normalized", "redirects"):
+        for k in ("normalized", "converted", "redirects"):
             for m in qd.get(k) or []:
                 alias[m["from"]] = m["to"]
         pages = {p["title"]: not (p.get("missing") or p.get("invalid")) for p in qd.get("pages") or []}
         for t in chunk:
             x = t
-            for _ in range(4):
+            for _ in range(6):
                 if x in alias:
                     x = alias[x]
             if x in pages:
@@ -317,7 +317,10 @@ def run(ctx):
                 log("  已檢查 %d／%d" % (done, len(todo)))
             st = state.setdefault(u, {})
             bad = s in ("broken", "moved", "unsure")
-            st["f"] = st.get("f", 0) + 1 if bad else 0
+            if not bad:
+                st["f"] = 0
+            elif st.get("t") != TODAY or not st.get("f"):  # 連續失敗以「天」計：同一天重跑幾次都只算一次
+                st["f"] = st.get("f", 0) + 1
             if bad and not st.get("ff"):
                 st["ff"] = TODAY
             if not bad:
