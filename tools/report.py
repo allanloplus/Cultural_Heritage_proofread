@@ -14,7 +14,7 @@ def _ignored(f, items):
         m = it.get("match") or {}
         if not m:
             continue
-        ok = all((f.get(k) == v) if k != "title_has" else (v in f["title"]) for k, v in m.items())
+        ok = all((f.get(k) == v) if k != "title_has" else (v in f["title"]) for k, v in m.items() if k != "note")
         if ok:
             until = it.get("until") or "9999-12-31"
             if until >= TODAY:
@@ -37,7 +37,7 @@ def keep_events(new, ctx):
         if e["check"].startswith("NEWS"):
             if days_between(e.get("date") or e["detected"], TODAY) > nk:
                 continue
-        elif e.get("city") and dd.get(e["city"]) and dd[e["city"]] > e["detected"]:
+        elif e.get("city") and dd.get(e["city"]) and dd[e["city"]] > e["detected"]:  # 同一天更新的不算（無法分辨先後），用例外清單處理
             continue
         keep.append(e)
     dump(keep, ESTATE, indent=0)

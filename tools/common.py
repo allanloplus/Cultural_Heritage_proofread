@@ -3,7 +3,7 @@
 網路禮儀：所有對外請求都用下面的 UA（只放專案網址，不放任何人的 Email 或帳號）；
 同一個網站的請求之間固定間隔，被限流（429／403）時只記為「未能確認」，不重複衝撞。
 """
-import datetime, hashlib, json, os, re, ssl, subprocess, sys, threading, time, urllib.error, urllib.parse, urllib.request
+import datetime, hashlib, json, os, re, ssl, subprocess, sys, threading, time, unicodedata, urllib.error, urllib.parse, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE = os.path.join(ROOT, ".cache")
@@ -172,18 +172,22 @@ SEV = ["high", "medium", "low", "info"]
 def finding(check, sev, site, title, detail="", city="", item="", name="", url="", sub="", extra=None):
     """一筆檢測發現。key 由「檢測項目＋網站＋縣市＋文資＋sub」算出，跨次檢測不變，用來追蹤首次發現日與是否已解決。"""
     raw = "|".join([check, site or "", city or "", item or "", sub or ""])
-    f = {"key": hashlib.sha1(raw.encode("utf-8")).hexdigest()[:12], "check": check, "sev": sev, "site": site or "",
+    f = {"key": hashlib.sha1(raw.encode("utf-8")).hexdigest()[:12], "dsha": dsha(detail), "check": check, "sev": sev, "site": site or "",
          "city": city or "", "item": item or "", "name": name or "", "title": title, "detail": detail or "", "url": url or ""}
     if extra:
         f.update(extra)
     return f
 
 
+VARIANTS = str.maketrans("台参湾厦啓峯羣舘床礮炮", "臺參灣廈啟峰群館牀砲砲")  # 異體字視為相同（官方資料常用異體字，網站用通行字）
+
+
 def norm_name(s):
-    """名稱比對用：台→臺、去掉括號內容、空白與標點。"""
-    s = re.sub(r"[（(].*?[)）]", "", s or "")
-    s = s.replace("台", "臺").replace("國定古蹟-", "").replace("國定古蹟", "")
-    return re.sub(r"[\s\-—–－─‧・·、，,。\.「」『』《》〈〉:：；;'’‘\"“”]", "", s).lower()
+    """名稱比對用：異體字統一、去掉括號內容、空白與標點。"""
+    s = unicodedata.normalize("NFKC", s or "")  # 官方資料偶有「相容字」（外觀相同、編碼不同）
+    s = re.sub(r"[（(].*?[)）]", "", s)
+    s = s.translate(VARIANTS).replace("國定古蹟-", "").replace("國定古蹟", "")
+    return re.sub(r"[\s\-—–－─‧・·、，,。\.「」『』《》〈〉:：；;'’‘\"“”/／]", "", s).lower()
 
 
 def same_name(a, b, loose=False):
@@ -192,7 +196,18 @@ def same_name(a, b, loose=False):
     vb = {norm_name(b), norm_name(re.sub(r"[（()）]", " ", b or ""))} - {""}
     if va & vb:
         return True
-    return loose and any(len(x) >= 3 and len(y) >= 3 and (x in y or y in x) for x in va for y in vb)
+    return loose and any(len(x) >= 3 and len(y) >= 3 and (x in y or y in x or (min(len(x), len(y)) >= 6 and (_subseq(x, y) or _subseq(y, x))))
+                         for x in va for y in vb)
+
+
+def _subseq(a, b):
+    """a 的每個字是否依序出現在 b 裡（官方名稱常在中間多加年代、族語）。"""
+    it = iter(b)
+    return all(ch in it for ch in a)
+
+
+def dsha(detail):
+    return hashlib.sha1((detail or "").encode("utf-8")).hexdigest()[:8]
 
 
 def days_between(a, b):

@@ -183,7 +183,7 @@
     b.appendChild(el("div", { class: "acts" }, [
       u ? el("a", { class: "btn", href: u, target: "_blank", rel: "noopener noreferrer", text: "打開相關網頁 ↗" }) : null,
       el("button", { type: "button", text: "複製給 Claude 的修正指示", on: { click: function () { copy(prompt(f, c)); } } }),
-      el("button", { type: "button", text: "複製例外清單格式", on: { click: function () { copy(JSON.stringify({ match: { key: f.key }, reason: "（請寫原因）", by: "Allan", until: "（到期日 YYYY-MM-DD）", note: f.title }, null, 1)); } } }),
+      el("button", { type: "button", text: "複製例外清單格式", on: { click: function () { copy(JSON.stringify({ match: { key: f.key, dsha: f.dsha }, reason: "（請寫原因）", by: "Allan", until: "（到期日 YYYY-MM-DD）", note: f.title }, null, 1)); } } }),
       el("code", { text: "編號 " + f.key + "・首次發現 " + f.first + "（" + f.age + " 天）" })]));
     return b;
   }
@@ -221,6 +221,7 @@
     var st = R.stats, facts = {
       official: st.official ? ["有形文資：網站 " + num(st.official.tangible.site) + " 處／官方 " + num(st.official.tangible.official) + " 處，逐筆比對 " + num(st.official.tangible.compared) + " 處",
         "無形文資：網站 " + st.official.ich.site + " 項／官方 " + st.official.ich.official + " 項（保存技術 " + st.official.ich.notInOpenData + " 項不在開放資料，未比對）",
+        st.official.ich.duplicateRecords != null ? "官方的重複紀錄（縣市登錄＋國家指定等，網站已合併）：有形 " + st.official.tangible.duplicateRecords + " 筆、無形 " + st.official.ich.duplicateRecords + " 筆" : null,
         "古物：網站 " + st.official.antiquity.site + " 件，對照官方 " + num(st.official.antiquity.official) + " 件",
         st.official.baseline.firstRun ? "第一次檢測：已建立官方公告基準（" + num(st.official.baseline.records) + " 筆）" : "官方公告基準 " + num(st.official.baseline.records) + " 筆，本次新公告 " + st.official.baseline.newAnnouncements + " 則"] : null,
       links: st.links ? ["不重複網址 " + num(st.links.total) + " 個，本次確認 " + num(st.links.checked) + " 個",
@@ -235,7 +236,7 @@
       var by = R.summary.byGroup[g.id] || {}, ran = R.meta.ran.indexOf(g.id) >= 0;
       $("checkCards").appendChild(el("div", { class: "check" }, [
         el("h3", {}, [el("span", { text: g.icon + " " + g.label }), ran ? nums(by) : el("span", { class: "skipped", text: "本次未執行" })]),
-        el("p", { text: g.what }), facts[g.id] ? el("ul", {}, facts[g.id].map(function (t) { return el("li", { text: t }); })) : null]));
+        el("p", { text: g.what }), facts[g.id] ? el("ul", {}, facts[g.id].filter(Boolean).map(function (t) { return el("li", { text: t }); })) : null]));
     });
   }
   function slaTable() {

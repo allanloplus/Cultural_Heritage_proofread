@@ -105,7 +105,7 @@ def run(ctx):
     for c in cities:
         for s in c.official:
             site_ids.setdefault(s.get("caseId"), []).append((c, s))
-    n_cmp = n_diff = 0
+    n_cmp = n_diff = n_dup = 0
     for cid, lst in site_ids.items():
         for c, s in lst:
             if cid not in T:
@@ -129,7 +129,7 @@ def run(ctx):
             if reg_here:
                 a0 = next((a for a in x.get("addresses") or [] if isinstance(a, dict) and (a.get("cityName") or "") in _variants(c.name)), {})
                 oaddr = (a0.get("distName") or "") + (a0.get("address") or "")
-                if _clean(oaddr) != _clean(s.get("address")):
+                if _clean(oaddr) != _clean(s.get("address")) and not (_clean(a0.get("address")) and _clean(s.get("address")).endswith(_clean(a0.get("address")))):
                     diffs.append(("地址", s.get("address"), oaddr, "low"))
                 la, ln = x.get("latitude"), x.get("longitude")
                 if la and float(la) > 100:
@@ -159,12 +159,17 @@ def run(ctx):
             reg = [by_name[v] for v in _cities_of(x) if v in by_name]
             c = reg[0] if reg else None
             ann = _ann(x)
+            # 同一處文資常有兩筆官方紀錄（縣市登錄＋國家指定，或改類別後新編案號）。同縣市已有同名的就不算缺。
+            regs = set(_cities_of(x))
+            if any(same_name(s2["name"], x["caseName"], loose=True) for cc in cities if regs & _variants(cc.name) for s2 in cc.official):
+                n_dup += 1
+                continue
             same = [s2["name"] for cc in cities for s2 in cc.official if norm_name(s2["name"]) == norm_name(x["caseName"])]
             F.append(finding("OFF-NEW", "medium" if same else "high", c.site["id"] if c else "", "官方有「%s」，網站還沒有收錄" % x["caseName"],
                              ("注意：網站已有同名的文資（案號不同），可能是同一處文資有兩種身分（例如古蹟＋文化景觀），或官方重新編案。\n" if same else "") + "類別：%s｜登錄縣市：%s｜案號：%s\n公告：%s" % (x.get("assetsClassifyName") or {"monument": "古蹟", "building": "歷史建築", "cluster": "聚落建築群", "memorial": "紀念建築", "archaeo": "考古遺址", "landscape": "文化景觀"}[kind], "、".join(sorted(set(_cities_of(x)))) or "不明",
                                                                  cid, "；".join(ann[-3:]) or "（無）"),
                              c.slug if c else "", cid, x["caseName"], (x.get("caseUrl") or "").replace("http://", "https://"), sub=cid))
-    stats["tangible"] = {"site": sum(len(c.official) for c in cities), "official": len(T), "compared": n_cmp, "fieldDiffs": n_diff}
+    stats["tangible"] = {"site": sum(len(c.official) for c in cities), "official": len(T), "compared": n_cmp, "fieldDiffs": n_diff, "duplicateRecords": n_dup}
 
     # ---- 無形文化資產 ----
     I = {}
@@ -175,7 +180,7 @@ def run(ctx):
     site_ich, ptp, names_by_city = {}, 0, {}
     for c in cities:
         for it in c.ich.get("items", []):
-            names_by_city.setdefault(c.slug, set()).add(it["name"])
+            names_by_city.setdefault(c.slug, []).append((it["name"], _holders(it.get("holder")), it.get("type")))
             m = re.search(r"/([A-Za-z]+)/(\d{14})", it.get("url") or "")
             if not m:
                 continue
@@ -195,7 +200,7 @@ def run(ctx):
             if not same_name(x["caseName"], it["name"], loose=True):
                 F.append(finding("OFF-FIELD", "medium", c.site["id"], "無形文資「%s」的名稱與官方資料不同" % it["name"],
                                  "網站：%s\n官方：%s" % (it["name"], x["caseName"]), c.slug, it["id"], it["name"], it.get("url"), sub="名稱", extra={"field": "名稱"}))
-    n_ich_new = 0
+    n_ich_new = n_ich_dup = 0
     if i_ok:
         for cid, x in I.items():
             if cid in site_ich:
@@ -206,22 +211,28 @@ def run(ctx):
                 reg = [by_name[g]] if g in by_name else []
             c = reg[0] if reg else None
             # 同縣市已有同名項目（網站把同一項目的多位保存者合併成一筆）就不算缺
-            if c and any(same_name(x["caseName"], n, loose=True) for n in names_by_city.get(c.slug, ())):
+            # 網站依規格把同一項目的縣市登錄與國家指定合併成一筆，也把多位保存者合併：同縣市同名，或保存者相同且類別相同（或名稱有共同用字），就視為已收錄
+            oh = _holders(x.get("recorder"))
+            ot = (x.get("assetsClassifyName") or "").strip()
+            if c and any(same_name(x["caseName"], n, loose=True)
+                         or (_holder_match(oh, h) and (t == ot or len(set(norm_name(n)) & set(norm_name(x["caseName"]))) >= 2))
+                         for n, h, t in names_by_city.get(c.slug, ())):
+                n_ich_dup += 1
                 continue
             n_ich_new += 1
             F.append(finding("ICH-NEW", "medium", c.site["id"] if c else "", "官方有無形文資「%s」，網站還沒有收錄" % x["caseName"],
                              "類別：%s｜主管機關：%s｜案號：%s\n公告：%s" % (x.get("assetsClassifyName"), x.get("govInstitutionName"), cid, "；".join(_ann(x)[-3:]) or "（無）"),
                              c.slug if c else "", cid, x["caseName"], (x.get("caseUrl") or "").replace("http://", "https://"), sub=cid))
-    stats["ich"] = {"site": sum(len(c.ich.get("items", [])) for c in cities), "official": len(I), "notInOpenData": ptp, "missing": n_ich_new}
+    stats["ich"] = {"site": sum(len(c.ich.get("items", [])) for c in cities), "official": len(I), "notInOpenData": ptp, "missing": n_ich_new, "duplicateRecords": n_ich_dup}
 
     # ---- 古物 ----
     A = boch.get("6.1", [])
-    a_by_county = {}
+    a_by_county, a_all = {}, {}
     for x in A:
+        a_all.setdefault(norm_name(x["caseName"]), []).append(x)
         for c in cities:
             if any((x.get("belongCity") or "").startswith(v) for v in _variants(c.name)):
-                a_by_county.setdefault(c.slug, {}).setdefault(norm_name(x["caseName"]), x)
-    a_all = {norm_name(x["caseName"]): x for x in A}
+                a_by_county.setdefault(c.slug, {}).setdefault(norm_name(x["caseName"]), []).append(x)
     n_ant = n_ant_miss = 0
     for c in cities:
         for v in c.ich.get("venues", []):
@@ -230,10 +241,13 @@ def run(ctx):
                 if not A:
                     continue
                 k = norm_name(a["name"])
-                x = a_by_county.get(c.slug, {}).get(k) or a_all.get(k)
-                if not x:  # 名稱不完全相同：找包含關係
-                    cand = [y for n, y in a_by_county.get(c.slug, {}).items() if len(k) >= 4 and (k in n or n in k)]
-                    x = cand[0] if len(cand) == 1 else None
+                xs = a_by_county.get(c.slug, {}).get(k) or a_all.get(k)
+                if not xs:  # 名稱不完全相同：官方名稱常多加年代、族語或用不同標點
+                    cand = [ys for ys in a_by_county.get(c.slug, {}).values() if same_name(a["name"], ys[0]["caseName"], loose=True)]
+                    xs = cand[0] if len(cand) == 1 else None
+                x = None
+                if xs:  # 同一件古物有多筆官方紀錄時，等級相符的優先
+                    x = next((y for y in xs if (y.get("assetsClassifyName") or "").strip() == a.get("level")), xs[0])
                 if not x:
                     n_ant_miss += 1
                     F.append(finding("ANT-GONE", "low", c.site["id"], "古物「%s」在官方開放資料找不到同名紀錄" % a["name"],
@@ -292,6 +306,18 @@ def _ann_diff(events, base, first_run, cid, sig, name, on_site, data_date, x):
         events.append(finding("OFF-ANN", sev, c.site["id"], "「%s」有新的官方公告（%s）" % (s["name"], a[11:].split(" ")[0] or kind),
                               "公告：%s\n請到國家文化資產網看公告內容（範圍變更、名稱修正、保存者異動、廢止等），再決定網站介紹是否要改。" % a,
                               c.slug, s["id"], s["name"], s.get("url"), sub=a))
+
+
+def _holders(s):
+    """保存者字串拆成名字集合：去掉括號說明、（歿）等註記，異體字統一。"""
+    s = re.sub(r"[（(](歿|已故|已歿|故)[)）]", "", s or "")
+    s = re.sub(r"[（()）]", "、", s)  # 括號裡常是本名或族名，也算一個名字
+    return {norm_name(t) for t in re.split(r"[、,，;；\s]+", s) if len(norm_name(t)) >= 2}
+
+
+def _holder_match(a, b):
+    """兩邊的保存者是否有同一個人或團體（「關廟山西宮」與「關廟山西宮管理委員會」算同一個）。"""
+    return any(x == y or (min(len(x), len(y)) >= 3 and (x in y or y in x)) for x in a for y in b)
 
 
 def _ownership(rec):
