@@ -24,5 +24,17 @@
   "resolved": 1,
   "overdue": 0,
   "run": "last"
+ },
+ {
+  "date": "2026-11-23",
+  "level": "weekly",
+  "total": 44,
+  "high": 0,
+  "medium": 0,
+  "low": 0,
+  "info": 44,
+  "new": 7,
+  "resolved": 0,
+  "overdue": 0
  }
 ]

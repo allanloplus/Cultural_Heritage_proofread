@@ -2608,11 +2608,11 @@
 "final": ""
 },
 "https://www.cultural.pthg.gov.tw/vipzone/Default.aspx": {
-"f": 1,
+"f": 2,
 "ff": "2026-11-22",
 "s": "unsure",
 "c": 0,
-"t": "2026-11-22",
+"t": "2026-11-23",
 "n": "URLError: <urlopen error [Errno 101] Network is unreachable>",
 "final": ""
 },
@@ -2665,11 +2665,11 @@
 "final": ""
 },
 "https://www.moc.gov.tw/en/information_108_75034.html": {
-"f": 1,
+"f": 2,
 "ff": "2026-11-22",
 "s": "unsure",
 "c": 403,
-"t": "2026-11-22",
+"t": "2026-11-23",
 "n": "HTTP 403",
 "final": ""
 },
@@ -2850,11 +2850,11 @@
 "final": ""
 },
 "https://scft.taoyuancf.org.tw/": {
-"f": 1,
+"f": 2,
 "ff": "2026-11-22",
 "s": "unsure",
 "c": 0,
-"t": "2026-11-22",
+"t": "2026-11-23",
 "n": "URLError: <urlopen error [Errno -2] Name or service not known>",
 "final": ""
 },
@@ -2931,11 +2931,11 @@
 "final": "https://access.line.me/oauth2/v2.1/login?returnUri=%2Foauth2%2Fv2.1%2Fauthorize%2Fconsent%3Fresponse_type%3Dcode%26client_id%3D1446101138%26state%3D478f263917e061019f23524468bd53%26redirect_uri%3Dhttps%253A%252F%252Fsocial-plugins.line.me%252Flineit%252FloginCallback%253FreturnUrl%253Dhttps%25253A%25252F%25252Fsocial-plugins.line.me%25252Flineit%25252Fshare%25253Furl%25253D%26scope%3Dopenid%2520profile%2520friends%2520groups%2520timeline.post%2520message.write&loginChannelId=1446101138&loginState=0vfjhEx1sv88z2XOH7OfjR"
 },
 "https://gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=BASIN&filetype=SHP": {
-"f": 1,
+"f": 2,
 "ff": "2026-11-22",
 "s": "unsure",
 "c": 0,
-"t": "2026-11-22",
+"t": "2026-11-23",
 "n": "ConnectionResetError: [Errno 104] Connection reset by peer",
 "final": ""
 },
@@ -2948,20 +2948,20 @@
 "final": ""
 },
 "https://www.tgos.tw/MDE/VirtualDir_TC/Product/9981ede9-584a-4470-8c5c-dbe579d4ecb4/": {
-"f": 1,
+"f": 2,
 "ff": "2026-11-22",
 "s": "unsure",
 "c": 403,
-"t": "2026-11-22",
+"t": "2026-11-23",
 "n": "HTTP 403",
 "final": ""
 },
 "https://gic.wra.gov.tw/gis/gic/API/Google/DownLoad.aspx?fname=RIVERLIN&filetype=SHP": {
-"f": 1,
+"f": 2,
 "ff": "2026-11-22",
 "s": "unsure",
 "c": 0,
-"t": "2026-11-22",
+"t": "2026-11-23",
 "n": "ConnectionResetError: [Errno 104] Connection reset by peer",
 "final": ""
 },
@@ -14914,6 +14914,2406 @@
 "s": "ok",
 "c": 200,
 "t": "2026-11-22",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-27/7c057676-a547-4a8e-9700-44f338f56527/c花蓮-明禮路日式宿舍02.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-27/96daeae1-e20a-4fa3-9bef-5c45cc38555c/c花蓮-松園別館02.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-27/9b6bcac2-a2c5-4d66-ae85-a1ba50b5f7b7/c花蓮-檢查長宿舍05.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-27/9e5fd6b8-0c50-49f7-8324-f0ca176da5d7/c花蓮-台鐵管理局06.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-27/9e85e554-6e9f-45f7-9a2f-4ee1eb68435f/c花蓮-花蓮港小學圍牆11.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-27/a3d7e45a-baf7-4486-903f-d7feee1c1c51/s_輔之居.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-27/b9d70667-e4b7-4a6e-bfa7-56ddb242f588/c花蓮-花女校長宿舍08.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-27/cbbc91f8-5863-4e69-8d8a-ec7063b90b01/c花蓮-花農校長舊宿舍02.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-27/d185f972-7e18-4e7d-89b7-e2093febb76a/c花蓮-高爾夫球樂部0105.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-27/edeed79e-b96e-4cbb-892f-cfbd816a8f15/c花蓮-明禮路31號日式宿舍01.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-27/f13aec35-a7d6-4e8c-8f60-2c914f551944/c花蓮-菁華林苑02.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-29/07a500bf-20c5-4e37-a40a-4457cec43fac/a秀林-加灣神社殘蹟03.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-29/18d06da7-8b87-4e97-8fc6-2f20d25ff78e/l富里-邱家古厝03.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-29/791ebcf0-87e2-4fe6-afad-39003b45b502/a秀林-台電銅門舊舍04.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-29/bbf460f6-4bb5-4512-8378-d46229f96c29/l富里-富南窯場48.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-29/bdadeb8e-4d33-438d-90ed-e1cf6ce02e6f/a秀林-普明寺02.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-29/c133bda6-e8b3-486d-af54-da899b7e257e/c花蓮-中廣電台06.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-29/fc0cd958-f034-4c56-9a1a-8c8d263b27be/a秀林-太魯閣牌樓01.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-30/125e42e2-e5eb-4e05-b57a-d34919158d5b/i瑞穗-慶安宮04.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-30/26fc6668-ebd2-420b-8965-79dcbe954f81/i瑞穗-富源保安宮09.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-30/3171245e-067f-44af-9faa-c8ec3e05576f/i瑞穗-掃叭隊道11.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-30/86d8aa33-90c8-4c32-a40c-464288ed942c/a秀林-慈雲橋05.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-30/c5063e1f-edef-4b87-aace-5dffbfbff0c5/b新城-原研海庄役03.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-30/f3d977e2-842e-45d0-a83a-94737a7b4ca2/b新城-神社舊址36.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-03-30/fd36fe22-d550-4e10-8644-816615818fb2/b新城-信義路舊宿01.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-06/554f03e2-7758-41ba-ad22-022862c2dced/f89bf2f3-5f2d-4661-ba1e-18cebd2037aa.jpeg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-06/5a5584df-83c8-4f93-ba44-7e76659e436c/e壽豐-日本移民墓園10.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-06/cb4b2ee2-1b5f-493b-a7df-89b202b75bf4/e壽豐-吳全城記念碑03.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-08/eb6ad99e-c200-47b9-ac2a-c75951e45b08/草屯朝陽宮.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-10/5fd713b6-39dc-4b85-83f2-1bd23c200187/g鳳林-林田山中山堂09.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-10/bc35dbf0-2338-4bc4-aabf-27392b37126b/e壽豐-豐田小國劍道館07.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-10/bd4fdeed-44b7-409f-97a5-73254ac4fae1/g鳳林-支亞干橋05.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-10/c63c2cfd-5b1e-4e5c-acf5-efaec5c527a6/e壽豐-移民指導所01.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-10/d3ef2646-fae1-43b4-a709-16c0d669fc48/e壽豐-花蓮農場招待所01.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-10/edc09b98-58ab-4dce-9be8-d3a26c46a0cd/g鳳林-大榮國小教師宿舍06.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-10/f4f97e96-3c74-4206-9542-017c0afbb50f/e壽豐-碧連寺10.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-10/f52e982a-fbb4-4436-9733-d120cf5aedec/e壽豐-溪口石窯05.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-11/1b009edb-fa8c-49f1-8e3e-3e4af270a166/g鳳林-校長夢工廠01.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-11/1b75f59a-b14a-4de5-bc55-4baeb178076f/g鳳林-過水橋02.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-11/2f76ba0d-76ed-447f-8273-521d701a963f/g鳳林-林田派出所03.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-11/73b5a950-e5ea-408b-921d-246f3749c549/g鳳林-林榮車站倉庫09.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-11/7fabe3f0-9048-4a85-9cd4-9301ac9567c5/臺灣省政府.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-11/a5eb7db3-e511-4184-b9ea-6af12d798b49/集集林尾陳宅永福堂.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-11/f69a2b60-2071-473b-b1f6-8ca54422002f/g鳳林-林田神社殘蹟11.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-17/47d50698-d720-4473-be57-5f9636ae0b63/396430.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-17/4c9ebfd6-6daf-47f6-a0b3-7f5043aaa731/41.4.png": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-17/68735daf-335a-4d08-98b5-ef5148904b03/s_臺中市警察第一分局_調整大小.png": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-17/f4242cee-1267-485d-a304-817f7f07cd48/s_金源吉林宅門廳.png": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-17/fc371355-b172-4db8-a638-0ee6d966baeb/s_公賣局第五酒廠(舊稱,臺中酒廠舊廠).png": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-18/45fa59cf-597e-4a29-a964-7c066e25ea44/s_合作金庫銀行臺中分行(原.臺中州立圖書館).png": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-18/57adc466-1ae6-40ba-ad3f-df77c3e13cf7/I001 彰化縣 彰化孔子廟(一級)02.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-18/61f81269-242f-46a6-9b81-fefd4e672fbd/豐原歷建14_豐榮水利之碑.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-18/c3daba61-11b1-4542-bdd5-3c7b78f1f243/s_臺中高農前棟大樓.png": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-19/ad14fdba-f20d-4881-807c-ec763f972c37/竹山連興宮.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-20/7219994c-b29c-4ccd-963f-0e2d1e6750b7/集集館.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-22/09773a8c-28cf-4523-a5d7-ae66f75c445a/中興新村文化景觀.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-22/20b49c92-2a20-4f24-b192-66855b007627/行政院農業委員會農糧署.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-22/8fee4264-ddab-4153-818e-3de3039f6772/經濟部中部辦公室.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-22/b99a32b1-afd5-49cc-afd8-8a19e9807fc4/行政院人事行政局地方人事行政處(原臺灣省政府人事處).jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-25/242db9fd-30cc-4b3e-86de-28930b76d7e3/S__37437581-2.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-25/8fb7c52f-d9c3-4203-bcf3-28065a3727b6/12.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-25/b2205430-e980-4fd3-b9d4-bc69d84eb402/汐止忠順廟及神社石燈3.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-25/ed8894fc-1040-448e-94f5-188fe9dfd443/2.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-28/9f9347bc-560c-4974-a80e-aaf3926dd688/苑裡圳舊水門.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-28/d6d0130a-7ada-4f70-8f39-e78b32a35adc/照片_歷史建築_蘆洲八角樓 (4).jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-04-29/184a2ed1-d897-45f6-8260-d2657978168a/楠仔腳蔓社學堂遺蹟.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-04/9f5b1b9b-fc68-4406-8fcb-4fec17a08819/壯圍二戰時期海岸防禦陣地群代表圖像.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-05/2cf58ece-39b2-4a54-97fb-f14baffbfd98/林鳳池舉人墓.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-08/25670c66-faf1-4f4e-b13e-7fb5cb79811b/義卒賴忠之墓.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-09/16db7fd3-d36b-4918-987f-3b15bdcbc5c4/林圮公墓.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-09/7617349d-d227-4993-ac39-38647b747b46/thumbnail_總辦公廳空拍.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-09/8b266339-ecf8-4979-88db-48c34a68266b/O014 高雄市 陳中和墓  (三級)01.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-09/907a4019-1990-4763-aaf3-2ea0c2ad672d/IMG_20190701_144256.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-09/c2d54e00-5eed-43a1-917d-b1fa65f18b5a/明新書院.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-09/fd15f42e-6d34-4e3d-a257-7d5a454a3027/thumbnail_修造工廠及材料倉庫.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-10/f2bdda68-c94d-411d-8249-6a7aec17d090/振昌興業股份有限公司建築群.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-12/6fa15b98-269b-49fe-899f-02500449d144/D064 桃園縣 龍潭聖蹟亭 (三級)04.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-19/c69e3730-3fc2-4cdf-89ed-7ad3c0cfa1fb/S__116146202.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-20/9f48e48d-590e-4321-a709-0a613e730f90/台灣省政資料館正面.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-23/1ef30080-fdc4-442c-a56a-135aa91b3a06/20230308-01.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-25/d0736c09-5d68-47e0-bdf5-418e36cdbc10/花蓮縣富里鄉豐南村吉哈拉艾文化景觀 3.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-25/ee0352fc-aa85-4d61-ae9d-fb3d14641d74/IMG_2624.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-26/0032b36f-900f-411a-b107-6e80767f8766/IMG_1628.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-26/61a8264b-b6c2-4a74-9338-6fef46c5408d/PXL_20210819_065021126.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-26/75b87e10-2b5c-4706-936d-96d32cfea4e9/IMG_1598.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-29/0bf65195-c96a-45d4-819b-5401715b7e96/D047桃園縣大溪鎮中央路翠鳳(歷建)01.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-29/2a373fcf-8d3e-41de-a0bc-afea2857e55b/PXL_20210609_025836879.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-29/4d9cc48c-473f-45c8-9423-bf0f036a5081/大溪_201202_208.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-29/85aad690-9c2d-40b4-8408-d3ac5f17905a/IMG_3360.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-29/94b06827-406c-4f73-a396-0e5f788a8a3e/2105_210610_945.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-29/a4514f54-2f9c-405e-8049-dcfae8666a84/景福宮210114_210121_7.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-29/c50f9c3b-56b3-4750-8bea-0a291189737a/PXL_20210609_034029034.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-31/57a0bca0-7864-4a5c-b53e-871f680cea69/IMG_0116.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-05-31/b12d29d8-b075-40cb-a40a-235b754b503c/20230222_142605.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-06-01/a6cd552d-a87e-4d65-9f2c-cc4c4644721d/LINE_ALBUM_2023.03.24_230325_191.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-06-01/aa8eafd5-9c2a-4ae4-bb54-02d030db753f/IMG_0071.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-06-01/e69b6f8e-9f1f-4176-a9b6-28b91f5ba860/IMG_0267.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-06-02/14dae98c-3f9e-4151-8aba-08cdb0ef7d57/_DSC2273.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-06-02/285d0232-6c24-4a21-8db6-497a7de4ba00/20230308-05.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-06-02/79a429eb-3b21-406c-b288-0f78fd3e2405/DSCN8756.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-06-02/8f9c87e9-b571-46c1-a285-dc93411650a0/20230308-11.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-06-02/f5eea76f-b233-4e06-a6c3-0f9ba9105afd/_DSC0405.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-06-05/fc778137-ecca-497d-9410-1018c9223503/4月訪視巡查_210510_799.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-06-07/adb8d3de-f713-41d5-9b65-c9c38104be6f/洪宅正立面.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-06-12/7a8873aa-a536-49ca-bf15-91e891a7ca45/DSC_8318.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-06-26/14f35673-7b5a-44b3-8518-d83698bd4492/IMG_9233-2.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-06-26/294d173d-4681-4df3-9110-143499c335c4/卓蘭軍民(昭忠)廟.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-06-26/80290dd0-5835-4475-b0df-5fe37837f92e/68089.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-06-26/e8ec793d-d7c9-4296-bd79-f05251670b72/通霄神社.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-06-27/34a8a506-2d33-4056-a6bd-54887fbe7233/獅潭日式庄長宿舍.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-06-29/df3f5810-7a04-48ce-b843-8c0f3c992cf9/銅鑼饒恒佩墓04.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-07-03/0d926f19-864b-42a3-baa9-11b300cd65db/承辦_外部全貌-1.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-07-03/a8245615-d131-45cf-bfeb-e262e9ef31ba/照片_市定古蹟_蘆洲陳頭北古厝_ (4).jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-07-03/a924b533-8910-4df1-8779-b0aafc4335be/宜蘭市陳土金醫師宅代表圖像.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-07-04/b3fb82ae-12d4-4bfd-a0eb-6d4efe4bc5f5/LINE_ALBUM_2023310_230313_134.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-07-05/1c04c6a3-b2b4-4c12-b5b5-cb8721105300/LINE_ALBUM_2023413_230413_170.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-07-05/b2fb61ac-8c8d-46ae-839b-2b189b5810d9/IMG_0180.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-07-05/b80819b8-1a49-4ccf-ba26-eb4564823596/IMG_0122.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-07-07/6a532bd3-e614-42e3-8ac2-d08aaf005480/空拍照.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-07-10/30e227f2-dffa-42eb-a28d-9b570acb7d3d/71404.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-07-11/fac68dff-cd60-40b6-bffb-839a0026185f/S__26288338.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-07-27/1c4bea11-412e-47f9-9e33-869ddf9b531d/20230608-25.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-07-27/28d16b63-ba29-41e3-a6ef-29050d6a16d1/20230706-03.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-07-27/3acac5f5-562d-4b84-a6ea-8a89b1341c0f/20230706-05.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-07-27/42e86c4d-d59b-4ea9-b10b-739e791c1dd9/20230705-02.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-07-27/4a24c4ed-23c2-4836-b8d0-ccc021f3eebd/20230608-34.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-07-27/4ab597ff-6ce4-4bdd-8d6b-7f17a31817d5/20230706-11.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-07-27/9864ff89-ad0b-4672-a199-757f72bbc11b/20230608-27.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-07-27/9a75fdc5-98e7-4167-a4e2-d9fdc4c0d828/20230608-28.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-07-27/a203ed81-2f6d-4332-b179-a65ea765fa83/20230706-08.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-07-27/d44fe14a-b310-4fb0-b420-5c167f2898c7/20230707-20.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-07-27/e53aa05c-cbcb-4175-806e-e30c05b20e31/20230608-19.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-07-28/551625e9-ca01-47dd-a6da-1a01ae2b155f/20230705-09車牌號碼已換.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-07-28/e43327be-8bcd-465e-92c7-8df0d2131a73/20230705-01.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-07-31/7a531288-6a35-4537-8b2f-66934883ec85/深坑黃氏興順居2.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-08-01/17eef48a-a685-45b1-a140-8706a7c5963b/溪湖田寮陳萬福故居01.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-08-01/3340b37a-a993-463f-bce2-c1209c3449da/芳苑洪家古厝01.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-08-01/88c82e11-a14e-44c1-bbc4-8ebdc8edbc7f/彰化八卦山大佛01.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-08-01/c58c7d75-bba6-4719-b168-7a7cfd63bfdf/玩味_外部全貌-1.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-08-01/fe9303c2-67a0-4961-9008-d1d68d8c7633/二水鼻仔頭鄭氏古厝01.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-08-03/89c12a5f-c5e1-40e0-bcef-344784ba05d6/八堡圳取水口.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-08-09/4a3f7351-aba1-4eab-aaeb-d4b43d48cb0a/大溪敬字亭.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-08-09/c09f7832-708b-44f8-bddd-6479311b23bc/8 IMG_2471.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-08-10/516e5fbe-bc0f-4485-a8cd-dbc548e1bc3c/社頭泰安岩01.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-08-18/3a432922-365f-42d1-a9e0-7327e5d70521/南投稅務出張所.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-08-18/4a4335dc-fb06-4c1f-855d-95a41ba4ca9b/埔里南村義民祠.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-08-21/4d1373f5-78ca-4e71-a334-7b826b14d208/PXL_20220424_024619765.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-08-23/567b26bd-3c43-44ee-af22-3134aa3ff67e/PXL_20220416_030952015_0.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-08-25/e8f5ae0d-a080-4e7e-bfff-38414c0c2a65/_R3L1521.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-08-28/ff4378e9-848f-430f-87ba-fa8642333904/20230703-01.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-08-30/0d3bc2a3-3181-47d4-a166-724ff173d549/甘泉井及石頭公.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-08-30/1b7d105a-b812-4bc2-8c5e-6d2a659edcd3/20230705-19.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-08-30/302e92a2-c268-4fee-8aab-da6dfd4f2422/竹山郡役所作戰指揮所(防空壕)入口.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-08-30/4d0c0caa-bd01-4bbc-963e-09eec753eb69/20230705-29.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-08-30/4f7bc695-ca8f-4a3d-ae3a-1b53f84979ec/20230703-12.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-08-30/c1c43662-e18e-4992-b4d2-2b2c7a2d8b2d/20230705-31.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-08-30/e0041366-49d8-44cd-b3eb-6432aac7a957/20230705-28.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-09-01/84dada88-9f74-45df-8833-a856dcc2c33d/EB1273BDDFC0DAE8E3375F2B9CCC2721EEB55276.jpeg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-09-01/e4981612-f594-47f4-ae38-7e70620db2f4/竹山神社及其附屬設施.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-09-08/39754091-6bbd-4857-ab56-6fe2b766c75e/LINE_ALBUM_2023820_230820_15.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-09-11/a7a8cee7-6f60-4931-ad4c-1b9b6105e9b5/20230705-30(1).jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-09-12/4c04414b-6061-4538-a668-3644420251b0/DJI_0043.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-09-13/f249ef7e-cf0d-47a0-91f8-f4fe90f6673a/國立中興大學實驗林管理處埔里連絡站(原北海道帝國大學農學部附屬台灣演習林辦公室).jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-09-14/731852da-f885-49f1-b1aa-e0e71fd6dca3/姜氏天水堂二房.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-09-14/b6f3ec84-4bf8-4207-b9cb-8f9ac20462a4/20220912-07.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-09-15/2cfa337a-6a64-4945-a71b-3627edc6226b/南投縣陳姓宗親會西水祠.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-09-15/2cfdcc30-f355-4145-aed4-864a2ec7c2f3/大馬璘考古遺址入口.jpeg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-09-19/28a49904-db4e-4bd9-81ab-c4706707fc1b/永濟義渡碑(名間鄉).jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-09-19/8c078b02-1349-4443-aac9-36132e9ad0aa/祭祀公業張琯溪公宗祠.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-09-19/dd8ce113-8aea-458b-a5c8-622097c42b3b/鹿谷聖蹟亭.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-09-21/a81f5087-9f9b-4919-a39d-c5fb2fd33e96/龍目井3.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-09-21/ddf181dc-6cb8-4c93-a7a2-5659438d62fb/S__44785698.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-09-23/340c25fb-29be-49bb-b969-859ed561441c/代表.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-09-26/4f2ae0f1-9ae9-4447-a418-8f377d623c7a/729f48f1-7c6d-45a4-841d-6eceeaea8c75.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-09-26/570a2276-7d75-44d5-a788-375e6f375bfd/IMG_9108.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-09-26/69e06586-36cf-412d-9068-a7e33eb0f1d2/485648.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-09-26/943f5753-bb7f-4987-adcb-e42e4440a7e4/IMG_9103_仙洞隧道南口.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-10-01/e1b1b190-521e-48f9-a942-671f175f21b6/草鞋墩雅舍.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-10-02/aa345f62-8124-49e7-8501-7d083724a1a8/水蛙窟考古遺址.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-10-02/d1f846f6-8fad-49a5-9a7b-94d1fda8f35d/集集火車站.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-10-02/d765d11a-da1e-4000-96c1-a303e7adfb38/行政院農業委員會茶業改良場魚池分場.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-10-02/eb2dd3d3-c2f5-4cf6-a355-61fc8bfcf274/IMG_E9195.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-10-03/2ddaf54e-1861-4ac3-a541-a277568840ee/P5110002.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-10-03/ecb88911-a860-4895-b78e-c3fe1a7e318f/20220628施姓大宗祠_220628_10.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-10-11/639cfbdf-339a-4d53-a2cf-488b5996c58e/DJI_0138.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-10-11/7f839786-234d-4bf2-ac25-7dfec22374be/air02.png": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-10-11/84f74860-2840-4f8d-a77d-241d21e18db0/DSC07699-1.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-10-11/96c38ca5-6d1a-4a23-82e3-c0e72f2c1f98/air002.png": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-10-11/a2d5eafd-c1e6-4325-bf61-24f9abad3c40/_ANA3734.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-10-11/a7614e9c-a8c4-42dd-a723-e06033fd54db/Still0730_00009-1.png": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-10-11/be824625-f60b-4472-8dd2-ddec0e910893/_ANA1798-1.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-10-11/c5312f67-cf95-4152-8c41-b41196f0ae2e/DJI_0191.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-10-11/e503819b-33b7-4a1a-b272-3973bcb0292e/DJI_0203-1.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-10-11/f27b1ed9-6439-4083-a7ed-1977594d4a01/DJI_0088-1.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-10-12/3e5637bc-02f0-4ed4-8a88-ae9e7e2b124e/20220315‧基隆市文化局‧要塞司令部-0031.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-10-16/40e8e0a3-fa89-4d01-865c-a82dfeecf815/S__46604291.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-10-16/679a9bf9-cad8-4d8b-9dad-5b3ba8cfe5a9/P_20211108_開山堂.png": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-11-08/58288c13-58af-4b8c-b4a1-07166cd6499a/DSC_0419.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-11-14/2aedec00-d49c-438d-8fd5-66a4b4d694c3/247405.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-11-14/dc2d6e3e-cc7c-46c3-a323-012652dcb7c8/S__55451661.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-11-15/3d5e6e96-ddfe-4265-ab7a-8c24844ffd05/鎮南聖神宮_202308071655-6.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-11-15/efc38159-60cc-48ea-b1f9-3f9b7b050b6c/IMG_7087.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-11-16/266748d9-1dc7-46ae-a87f-d29a9e0c8613/IMG_9892.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-11-16/408cf36c-116c-405e-8225-d1e3509231e0/IMG_3341.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-11-16/f7a14776-f89a-4ee4-98bf-0ae12c1497ed/IMGP2598.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-11-17/0c7fc522-cfef-420c-a5ee-9922045e60aa/DSC09420 (2).jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-11-17/1955d237-33f8-494f-a572-612c8c23018a/IMG_7095.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-11-17/c47a1fcb-52ed-4bc9-8bb6-8a2647bfb6e9/楚勇義塚本體.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-11-22/0c8246ef-8e32-48aa-aac2-48fd8067db08/照片.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-11-22/d124aeee-1d84-4419-bcd1-dd679c0d109b/圖片.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-11-28/b8ceb918-c9a9-447a-a995-b3b643c73bdb/IMG_0901.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-12-11/4765baf2-26b2-432a-9b86-04f40403a25f/DSC02793.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-12-11/7200f8a1-cfe6-4bde-b146-df042768de6f/S__3940480.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-12-12/33820d20-dc4c-49fe-b833-7f6d1ebd7a5f/IMG20210510163523.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2023-12-12/ff04210c-d5d7-45f0-a24e-bc13b9a4d506/S__102694943.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-01-22/826ebb2e-ae42-41d2-a8db-1de0a8eaf9b6/照片六 臨延平路街屋（建築物外觀）.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-01-25/4c2aacbe-a40e-4f6f-9d26-175cc946d283/太武山文化景觀-以金門海印寺為中心.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-02-02/534a5842-17c4-4575-8d56-257a6e2baa70/DSC04263.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-02-02/d3af6625-de8b-49c0-aa4e-4b7c873dd12a/DSC00041.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-02-15/5987bc27-018c-4e82-b316-00833e80d43b/歷建45-野銀部落傳統建築-永保 (1).jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-02-17/14780677-3009-4ea2-a6f0-96b6043d3cf3/54b565be-4fbb-4cd1-97ff-5618d95c0915.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-02-20/1b52f8cb-b6e4-43e0-9e96-f13c47a5c42b/明遺古街.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-02-24/c1f17fbf-c959-44ea-a341-2e1279848fcf/南投林區管理處水里工作站所轄木造辦公廳舍.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-02-26/bed64ca2-91af-43b0-be41-f1565a963e05/圖片2.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-02-27/b79ab5c9-671a-4950-91f4-f8d96d3786a9/S__28000487_0.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-02-29/e4a9fb81-f61c-40b9-919c-236abd844077/林淵石頭厝.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-03-15/6bbb7af1-aa59-4897-b839-07720c603130/unnamed.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-03-18/2096de7d-120d-4f67-b83e-60278b442a0b/燈塔照片.png": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-03-26/70d77352-296c-464a-a8f1-75c3bb6ffc50/DSC_0222.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-03-27/07a40f7f-34e0-4ea4-9b34-3553760450cb/53492.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-03-27/1a431020-8681-4767-bddb-28f51b3aec26/代表圖像(臺北市政府文化局).png": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-03-27/24d770b0-9bbf-4a12-b681-120fcc040d33/218648.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-03-27/28ac69c5-04df-4378-9d03-9216e6205eed/20240210_132827.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-03-27/3c988ebb-738f-473f-9bc6-660d8da60742/湖下楊允泡及楊盤讀古厝封面_審查後更新.png": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-03-27/6c8e1b67-25f7-44da-85ab-1a1819ce5fe2/湖前陳宗炯洋樓.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-03-27/899fc85c-e3e5-4d07-a730-332c06355052/(0)封面.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-03-27/ab6277fd-51af-4c87-abc6-0649c6c49c48/53490.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-03-27/c0ad5124-4246-43b9-8aa9-a23b1607806d/1.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-03-29/3b5ef3de-8d8f-47dd-a78f-f46944ae2b70/LINE_ALBUM_20231218 文資審議委員會（竹中講堂）_231218_24.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-03-29/9b4fb7a2-40f0-4762-9a96-bff2dcabf788/LINE_ALBUM_20231204審議會-八卦窯_竹女小禮堂_231205_7.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-04-01/c67f65f1-6e5b-4fcb-996e-eb7ccf0b9d4f/454901_0.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-04-02/b6ef8196-643e-43ff-8d9e-834553062bb4/(3).jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-04-09/59333444-6ffc-47b5-9488-e77c26ec70ef/中壢燃藜第紅樓.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-04-09/7a88d732-546f-4758-b1cc-8612772091be/1712652535205.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-04-09/b0252108-5bce-453c-bd4b-7ca7d7d2163c/八掌溪渡槽橋2.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-04-11/823bd50a-ce6e-42bf-846e-b58006005100/藏興古厝.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-04-15/6c18c371-c032-4602-83ec-cd3b6fa58ad8/原彰化市甲種學校職員宿舍01.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-04-17/1d66e113-00dd-43ea-be56-f4f7033152df/竹山永濟義渡碑及周邊環境.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-04-25/aa289a90-f4d0-4dfa-ac1d-30e1e665eb80/慈德宮.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-07/3e45659a-cfa0-4885-a2ed-69210b2c84a1/359566.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-09/c201cf23-bbe7-4b19-b413-bf359eb1d935/草屯國小禮堂整體外觀及周邊環境.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-10/6c543075-c2b8-4be3-a945-6b2fd4cbf634/871167_0.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-10/b009880c-168a-44ea-be24-89fde1c78b11/S__31818019.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-10/c830115d-c193-4ec7-b645-388f3ff85b13/871161_0.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-13/27b9b420-b1cc-4e5a-aa9a-5dc92f0739f6/宜蘭五穀廟代表圖.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-15/04e9d94e-43a0-4a56-8b37-38e8b6554c16/山后中堡中書第_代表圖像.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-15/4448cb86-cbd3-4730-b445-4c3cad5990b2/黃樓洋樓_代表圖像(壓縮).jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-15/7d8dc8bb-f92d-4455-9fb4-0287ba684bd9/翁贊商、翁贊榮洋樓_代表圖像.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-15/96fce3d3-8518-479f-84a8-567049c97b39/南投市中山公園聚芳館.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-15/d8d4f290-73a4-495c-9f04-1be7610e487e/北山李氏兄弟洋樓-代表圖像.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-16/d1c27fb3-07d3-4a6a-862c-a0e6394c5384/敷榮堂.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-21/6f37e84f-e9ab-4038-b2c3-16f45870bfcd/陳家古厝(武秀才陳獻瑞家宅).jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-23/7d0d41d2-50d5-4e0b-aeac-8d7e1d52ad11/大埔永安石板橋(代表).jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-23/80b9f79f-6671-4b7f-922d-837e3adf7347/湯圍溫泉溝_A999551.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-24/4de0d712-4456-4ccd-a6e4-6a4c84d97e85/01.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-24/5317a2b1-b068-4bcc-b08b-9c83c8a21beb/西鄉廳憲德政碑_A999234.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-24/6b4ff12e-246b-462d-af5d-aaa14ee2045f/外員山裝甲營軍事建築群_A990389.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-24/8381017a-ac85-42cc-ba11-3e610fd1fb88/01.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-28/435e726b-1b2b-4131-a02a-735f93d8f6ac/代表圖像.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-28/c5bbe6af-070d-4b41-a1be-1aaa121814e1/金門縣 奉直第 (歷建)01.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-29/ee60a527-4ca3-41b2-9cb9-affac5281e74/01封面.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-31/24088f06-eb7c-4ea3-90a5-0bac840b8552/S__94912531_0.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-31/8a078d87-8f98-4cab-b84c-c419ad7723f4/S__94912536_0.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-05-31/8afb3e0e-e436-4f93-bd51-a51069905157/S__94912523_0.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-06-03/8a0c6f0a-6335-454f-91ec-f1c2a4cfb51f/LINE_ALBUM_嘉義縣113年第一次文化資產審議會現勘_240327_20.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-06-07/291e46b6-5c91-41f2-bd46-3bd8d1ba7fbd/陳善述老宅.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-06-18/2648d791-b250-4aab-883b-990756b05f4e/陳篤欽古厝_封面.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-06-18/2fb9ca3c-23aa-4ae2-841c-5e7d21450979/蔡永耀洋樓_封面.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-06-18/324f88a6-312e-4e65-938e-a569cb07be3b/陳氏二落大厝_封面.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-06-18/3c499b80-5df6-41fb-a945-7380954eded1/李開和洋樓_封面.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-06-18/60b76a48-a583-472f-9a75-76857e0f395c/張氏古厝(沙美102號)_封面.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-06-18/6f2182cc-f79d-476f-b369-82d4d8d13afd/黃文東宅_封面.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-06-18/73b28fce-2f4b-4cfb-bf1c-3e526a22f195/何永洋樓_封面.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-06-18/7bd9c134-9f3f-4b5a-91be-2267d1d2b938/昭靈宮_封面.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-06-18/8fce908f-438a-4b0b-8c9b-99b08fb96675/蔡永耀二落大厝_封面.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-06-18/95f6b18f-1288-4080-b62f-7b018adcfe3f/張璋滿古厝(85號)-封面.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-06-18/b024e9a5-a9e4-4549-b87e-44987bf78485/黃乃甫番仔厝_封面.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-06-18/c3717a24-0733-4e6b-81d5-5f942cba9638/張氏古厝(沙美101號)_封面.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-06-18/dd417bf1-6d34-4759-b494-bac7da15c0e7/方宅_封面.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-06-18/e9e32c89-fe8c-41e2-9038-39c6706e676c/金東電影院_封面.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-06-18/f1ceafbb-8b9c-4473-af11-15dc73d9c90d/後浦何宅_封面.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-06-18/f63717a1-e950-4309-840c-194828989906/張氏古厝_封面.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-06-18/fe644dd1-d440-45f9-ae14-58bf25840a2d/陳明侑古厝_封面.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-06-28/dbe2dfe3-c9e9-4139-b1e6-010215b18784/LINE_ALBUM_天龍吊橋1130627_240628_1.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-07-05/19b3700f-928b-4098-a104-4e92b63957f5/S__62808082_0.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-07-05/42c867eb-f466-42d7-bf8a-dce6cf54057b/三塊厝火車站014.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-07-05/51d82d38-bfd6-412a-a7ed-8f44b7813c81/275795_0.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-07-05/9943ac64-741b-48f8-8fc7-a2290362484e/20240626 (2)_0.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-07-07/17174d3f-2984-40f6-8bef-4fd221ba25a1/IMG_1961_0.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
+"n": "",
+"final": ""
+},
+"https://data.boch.gov.tw/upload/representImageFile/2024-07-07/1a981e98-53ab-459d-8272-9b5b6005b1a8/楠梓禮拜堂.jpg": {
+"f": 0,
+"s": "ok",
+"c": 200,
+"t": "2026-11-23",
 "n": "",
 "final": ""
 }
